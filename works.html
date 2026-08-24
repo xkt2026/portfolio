@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代表作品 - 个人作品集</title>
+  <meta name="description" content="品牌视觉、招标方案与新媒体运营代表项目">
+  <style>
+:root {
+  --bg: #F6F1E7;
+  --ink: #141414;
+  --blue: #3B6FE0;
+  --orange: #FF7A3D;
+  --pink: #FF5E8A;
+  --yellow: #FFD23F;
+  --mint: #43C59E;
+  --lilac: #B79CED;
+  --border: 3px solid #141414;
+  --shadow: 6px 6px 0 #141414;
+  --font-display: "Arial Black", "Helvetica Neue", "Impact", sans-serif;
+  --font-body: "Courier New", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 20%, var(--lilac) 0 14px, transparent 15px),
+    radial-gradient(circle at 88% 8%, var(--yellow) 0 10px, transparent 11px);
+  background-size: 260px 260px, 180px 180px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+  padding: 0.8rem 1.4rem;
+  background: var(--ink); color: var(--bg);
+  border-bottom: var(--border);
+}
+.brand { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 1px; }
+.brand .mark {
+  display: inline-block; width: 1.4rem; height: 1.4rem; margin-right: .5rem;
+  background: var(--yellow); border: 2px solid var(--bg); transform: rotate(12deg);
+}
+.nav-links { display: flex; gap: .4rem; flex-wrap: wrap; }
+.nav-links a {
+  padding: .35rem .8rem; font-weight: bold; text-transform: uppercase;
+  background: var(--bg); color: var(--ink); border: 2px solid var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.nav-links a:hover { transform: translate(-2px,-2px); box-shadow: 3px 3px 0 var(--ink); }
+.nav-links a.active { background: var(--yellow); }
+.menu-toggle { display: none; font-weight: bold; background: var(--yellow); border: 2px solid var(--bg); color: var(--ink); padding: .4rem .8rem; }
+
+/* ---------- Hero / Page header ---------- */
+.page-hero {
+  position: relative; padding: clamp(2.5rem, 8vw, 6rem) 1.4rem;
+  border-bottom: var(--border); overflow: hidden;
+}
+.hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-title {
+  font-family: var(--font-display); font-size: clamp(2.4rem, 9vw, 6rem);
+  line-height: .92; text-transform: uppercase; letter-spacing: -1px;
+}
+.hero-sub {
+  display: inline-block; margin-top: 1rem; padding: .3rem .8rem;
+  background: var(--orange); color: var(--bg); border: var(--border);
+  transform: rotate(-1.5deg); box-shadow: var(--shadow); font-weight: bold;
+}
+
+/* ---------- Sections ---------- */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1.4rem; }
+.section { padding: clamp(2.5rem, 7vw, 5rem) 0; border-bottom: 2px dashed var(--ink); }
+
+.section-head {
+  display: inline-block; font-family: var(--font-display);
+  text-transform: uppercase; font-size: clamp(1.6rem, 5vw, 2.6rem);
+  margin-bottom: 1.6rem; padding: .15rem .9rem;
+  background: var(--yellow); border: var(--border); transform: rotate(-1deg);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Grid cards ---------- */
+.grid {
+  display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card {
+  position: relative; background: var(--bg);
+  border: var(--border); box-shadow: var(--shadow);
+  padding: 1.2rem; overflow: hidden;
+  transition: transform .15s ease;
+}
+.card:nth-child(3n) { background: var(--mint); }
+.card:nth-child(3n+1) { background: var(--yellow); }
+.card:nth-child(3n+2) { background: var(--pink); color: var(--bg); }
+.card:nth-child(3n+2) .card-title { color: var(--bg); }
+.card:hover { transform: translate(-3px,-3px) rotate(-1deg); }
+.card-title { font-family: var(--font-display); text-transform: uppercase; font-size: 1.2rem; margin-bottom: .5rem; }
+.card p { font-size: .95rem; }
+
+/* ---------- Feature rows ---------- */
+.rows { display: grid; gap: 1.6rem; }
+.row {
+  display: grid; gap: 1.2rem; grid-template-columns: 1fr;
+  background: var(--bg); border: var(--border); box-shadow: var(--shadow);
+  padding: 1.3rem;
+}
+@media (min-width: 700px) {
+  .row { grid-template-columns: 1fr 1fr; align-items: center; }
+  .row .row-media { order: 2; }
+  .row:nth-child(even) .row-media { order: 1; }
+}
+.row-tag {
+  display: inline-block; padding: .1rem .5rem; margin-bottom: .6rem;
+  background: var(--blue); color: var(--bg); border: 2px solid var(--ink);
+  font-weight: bold; text-transform: uppercase; font-size: .8rem;
+}
+
+/* ---------- Quote / marquee ---------- */
+.marquee {
+  overflow: hidden; white-space: nowrap; border-top: var(--border); border-bottom: var(--border);
+  background: var(--ink); color: var(--bg); padding: .7rem 0;
+}
+.marquee-track { display: inline-block; padding-left: 100%; animation: scroll 18s linear infinite; }
+.marquee span { margin: 0 2rem; font-family: var(--font-display); text-transform: uppercase; }
+@keyframes scroll { to { transform: translateX(-100%); } }
+
+blockquote {
+  font-family: var(--font-display); font-size: clamp(1.2rem, 4vw, 2rem);
+  padding: 1.4rem; background: var(--lilac); border: var(--border);
+  box-shadow: var(--shadow); transform: rotate(1deg); margin: 1.6rem 0;
+}
+
+/* ---------- Shapes / stickers (rotated collage bits) ---------- */
+.sticker {
+  display: inline-block; font-family: var(--font-display); text-transform: uppercase;
+  padding: .4rem .9rem; border: var(--border); box-shadow: var(--shadow);
+  transform: rotate(var(--rot, 0deg));
+}
+.shape-dots { background-image: radial-gradient(var(--ink) 2.5px, transparent 2.6px); background-size: 14px 14px; opacity:.9; }.shape-triangle { clip-path: polygon(50% 0, 100% 100%, 0 100%); background: var(--orange); }.shape-wave { background: var(--mint); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }.shape-stripe { background: repeating-linear-gradient(45deg, var(--pink), var(--pink) 10px, var(--bg) 10px, var(--bg) 20px); }.shape-cross { background: repeating-linear-gradient(0deg, var(--ink), var(--ink) 2px, transparent 2px, transparent 6px), repeating-linear-gradient(90deg, var(--ink), var(--ink) 2px, transparent 2px, transparent 6px); opacity:.7; }.shape-zig { background: repeating-linear-gradient(90deg, var(--yellow) 0 14px, var(--blue) 14px 28px); }.shape-ring { border: 8px solid var(--blue); border-radius: 50%; }.shape-blob { background: var(--lilac); border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%; }
+
+/* ---------- Footer ---------- */
+.site-foot {
+  padding: 1.6rem 1.4rem; background: var(--ink); color: var(--bg);
+  text-align: center; font-size: .9rem;
+}
+.site-foot a { text-decoration: underline; text-decoration-thickness: 2px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none; width: 100%; flex-direction: column;
+    background: var(--ink); border-top: 2px solid var(--bg); padding-top: .5rem;
+  }
+  .nav-links.open { display: flex; }
+  .menu-toggle { display: inline-block; }
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="brand"><span class="mark"></span>ART PORTFOLIO</div>
+  <button class="menu-toggle" aria-label="Menu">MENU</button>
+  <div class="nav-links" id="navLinks"><a href="index.html">首页</a><a href="works.html" class="active">作品</a><a href="about.html">经历</a></div>
+</nav>
+
+<header class="page-hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">代表作品</h1>
+    <div class="hero-sub">品牌 / 投标 / 新媒体 / IP 运营</div>
+  </div>
+</header>
+
+<section class="section"><div class="container"><h2 class="section-head">品牌视觉项目</h2><div class="grid"><article class="card"><h3 class="card-title">移动 5G 推广</h3><p>5G 品牌传播视觉与叙事设计</p></article><article class="card"><h3 class="card-title">澳门银行投标</h3><p>结合用户洞察的投标内容方案</p></article><article class="card"><h3 class="card-title">珠海长隆 VI</h3><p>品牌 VI 视觉识别系统设计</p></article></div></div></section><section class="section"><div class="container"><h2 class="section-head">运营项目</h2><div class="grid"><article class="card"><h3 class="card-title">商铺区域推广</h3><p>区域商铺内容策划与流量运营</p></article><article class="card"><h3 class="card-title">美食博主 IP</h3><p>美食区博主 IP 运营与涨粉</p></article></div></div></section><section class="section"><div class="container"><blockquote>把用户洞察变成视觉叙事，让内容自己说话。<br><small>— 设计理念</small></blockquote></div></section><footer class="site-foot"><span class="brand"><span class="mark"></span>ART PORTFOLIO</span><br>&copy; 2026 ART PORTFOLIO</footer>
+<script>
+  var toggle = document.querySelector('.menu-toggle');
+  var links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){ links.classList.toggle('open'); });
+  }
+</script>
+
+</body>
+</html>

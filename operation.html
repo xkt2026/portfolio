@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>策划运营 - 陈麒汀作品集</title>
+  <meta name="description" content="小红书大众点评运营与策划文案作品">
+  <style>
+:root {
+  --bg: #F6F1E7;
+  --ink: #141414;
+  --blue: #3B6FE0;
+  --orange: #FF7A3D;
+  --pink: #FF5E8A;
+  --yellow: #FFD23F;
+  --mint: #43C59E;
+  --lilac: #B79CED;
+  --border: 3px solid #141414;
+  --shadow: 6px 6px 0 #141414;
+  --font-display: "Arial Black", "Helvetica Neue", "Impact", sans-serif;
+  --font-body: "Courier New", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 20%, var(--lilac) 0 14px, transparent 15px),
+    radial-gradient(circle at 88% 8%, var(--yellow) 0 10px, transparent 11px);
+  background-size: 260px 260px, 180px 180px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Navigation ---------- */
+.site-nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
+  padding: 0.8rem 1.4rem;
+  background: var(--ink); color: var(--bg);
+  border-bottom: var(--border);
+}
+.brand { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 1px; }
+.brand .mark {
+  display: inline-block; width: 1.4rem; height: 1.4rem; margin-right: .5rem;
+  background: var(--yellow); border: 2px solid var(--bg); transform: rotate(12deg);
+}
+.nav-links { display: flex; gap: .4rem; flex-wrap: wrap; }
+.nav-links a {
+  padding: .35rem .8rem; font-weight: bold; text-transform: uppercase;
+  background: var(--bg); color: var(--ink); border: 2px solid var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.nav-links a:hover { transform: translate(-2px,-2px); box-shadow: 3px 3px 0 var(--ink); }
+.nav-links a.active { background: var(--yellow); }
+.menu-toggle { display: none; font-weight: bold; background: var(--yellow); border: 2px solid var(--bg); color: var(--ink); padding: .4rem .8rem; }
+
+/* ---------- Hero / Page header ---------- */
+.page-hero {
+  position: relative; padding: clamp(2.5rem, 8vw, 6rem) 1.4rem;
+  border-bottom: var(--border); overflow: hidden;
+}
+.hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-title {
+  font-family: var(--font-display); font-size: clamp(2.4rem, 9vw, 6rem);
+  line-height: .92; text-transform: uppercase; letter-spacing: -1px;
+}
+.hero-sub {
+  display: inline-block; margin-top: 1rem; padding: .3rem .8rem;
+  background: var(--orange); color: var(--bg); border: var(--border);
+  transform: rotate(-1.5deg); box-shadow: var(--shadow); font-weight: bold;
+}
+
+/* ---------- Sections ---------- */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 1.4rem; }
+.section { padding: clamp(2.5rem, 7vw, 5rem) 0; border-bottom: 2px dashed var(--ink); }
+
+.section-head {
+  display: inline-block; font-family: var(--font-display);
+  text-transform: uppercase; font-size: clamp(1.6rem, 5vw, 2.6rem);
+  margin-bottom: 1.6rem; padding: .15rem .9rem;
+  background: var(--yellow); border: var(--border); transform: rotate(-1deg);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Grid cards ---------- */
+.grid {
+  display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card {
+  position: relative; background: var(--bg);
+  border: var(--border); box-shadow: var(--shadow);
+  padding: 1.2rem; overflow: hidden;
+  transition: transform .15s ease;
+}
+.card:nth-child(3n) { background: var(--mint); }
+.card:nth-child(3n+1) { background: var(--yellow); }
+.card:nth-child(3n+2) { background: var(--pink); color: var(--bg); }
+.card:nth-child(3n+2) .card-title { color: var(--bg); }
+.card:hover { transform: translate(-3px,-3px) rotate(-1deg); }
+.card-title { font-family: var(--font-display); text-transform: uppercase; font-size: 1.2rem; margin-bottom: .5rem; }
+.card p { font-size: .95rem; }
+
+/* ---------- Feature rows ---------- */
+.rows { display: grid; gap: 1.6rem; }
+.row {
+  display: grid; gap: 1.2rem; grid-template-columns: 1fr;
+  background: var(--bg); border: var(--border); box-shadow: var(--shadow);
+  padding: 1.3rem;
+}
+@media (min-width: 700px) {
+  .row { grid-template-columns: 1fr 1fr; align-items: center; }
+  .row .row-media { order: 2; }
+  .row:nth-child(even) .row-media { order: 1; }
+}
+.row-tag {
+  display: inline-block; padding: .1rem .5rem; margin-bottom: .6rem;
+  background: var(--blue); color: var(--bg); border: 2px solid var(--ink);
+  font-weight: bold; text-transform: uppercase; font-size: .8rem;
+}
+
+/* ---------- Quote / marquee ---------- */
+.marquee {
+  overflow: hidden; white-space: nowrap; border-top: var(--border); border-bottom: var(--border);
+  background: var(--ink); color: var(--bg); padding: .7rem 0;
+}
+.marquee-track { display: inline-block; padding-left: 100%; animation: scroll 18s linear infinite; }
+.marquee span { margin: 0 2rem; font-family: var(--font-display); text-transform: uppercase; }
+@keyframes scroll { to { transform: translateX(-100%); } }
+
+blockquote {
+  font-family: var(--font-display); font-size: clamp(1.2rem, 4vw, 2rem);
+  padding: 1.4rem; background: var(--lilac); border: var(--border);
+  box-shadow: var(--shadow); transform: rotate(1deg); margin: 1.6rem 0;
+}
+
+/* ---------- Shapes / stickers (rotated collage bits) ---------- */
+.sticker {
+  display: inline-block; font-family: var(--font-display); text-transform: uppercase;
+  padding: .4rem .9rem; border: var(--border); box-shadow: var(--shadow);
+  transform: rotate(var(--rot, 0deg));
+}
+.shape-dots { background-image: radial-gradient(var(--ink) 2.5px, transparent 2.6px); background-size: 14px 14px; opacity:.9; }.shape-triangle { clip-path: polygon(50% 0, 100% 100%, 0 100%); background: var(--orange); }.shape-wave { background: var(--mint); border-radius: 50% 50% 0 0 / 100% 100% 0 0; }.shape-stripe { background: repeating-linear-gradient(45deg, var(--pink), var(--pink) 10px, var(--bg) 10px, var(--bg) 20px); }.shape-cross { background: repeating-linear-gradient(0deg, var(--ink), var(--ink) 2px, transparent 2px, transparent 6px), repeating-linear-gradient(90deg, var(--ink), var(--ink) 2px, transparent 2px, transparent 6px); opacity:.7; }.shape-zig { background: repeating-linear-gradient(90deg, var(--yellow) 0 14px, var(--blue) 14px 28px); }.shape-ring { border: 8px solid var(--blue); border-radius: 50%; }.shape-blob { background: var(--lilac); border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%; }
+
+/* ---------- Footer ---------- */
+.site-foot {
+  padding: 1.6rem 1.4rem; background: var(--ink); color: var(--bg);
+  text-align: center; font-size: .9rem;
+}
+.site-foot a { text-decoration: underline; text-decoration-thickness: 2px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none; width: 100%; flex-direction: column;
+    background: var(--ink); border-top: 2px solid var(--bg); padding-top: .5rem;
+  }
+  .nav-links.open { display: flex; }
+  .menu-toggle { display: inline-block; }
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="brand"><span class="mark"></span>陈麒汀</div>
+  <button class="menu-toggle" aria-label="Menu">MENU</button>
+  <div class="nav-links" id="navLinks"><a href="index.html">首页</a><a href="design.html">设计</a><a href="film.html">影像</a><a href="operation.html" class="active">运营</a><a href="about.html">经历</a></div>
+</nav>
+
+<header class="page-hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">策划与运营案例</h1>
+    <div class="hero-sub">在实际项目中应用的真实经验</div>
+    
+  </div>
+</header>
+
+<section class="section"><div class="container"><h2 class="section-head">小红书 / 大众点评运营</h2><div class="grid"><article class="card"><img src="images/op_xiaohongshu.jpeg" alt="" style="width:100%;border:var(--border);box-shadow:var(--shadow);margin-bottom:.8rem;display:block;"><h3 class="card-title">文案撰写</h3><p>高感染力原创文案，品效双线</p></article><article class="card"><h3 class="card-title">照片拍摄后期</h3><p>内容视觉统一与后期处理</p></article><article class="card"><h3 class="card-title">话题运营</h3><p>分析受众关注点，直击平台热点</p></article></div></div></section><section class="section"><div class="container"><h2 class="section-head">运营成果</h2><div class="grid"><article class="card"><h3 class="card-title">粉丝 +100</h3><p>单项目账号粉丝增长</p></article><article class="card"><h3 class="card-title">获利 2000+</h3><p>商业转化收益</p></article><article class="card"><h3 class="card-title">收藏 1500+</h3><p>内容收藏量</p></article></div></div></section><section class="section"><div class="container"><h2 class="section-head">策划文案类作品</h2><div class="rows"><div class="row"><div class="row-media"><img src="images/op_hk72.png" alt="" style="width:100%;border:var(--border);box-shadow:var(--shadow);display:block;"></div><div class="row-body"><span class="row-tag">策划</span><h3 style="font-family:var(--font-display);text-transform:uppercase;">视频策划</h3><p>从选题到节奏的整体策划。</p></div></div><div class="row"><div class="row-media"><img src="images/op_spain.png" alt="" style="width:100%;border:var(--border);box-shadow:var(--shadow);display:block;"></div><div class="row-body"><span class="row-tag">文案</span><h3 style="font-family:var(--font-display);text-transform:uppercase;">脚本设计 / 剧本撰写</h3><p>叙事结构与高感染力的脚本创作。</p></div></div><div class="row"><div class="row-media"><div class="sticker" style="--rot:2deg;">SHOOT</div></div><div class="row-body"><span class="row-tag">执行</span><h3 style="font-family:var(--font-display);text-transform:uppercase;">拍摄计划</h3><p>拍摄流程与执行统筹。</p></div></div></div></div></section><section class="section"><div class="container"><blockquote>「痛点拆解 × 品效共振」跨域文案精准穿透用户心智，品效双线提升策略实现传播裂变。<br><small>— 运营方法论</small></blockquote></div></section><footer class="site-foot"><span class="brand"><span class="mark"></span>陈麒汀</span><br>&copy; 2026 陈麒汀</footer>
+<script>
+  var toggle = document.querySelector('.menu-toggle');
+  var links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){ links.classList.toggle('open'); });
+  }
+</script>
+
+</body>
+</html>

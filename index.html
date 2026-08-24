@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陈麒汀 — 视觉与营销设计师</title>
+<style>
+/* ===== 基础重置 ===== */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+/* ===== 变量系统 ===== */
+:root {
+  --ink: #292626;
+  --cream: #f2eee6;
+  --card-1: #78816d;
+  --card-2: #a5b1b2;
+  --card-3: #b49a71;
+  --card-4: #6f687b;
+  --nav-h: 62px;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: "PingFang SC", "Microsoft YaHei", sans-serif;
+  --shadow-card: 0 -24px 70px rgba(37, 31, 28, 0.16);
+  --border-card: 1px solid rgba(66, 54, 40, 0.16);
+}
+
+/* ===== 全局噪点纹理 ===== */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ===== 导航栏 ===== */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4vw;
+  background: rgba(242, 238, 230, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1000;
+  border-bottom: var(--border-card);
+  transition: background 0.3s;
+}
+.nav.scrolled { background: rgba(242, 238, 230, 0.95); }
+.nav-brand {
+  font-family: var(--font-display);
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.brand-en {
+  font-size: 11px;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: var(--ink);
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { opacity: 1; }
+
+/* ===== Hero 首页区 ===== */
+.hero {
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--nav-h) + 2rem) 4vw 2rem;
+  background: var(--cream);
+  z-index: 1;
+  overflow: hidden;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+.hero-name {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+.hero-name-en {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2.2vw, 28px);
+  letter-spacing: 3px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+.hero-name-zh {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.6vw, 32px);
+  letter-spacing: 6px;
+  color: var(--ink);
+  opacity: 0.75;
+  position: relative;
+}
+.hero-name-zh::before {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -3px;
+  width: 100%; height: 2px;
+  background: var(--ink);
+  opacity: 0.35;
+  transform: rotate(-2deg);
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 6vw, 92px);
+  line-height: 0.92;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.hero-title::after {
+  content: attr(data-shadow);
+  position: absolute;
+  left: 7px; top: 7px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(41, 38, 38, 0.15);
+  z-index: -1;
+}
+.hero-sub {
+  font-size: clamp(16px, 2vw, 22px);
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+.hero-data {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.hero-data-item {
+  text-align: center;
+}
+.hero-data-num {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1;
+  display: block;
+}
+.hero-data-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  opacity: 0.5;
+  margin-top: 0.3rem;
+}
+.hero-figure {
+  flex: 0 0 min(50%, 450px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-avatar {
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  transform: rotate(-5deg) translateY(-8px);
+  filter: drop-shadow(12px 16px 30px rgba(37, 31, 28, 0.25));
+}
+.hero-avatar img {
+  width: 100%;
+  display: block;
+}
+.hero-avatar::after {
+  content: "QITING · HAUTE COUTURE";
+  position: absolute;
+  left: -30px;
+  bottom: -20px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--ink);
+  opacity: 0.6;
+  transform: rotate(-8deg);
+  background: transparent;
+  padding: 0;
+}
+
+/* 装饰纸片 */
+.hero-deco {
+  position: absolute;
+  width: 60px; height: 60px;
+  background: var(--card-3);
+  opacity: 0.4;
+  border-radius: 2px;
+}
+.hero-deco.d1 { top: 10%; right: -5%; transform: rotate(25deg); }
+.hero-deco.d2 { bottom: 15%; left: -8%; transform: rotate(-15deg); background: var(--card-2); }
+
+/* ===== 卡片堆叠区 ===== */
+.card-stack {
+  position: relative;
+}
+.portfolio-card {
+  position: sticky;
+  top: var(--nav-h);
+  height: max(calc(100vh - var(--nav-h)), 800px);
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(41, 38, 38, 0.35) transparent;
+  padding: 3rem 4vw 4rem;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+}
+.portfolio-card::-webkit-scrollbar { width: 6px; }
+.portfolio-card::-webkit-scrollbar-thumb {
+  background: rgba(41, 38, 38, 0.35);
+  border-radius: 3px;
+}
+.portfolio-card.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 卡片背景色 */
+.card-1 { background: var(--card-1); z-index: 2; }
+.card-2 { background: var(--card-2); z-index: 3; }
+.card-3 { background: var(--card-3); z-index: 4; }
+.card-4 { background: var(--card-4); z-index: 5; }
+.card-5 { background: var(--cream); z-index: 6; border-top: var(--border-card); }
+.card-6 { background: #e9e4d8; z-index: 7; border-top: var(--border-card); }
+
+/* 纸张纹理叠加 */
+.portfolio-card::before,
+.portfolio-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+}
+.portfolio-card::after {
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+}
+
+/* 锯齿边缘 */
+.card-edge {
+  position: absolute;
+  top: -20px; left: 0; right: 0;
+  height: 40px;
+  clip-path: polygon(
+    0% 50%, 3% 30%, 6% 55%, 9% 35%, 12% 60%, 15% 40%,
+    18% 65%, 21% 45%, 24% 70%, 27% 50%, 30% 75%, 33% 55%,
+    36% 80%, 39% 60%, 42% 85%, 45% 65%, 48% 90%, 51% 70%,
+    54% 95%, 57% 75%, 60% 100%, 63% 80%, 66% 95%, 69% 85%,
+    72% 100%, 75% 90%, 78% 100%, 81% 95%, 84% 100%, 87% 95%,
+    90% 100%, 93% 95%, 96% 100%, 100% 50%
+  );
+  background: inherit;
+  z-index: 1;
+}
+
+/* 卡片顶部大标题 */
+.card-crown {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 10vw, 132px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.card-crown::after {
+  content: attr(data-shadow);
+  position: absolute;
+  left: -8px; top: 8px;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+/* 卡片编号便签 */
+.card-badge {
+  display: inline-block;
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 12px;
+  padding: 0.4rem 1rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  transform: rotate(-1deg);
+}
+
+/* 卡片内容区 */
+.card-surface {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== 数据指标 ===== */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.data-card {
+  background: rgba(242, 238, 230, 0.25);
+  border: var(--border-card);
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+.data-card-num {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.data-card-label {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ===== 图片画廊 ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.gallery-item {
+  position: relative;
+  background: rgba(242, 238, 230, 0.2);
+  border: var(--border-card);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery-item:hover {
+  transform: translateY(-4px) rotate(0.5deg);
+  box-shadow: 0 12px 40px rgba(37, 31, 28, 0.2);
+}
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.gallery-caption {
+  padding: 1rem;
+  font-size: 14px;
+}
+.gallery-caption h4 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  margin-bottom: 0.3rem;
+}
+.gallery-caption p {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* ===== 时间线 ===== */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin: 2rem 0;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: rgba(41, 38, 38, 0.15);
+}
+.timeline-item {
+  position: relative;
+  padding: 1.5rem 0 1.5rem 2rem;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2rem; top: 1.8rem;
+  width: 12px; height: 12px;
+  background: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  transform: translateX(-5px);
+}
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 28px;
+  margin-bottom: 0.3rem;
+}
+.timeline-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.timeline-desc {
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.7;
+}
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.timeline-tag {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(242, 238, 230, 0.3);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+/* ===== 技能标签 ===== */
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+.skill-tag {
+  font-size: 13px;
+  background: rgba(242, 238, 230, 0.25);
+  border: var(--border-card);
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.skill-tag:hover {
+  background: rgba(242, 238, 230, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ===== 跑马灯 ===== */
+.marquee-wrap {
+  overflow: hidden;
+  margin: 2rem 0;
+  border-top: var(--border-card);
+  border-bottom: var(--border-card);
+  padding: 1rem 0;
+}
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-item {
+  white-space: nowrap;
+  font-size: 14px;
+  opacity: 0.7;
+  padding: 0.5rem 1rem;
+  background: rgba(242, 238, 230, 0.15);
+  border-radius: 2px;
+}
+
+/* ===== 页脚 ===== */
+.footer {
+  padding: 3rem 4vw;
+  text-align: center;
+  background: var(--cream);
+  border-top: var(--border-card);
+}
+.footer p {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+/* ===== 相册模式 (PHOTO & FILM) ===== */
+.album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+.album-item {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 3px solid var(--cream);
+  background: var(--cream);
+  box-shadow: 4px 5px 0 rgba(41, 38, 38, 0.12);
+  cursor: zoom-in;
+  transform: rotate(-0.5deg);
+  transition: transform 0.35s, box-shadow 0.35s, filter 0.35s;
+}
+.album-item:nth-child(2n) { transform: rotate(0.6deg); }
+.album-item:nth-child(3n) { transform: rotate(-0.8deg); }
+.album-item:hover {
+  transform: rotate(0deg) scale(1.04);
+  box-shadow: 8px 10px 0 rgba(41, 38, 38, 0.18);
+  z-index: 2;
+}
+.album-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: filter 0.35s;
+}
+.album-item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.6rem 0.8rem 0.6rem;
+  background: linear-gradient(to top, rgba(30, 25, 22, 0.75), transparent);
+  color: var(--cream);
+  transform: translateY(100%);
+  transition: transform 0.35s;
+}
+.album-item:hover figcaption {
+  transform: translateY(0);
+}
+.album-item figcaption strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.album-item figcaption span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.85;
+}
+.album-hint {
+  margin-top: 1.2rem;
+  font-size: 12px;
+  opacity: 0.55;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* ===== 图片放大查看 (Lightbox) ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(30, 25, 22, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  padding: 4vh 4vw;
+  cursor: zoom-out;
+}
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+.lightbox-figure {
+  max-width: 92vw;
+  max-height: 88vh;
+  background: var(--cream);
+  border: 6px solid var(--cream);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  transform: scale(0.92);
+  transition: transform 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+.lightbox.open .lightbox-figure {
+  transform: scale(1);
+}
+.lightbox-figure img {
+  display: block;
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+.lightbox-cap {
+  padding: 0.8rem 1rem;
+  font-size: 13px;
+  color: var(--ink);
+  text-align: center;
+}
+.lightbox-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--cream);
+  border: 3px solid var(--cream);
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.lb-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  font-size: 30px;
+  line-height: 46px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10001;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, background 0.2s;
+}
+.lb-nav:hover {
+  background: var(--ink);
+  color: var(--cream);
+  transform: translateY(-50%) scale(1.1);
+}
+.lb-prev { left: 3vw; }
+.lb-next { right: 3vw; }
+.lightbox-cap strong { display: block; font-family: var(--font-display); font-size: 16px; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .hero-inner { flex-direction: column; gap: 2rem; }
+  .hero-figure { flex: 0 0 auto; max-width: 280px; }
+  .hero-data { gap: 1.5rem; }
+  .nav-links { display: none; }
+  .gallery { grid-template-columns: 1fr; }
+  .card-crown { font-size: 56px; }
+}
+</style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-brand">陈麒汀 <span class="brand-en">QITING CHEN</span></a>
+  <div class="nav-links">
+    <a href="#hero" class="active">首页</a>
+    <a href="#card1">能力</a>
+    <a href="#card2">设计</a>
+    <a href="#card3">AIGC</a>
+    <a href="#card4">影像</a>
+    <a href="#card5">运营</a>
+    <a href="#card6">经历</a>
+  </div>
+</nav>
+
+<!-- Hero 首页区 -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-name">
+        <span class="hero-name-en">QITING CHEN</span>
+        <span class="hero-name-zh">陈 麒 汀</span>
+      </div>
+      <h1 class="hero-title" data-shadow="VISUAL DESIGNER">VISUAL DESIGNER</h1>
+      <p class="hero-sub">视觉传达设计 · 品牌运营 · 影像创作</p>
+      <p style="font-size:15px; opacity:0.7; max-width:480px; line-height:1.8;">
+        从4A品牌视觉到新媒体运营，从马德里艺术研究到实战设计落地。
+        用视觉讲故事，用数据驱动增长
+      </p>
+      <div class="hero-data">
+        <div class="hero-data-item">
+          <span class="hero-data-num">40%</span>
+          <span class="hero-data-label">品牌复用率提升</span>
+        </div>
+        <div class="hero-data-item">
+          <span class="hero-data-num">83%</span>
+          <span class="hero-data-label">项目中标率</span>
+        </div>
+        <div class="hero-data-item">
+          <span class="hero-data-num">300%</span>
+          <span class="hero-data-label">粉丝增长</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="hero-avatar">
+        <img src="images/avatar_collage_v2.png?v=1" alt="陈麒汀">
+      </div>
+      <div class="hero-deco d1"></div>
+      <div class="hero-deco d2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 卡片堆叠区 -->
+<div class="card-stack">
+
+  <!-- 卡片1：核心能力 -->
+  <section class="portfolio-card card-1" id="card1">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">01 / 核心能力</div>
+      <h2 class="card-crown" data-shadow="CAPABILITY">CAPABILITY</h2>
+      
+      <div class="data-grid">
+        <div class="data-card">
+          <div class="data-card-num">15+</div>
+          <div class="data-card-label">省级品牌营销项目</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-num">1000+</div>
+          <div class="data-card-label">内容视觉创作</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-num">22</div>
+          <div class="data-card-label">长期合作客户</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-num">150%</div>
+          <div class="data-card-label">客户转化率提升</div>
+        </div>
+      </div>
+
+      <div class="skill-cloud">
+        <span class="skill-tag">品牌视觉设计</span>
+        <span class="skill-tag">KV 设计</span>
+        <span class="skill-tag">电商视觉</span>
+        <span class="skill-tag">UI/UX 设计</span>
+        <span class="skill-tag">IP 设计</span>
+        <span class="skill-tag">包装设计</span>
+        <span class="skill-tag">摄影</span>
+        <span class="skill-tag">视频剪辑</span>
+        <span class="skill-tag">AIGC 创作</span>
+        <span class="skill-tag">新媒体运营</span>
+        <span class="skill-tag">活动策划</span>
+        <span class="skill-tag">英西双语</span>
+      </div>
+
+      <div class="marquee-wrap">
+        <div class="marquee-track">
+          <span class="marquee-item">联通 5G 品牌传播</span>
+          <span class="marquee-item">澳门银行投标</span>
+          <span class="marquee-item">珠海长隆 VI</span>
+          <span class="marquee-item">JUNER CARL 新品发布</span>
+          <span class="marquee-item">NUNU IP 设计</span>
+          <span class="marquee-item">商铺区域推广</span>
+          <span class="marquee-item">美食博主 IP 运营</span>
+          <span class="marquee-item">BTS 演唱会策划</span>
+          <span class="marquee-item">联通 5G 品牌传播</span>
+          <span class="marquee-item">澳门银行投标</span>
+          <span class="marquee-item">珠海长隆 VI</span>
+          <span class="marquee-item">JUNER CARL 新品发布</span>
+          <span class="marquee-item">NUNU IP 设计</span>
+          <span class="marquee-item">商铺区域推广</span>
+          <span class="marquee-item">美食博主 IP 运营</span>
+          <span class="marquee-item">BTS 演唱会策划</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 卡片2：设计作品 -->
+  <section class="portfolio-card card-2" id="card2">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">02 / 设计作品</div>
+      <h2 class="card-crown" data-shadow="DESIGN">DESIGN</h2>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/design_unicom_5g.png?v=3" alt="联通 5G KV">
+          <div class="gallery-caption">
+            <h4>联通 5G 让未来生长</h4>
+            <p>品牌 KV 设计 · 万物互联视觉概念</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/design_telecom_series.png" alt="电信 5G 系列">
+          <div class="gallery-caption">
+            <h4>电信 5G 系列海报</h4>
+            <p>智慧旅游 / 智能制造 / 智慧家庭 / 医疗</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/design_juner_carl.png" alt="JUNER CARL">
+          <div class="gallery-caption">
+            <h4>JUNER CARL 春夏新品</h4>
+            <p>品牌海报 · 自然美轻时尚概念</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/design_nunu_ip.jpg" alt="NUNU IP">
+          <div class="gallery-caption">
+            <h4>NUNU 品牌 IP 设计</h4>
+            <p>标志 / 标准字体 / 标准色系统</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/design_book.png" alt="书籍设计">
+          <div class="gallery-caption">
+            <h4>书籍设计</h4>
+            <p>出版物视觉与排版</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/design_package.png" alt="包装设计">
+          <div class="gallery-caption">
+            <h4>包装与周边设计</h4>
+            <p>产品包装视觉系统</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/design_ui.png" alt="UI 设计">
+          <div class="gallery-caption">
+            <h4>UI/UX 设计</h4>
+            <p>移动端界面与数据可视化</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 卡片3：AIGC 创作 -->
+  <section class="portfolio-card card-3" id="card3">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">03 / AIGC 创作</div>
+      <h2 class="card-crown" data-shadow="AIGC">AIGC</h2>
+      <p style="font-size:14px;opacity:0.65;margin-top:-0.5rem;margin-bottom:1.2rem;">AI 辅助艺术创作 · 梦幻场景与视觉探索</p>
+
+      <!-- 分类 1：数字静物 -->
+      <h3 style="font-family:var(--font-display);font-size:20px;margin:1.5rem 0 0.8rem;opacity:0.8;">数字静物 · Digital Still Life</h3>
+      <div class="album" id="album-aigc-still">
+        <figure class="album-item">
+          <img src="images/aigc_apple_glitch.jpg?v=1" alt="AIGC · 故障苹果">
+          <figcaption>
+            <strong>故障苹果</strong>
+            <span>像素错位与数字噪点</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/aigc_apple_pixel.jpg?v=1" alt="AIGC · 像素苹果">
+          <figcaption>
+            <strong>像素苹果</strong>
+            <span>复古条纹与马赛克表面</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/aigc_spheres.png" alt="AIGC · 幻境球体">
+          <figcaption>
+            <strong>幻境球体</strong>
+            <span>超现实空间与光影</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/aigc_sphere.png" alt="AIGC · 悬浮之境">
+          <figcaption>
+            <strong>悬浮之境</strong>
+            <span>镜面与流体色彩</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/aigc_bubble.png" alt="AIGC · 幻彩气泡">
+          <figcaption>
+            <strong>幻彩气泡</strong>
+            <span>气泡与渐变色彩实验</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/aigc_burst.png" alt="AIGC · 流体爆发">
+          <figcaption>
+            <strong>流体爆发</strong>
+            <span>流体动力学视觉探索</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- 分类 2：秋装新品概念海报 -->
+      <h3 style="font-family:var(--font-display);font-size:20px;margin:2rem 0 0.8rem;opacity:0.8;">秋装新品 · Autumn Campaign</h3>
+      <div class="album" id="album-aigc-autumn">
+        <figure class="album-item">
+          <img src="images/photo_golf1.jpg?v=2" alt="AIGC · 秋装新品概念海报">
+          <figcaption>
+            <strong>秋装新品概念海报</strong>
+            <span>概念 01 / 03</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_golf2.jpg?v=2" alt="AIGC · 秋装新品概念海报">
+          <figcaption>
+            <strong>秋装新品概念海报</strong>
+            <span>概念 02 / 03</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_golf3.jpg?v=2" alt="AIGC · 秋装新品概念海报">
+          <figcaption>
+            <strong>秋装新品概念海报</strong>
+            <span>概念 03 / 03</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="album-hint">点击照片放大 · 左右箭头切换</p>
+    </div>
+  </section>
+
+  <!-- 卡片4：摄影与影像 -->
+  <section class="portfolio-card card-4" id="card4">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">04 / 摄影影像</div>
+      <h2 class="card-crown" data-shadow="PHOTO & FILM">PHOTO & FILM</h2>
+      
+      <!-- 系列 1：产品陶瓷 -->
+      <h3 style="font-family:var(--font-display);font-size:20px;margin:1.5rem 0 0.8rem;opacity:0.8;">产品陶瓷 · Ceramics</h3>
+      <div class="album" id="album-photo-ceramic">
+        <figure class="album-item">
+          <img src="images/photo_stilllife1.jpg?v=3" alt="陶瓷产品摄影">
+          <figcaption>
+            <strong>陶瓷系列</strong>
+            <span>作品 01 / 02</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_stilllife2.jpg?v=3" alt="陶瓷产品摄影">
+          <figcaption>
+            <strong>陶瓷系列</strong>
+            <span>作品 02 / 02</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- 系列 2：旅行人文 -->
+      <h3 style="font-family:var(--font-display);font-size:20px;margin:2rem 0 0.8rem;opacity:0.8;">旅行人文 · Travel</h3>
+      <div class="album" id="album-photo-travel">
+        <figure class="album-item">
+          <img src="images/photo_paris.jpeg" alt="巴黎 · 莎士比亚书店">
+          <figcaption>
+            <strong>巴黎 · 莎士比亚书店</strong>
+            <span>旅行人文摄影</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_amsterdam.jpeg" alt="阿姆斯特丹">
+          <figcaption>
+            <strong>阿姆斯特丹</strong>
+            <span>运河与城市建筑</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_amsterdam_metro.jpg" alt="阿姆斯特丹 · 电车">
+          <figcaption>
+            <strong>阿姆斯特丹 · 电车</strong>
+            <span>城市公共交通人文</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_amsterdam_street.jpg" alt="阿姆斯特丹 · 街头">
+          <figcaption>
+            <strong>阿姆斯特丹 · 街头</strong>
+            <span>当地生活与美食</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_street1.jpeg" alt="街头纪实">
+          <figcaption>
+            <strong>街头纪实</strong>
+            <span>城市人文与环境叙事</span>
+          </figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/photo_street2.jpeg" alt="柏林街头">
+          <figcaption>
+            <strong>柏林街头</strong>
+            <span>欧洲城市光影</span>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="album-hint">点击照片放大 · 左右箭头切换</p>
+
+      <div style="margin-top:2rem; padding:1.5rem; background:rgba(242,238,230,0.2); border:var(--border-card);">
+        <h3 style="font-family:var(--font-display); font-size:22px; margin-bottom:1rem;">视频作品</h3>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1rem;">
+          <div>
+            <h4 style="font-size:16px; margin-bottom:0.3rem;">HONGKONG 72 Hours</h4>
+            <p style="font-size:13px; opacity:0.7;">霓虹街道与复古出租车的城市影像</p>
+          </div>
+          <div>
+            <h4 style="font-size:16px; margin-bottom:0.3rem;">西班牙短片</h4>
+            <p style="font-size:13px; opacity:0.7;">情感叙事与物件记忆</p>
+          </div>
+          <div>
+            <h4 style="font-size:16px; margin-bottom:0.3rem;">沃兰多宣传片</h4>
+            <p style="font-size:13px; opacity:0.7;">通用发动机实验数据与车主体验</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 卡片5：运营与策划 -->
+  <section class="portfolio-card card-5" id="card5">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">05 / 运营策划</div>
+      <h2 class="card-crown" data-shadow="OPERATION">OPERATION</h2>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/op_hongkong.png" alt="香港72小时">
+          <div class="gallery-caption">
+            <h4>HONGKONG 72 Hours</h4>
+            <p>视频策划 · 城市影像叙事</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/op_spain.png" alt="西班牙短片">
+          <div class="gallery-caption">
+            <h4>西班牙短片</h4>
+            <p>脚本设计 · 情感物件叙事</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/op_wolando.png" alt="沃兰多策划">
+          <div class="gallery-caption">
+            <h4>沃兰多宣传片策划</h4>
+            <p>策划方案 · 三缸机发动机传播</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/op_bts.png" alt="BTS 演唱会">
+          <div class="gallery-caption">
+            <h4>BTS 演唱会策划</h4>
+            <p>数据运营 · 54国巡演 / 23万+人次</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;">
+        <h3 style="font-family:var(--font-display); font-size:22px; margin-bottom:1rem;">小红书 / 大众点评运营</h3>
+        <div class="data-grid" style="grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));">
+          <div class="data-card">
+            <div class="data-card-num">+300%</div>
+            <div class="data-card-label">3个月粉丝增长</div>
+          </div>
+          <div class="data-card">
+            <div class="data-card-num">+200%</div>
+            <div class="data-card-label">内容触达率</div>
+          </div>
+          <div class="data-card">
+            <div class="data-card-num">1500+</div>
+            <div class="data-card-label">收藏</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 卡片6：工作经历 -->
+  <section class="portfolio-card card-6" id="card6">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">06 / 工作经历</div>
+      <h2 class="card-crown" data-shadow="EXPERIENCE" style="color:var(--ink);">EXPERIENCE</h2>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2024 — 2026</div>
+          <div class="timeline-title">马德里康普顿斯大学 · 艺术与创作研究（硕士）</div>
+          <div class="timeline-desc">图形图像处理 · 纪录片拍摄研究 · 艺术史研究 · 环境干预与艺术 · 艺术与市场</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">QS 164</span>
+            <span class="timeline-tag">西语/英语授课</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2021 — 2024</div>
+          <div class="timeline-title">SOLOYAZHI 工作室 · 市场营销与品牌运营</div>
+          <div class="timeline-desc">个人 IP 新媒体内容策划与运营。3 个月账号粉丝增长 300%+。构建"内容创意—流量运营—商业转化"模型，累计 1000+ 内容创作，维护 22 家长期客户</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">粉丝 +300%</span>
+            <span class="timeline-tag">转化 +150%</span>
+            <span class="timeline-tag">1000+ 项目</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2019 — 2021</div>
+          <div class="timeline-title">九易广告有限公司（4A） · 品牌视觉设计师</div>
+          <div class="timeline-desc">为中国三大通信运营商提供品牌传播与营销视觉支持。参与 15+ 省级品牌营销项目。品牌复用率提升 40%，项目中标率 83%</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">品牌复用率 +40%</span>
+            <span class="timeline-tag">中标率 83%</span>
+            <span class="timeline-tag">H5 点击率 +32%</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2019 — 2021</div>
+          <div class="timeline-title">韩山师范学院 · 视觉传达设计（本科）</div>
+          <div class="timeline-desc">UI 设计 · 书籍设计 · 广告摄影 · VI 设计 · 插画 · 印刷工艺 · 包装设计</div>
+          <div class="timeline-tags">
+            <span class="timeline-tag">视觉传达</span>
+            <span class="timeline-tag">本科</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:3rem; padding-top:2rem; border-top:var(--border-card);">
+        <h3 style="font-family:var(--font-display); font-size:22px; margin-bottom:1rem;">技能与语言</h3>
+        <div class="skill-cloud">
+          <span class="skill-tag">Adobe 全家桶</span>
+          <span class="skill-tag">TouchDesigner</span>
+          <span class="skill-tag">AIGC</span>
+          <span class="skill-tag">Blender</span>
+          <span class="skill-tag">Cinema 4D</span>
+          <span class="skill-tag">PTGui</span>
+          <span class="skill-tag">Office / PPT</span>
+          <span class="skill-tag">英语 CET-6.5</span>
+          <span class="skill-tag">西班牙语 B2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- 页脚 -->
+<footer class="footer">
+  <p>陈麒汀 · 视觉与营销设计师 · chenqiting@email.com</p>
+  <p style="margin-top:0.5rem; font-size:11px;">Designed with collage-website-skill</p>
+</footer>
+
+<!-- 图片放大查看 -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="上一张">‹</button>
+  <figure class="lightbox-figure">
+    <span class="lightbox-close" id="lbClose">×</span>
+    <img id="lbImg" src="" alt="">
+    <figcaption class="lightbox-cap" id="lbCap"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="下一张">›</button>
+</div>
+
+<script>
+const navH = 62;
+
+// 导航栏滚动效果
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// 导航高亮
+const sections = document.querySelectorAll('.hero, .portfolio-card');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if (rect.top <= navH + 10) current = sec.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+});
+
+// 卡片 inactive 效果（简化版）
+const cards = document.querySelectorAll('.portfolio-card');
+window.addEventListener('scroll', () => {
+  cards.forEach((card, i) => {
+    const rect = card.getBoundingClientRect();
+    const nextCard = cards[i + 1];
+    if (nextCard) {
+      const nextRect = nextCard.getBoundingClientRect();
+      if (nextRect.top < navH + 50) {
+        card.classList.add('inactive');
+      } else {
+        card.classList.remove('inactive');
+      }
+    }
+  });
+});
+
+// 图片放大查看（支持相册内左右切换）
+const lightbox = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbCap = document.getElementById('lbCap');
+const lbClose = document.getElementById('lbClose');
+const lbPrev = document.getElementById('lbPrev');
+const lbNext = document.getElementById('lbNext');
+
+let lbImages = [];      // 当前相册内所有图片
+let lbIndex = 0;        // 当前显示下标
+
+function lbRender(i) {
+  lbIndex = (i + lbImages.length) % lbImages.length;
+  const img = lbImages[lbIndex];
+  lbImg.src = img.src;
+  // 提取标题与说明
+  let strong = '', span = '';
+  const fig = img.closest('figure');
+  if (fig) {
+    const s = fig.querySelector('figcaption strong');
+    const p = fig.querySelector('figcaption span');
+    strong = s ? s.textContent : '';
+    span = p ? p.textContent : '';
+  }
+  if (!span) {
+    const item = img.closest('.gallery-item');
+    if (item) {
+      const h = item.querySelector('.gallery-caption h4');
+      const p = item.querySelector('.gallery-caption p');
+      strong = h ? h.textContent : '';
+      span = p ? p.textContent : '';
+    }
+  }
+  lbCap.innerHTML = (strong ? '<strong>' + strong + '</strong>' : '')
+    + (span ? '<span>' + span + '</span>' : '');
+}
+
+function openLightbox(img) {
+  // 若图片在相册中，则启用左右切换
+  const album = img.closest('.album');
+  if (album) {
+    lbImages = Array.from(album.querySelectorAll('.album-item img'));
+    lbIndex = lbImages.indexOf(img);
+    lbPrev.style.display = 'block';
+    lbNext.style.display = 'block';
+  } else {
+    lbImages = [img];
+    lbIndex = 0;
+    lbPrev.style.display = 'none';
+    lbNext.style.display = 'none';
+  }
+  lbRender(lbIndex);
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden', 'false');
+}
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden', 'true');
+}
+lbPrev.addEventListener('click', e => {
+  e.stopPropagation();
+  lbRender(lbIndex - 1);
+});
+lbNext.addEventListener('click', e => {
+  e.stopPropagation();
+  lbRender(lbIndex + 1);
+});
+
+document.querySelectorAll('.gallery-item img, .album-item img').forEach(img => {
+  img.addEventListener('click', e => {
+    e.stopPropagation();
+    openLightbox(img);
+  });
+});
+lbClose.addEventListener('click', e => {
+  e.stopPropagation();
+  closeLightbox();
+});
+lightbox.addEventListener('click', closeLightbox);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeLightbox();
+  if (lightbox.classList.contains('open')) {
+    if (e.key === 'ArrowLeft') lbRender(lbIndex - 1);
+    if (e.key === 'ArrowRight') lbRender(lbIndex + 1);
+  }
+});
+</script>
+
+</body>
+</html>
