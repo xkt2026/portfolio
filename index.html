@@ -262,8 +262,9 @@ body {
 .card-2 { background: var(--card-2); z-index: 3; }
 .card-3 { background: var(--card-3); z-index: 4; }
 .card-4 { background: var(--card-4); z-index: 5; }
-.card-5 { background: var(--cream); z-index: 6; border-top: var(--border-card); }
-.card-6 { background: #e9e4d8; z-index: 7; border-top: var(--border-card); }
+.card-5 { background: var(--card-5, var(--cream)); z-index: 6; border-top: var(--border-card); }
+.card-6 { background: var(--card-6, #e9e4d8); z-index: 7; border-top: var(--border-card); }
+.card-7 { background: #e9e4d8; z-index: 8; border-top: var(--border-card); }
 
 /* 纸张纹理叠加 */
 .portfolio-card::before,
@@ -694,10 +695,11 @@ body {
     <a href="#hero" class="active">首页</a>
     <a href="#card1">能力</a>
     <a href="#card2">设计</a>
-    <a href="#card3">AIGC</a>
-    <a href="#card4">影像</a>
-    <a href="#card5">运营</a>
-    <a href="#card6">经历</a>
+    <a href="#card3">UI 设计</a>
+    <a href="#card4">AIGC</a>
+    <a href="#card5">影像</a>
+    <a href="#card6">运营</a>
+    <a href="#card7">经历</a>
   </div>
 </nav>
 
@@ -868,11 +870,51 @@ body {
     </div>
   </section>
 
-  <!-- 卡片3：AIGC 创作 -->
+  <!-- 卡片3：UI 设计 -->
   <section class="portfolio-card card-3" id="card3">
     <div class="card-edge"></div>
     <div class="card-surface">
-      <div class="card-badge">03 / AIGC 创作</div>
+      <div class="card-badge">03 / UI 设计</div>
+      <h2 class="card-crown" data-shadow="UI DESIGN">UI DESIGN</h2>
+      <p style="font-size:14px;opacity:0.65;margin-top:-0.5rem;margin-bottom:1.2rem;">产品体验 · 界面视觉 · 数据可视化</p>
+
+      <!-- 组 1：SHIELDLY 安全社区 -->
+      <h3 style="font-family:var(--font-display);font-size:20px;margin:1.5rem 0 0.8rem;opacity:0.8;">SHIELDLY · 安全社区</h3>
+      <div class="album" id="album-ui-shieldly">
+        <figure class="album-item">
+          <img src="images/ui_shieldly_1.png" alt="SHIELDLY · 社区主界面">
+          <figcaption><strong>SHIELDLY 社区</strong><span>社区守护与成员管理</span></figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/ui_shieldly_2.png" alt="SHIELDLY · 安全预警">
+          <figcaption><strong>SHIELDLY 安全</strong><span>实时预警与家人守护</span></figcaption>
+        </figure>
+      </div>
+
+      <!-- 组 2：信用评分 -->
+      <h3 style="font-family:var(--font-display);font-size:20px;margin:1.5rem 0 0.8rem;opacity:0.8;">信用评分 · Credit Score</h3>
+      <div class="album" id="album-ui-credit">
+        <figure class="album-item">
+          <img src="images/ui_credit_1.jpg" alt="信用评分 · 卡片 1">
+          <figcaption><strong>信用评分卡</strong><span>银行信用评级界面</span></figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/ui_credit_2.jpg" alt="信用评分 · 卡片 2">
+          <figcaption><strong>信用评分卡</strong><span>银行信用评级界面</span></figcaption>
+        </figure>
+        <figure class="album-item">
+          <img src="images/ui_credit_3.jpg" alt="信用评分 · 卡片 3">
+          <figcaption><strong>信用评分卡</strong><span>银行信用评级界面</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 卡片4：AIGC 创作 -->
+  <section class="portfolio-card card-4" id="card4">
+    <div class="card-edge"></div>
+    <div class="card-surface">
+      <div class="card-badge">04 / AIGC 创作</div>
       <h2 class="card-crown" data-shadow="AIGC">AIGC</h2>
       <p style="font-size:14px;opacity:0.65;margin-top:-0.5rem;margin-bottom:1.2rem;">AI 辅助艺术创作 · 梦幻场景与视觉探索</p>
 
@@ -939,11 +981,11 @@ body {
     </div>
   </section>
 
-  <!-- 卡片4：摄影与影像 -->
-  <section class="portfolio-card card-4" id="card4">
+  <!-- 卡片5：摄影与影像 -->
+  <section class="portfolio-card card-5" id="card5">
     <div class="card-edge"></div>
     <div class="card-surface">
-      <div class="card-badge">04 / 摄影影像</div>
+      <div class="card-badge">05 / 摄影影像</div>
       <h2 class="card-crown" data-shadow="PHOTO & FILM">PHOTO & FILM</h2>
       
       <!-- 系列 1：产品陶瓷 -->
@@ -1033,11 +1075,11 @@ body {
     </div>
   </section>
 
-  <!-- 卡片5：运营与策划 -->
-  <section class="portfolio-card card-5" id="card5">
+  <!-- 卡片6：运营与策划 -->
+  <section class="portfolio-card card-6" id="card6">
     <div class="card-edge"></div>
     <div class="card-surface">
-      <div class="card-badge">05 / 运营策划</div>
+      <div class="card-badge">06 / 运营策划</div>
       <h2 class="card-crown" data-shadow="OPERATION">OPERATION</h2>
       
       <div class="gallery">
@@ -1091,11 +1133,11 @@ body {
     </div>
   </section>
 
-  <!-- 卡片6：工作经历 -->
-  <section class="portfolio-card card-6" id="card6">
+  <!-- 卡片7：工作经历 -->
+  <section class="portfolio-card card-7" id="card7">
     <div class="card-edge"></div>
     <div class="card-surface">
-      <div class="card-badge">06 / 工作经历</div>
+      <div class="card-badge">07 / 工作经历</div>
       <h2 class="card-crown" data-shadow="EXPERIENCE" style="color:var(--ink);">EXPERIENCE</h2>
       
       <div class="timeline">
