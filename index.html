@@ -186,6 +186,49 @@ body {
   opacity: 0.5;
   margin-top: 0.3rem;
 }
+.hero-jump {
+  margin-top: 2.5rem;
+}
+.hero-jump-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.hero-jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.jump-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(28, 28, 28, 0.22);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+  transition: all 0.25s ease;
+}
+.jump-link:hover {
+  background: var(--ink);
+  color: var(--cream);
+  opacity: 1;
+  transform: translateY(-2px);
+  border-color: var(--ink);
+}
+.jump-num {
+  font-family: var(--font-display);
+  font-size: 11px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
 .hero-figure {
   flex: 0 0 min(50%, 450px);
   position: relative;
@@ -731,6 +774,17 @@ body {
           <span class="hero-data-label">粉丝增长</span>
         </div>
       </div>
+      <div class="hero-jump">
+        <span class="hero-jump-label">浏览作品</span>
+        <div class="hero-jump-links">
+          <a href="#card2" class="jump-link"><span class="jump-num">01</span>设计</a>
+          <a href="#card3" class="jump-link"><span class="jump-num">02</span>UI 设计</a>
+          <a href="#card4" class="jump-link"><span class="jump-num">03</span>AIGC</a>
+          <a href="#card5" class="jump-link"><span class="jump-num">04</span>影像</a>
+          <a href="#card6" class="jump-link"><span class="jump-num">05</span>运营</a>
+          <a href="#card7" class="jump-link"><span class="jump-num">06</span>经历</a>
+        </div>
+      </div>
     </div>
     <div class="hero-figure">
       <div class="hero-avatar">
@@ -1256,6 +1310,52 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+// 翻阅锁定：翻完当前卡片内容才能进入下一页
+function cardHasOverflow(card) {
+  return card.scrollHeight > card.clientHeight + 4;
+}
+function cardAtBottom(card) {
+  return card.scrollTop + card.clientHeight >= card.scrollHeight - 4;
+}
+window.addEventListener('wheel', (e) => {
+  if (e.deltaY <= 0) return; // 只锁定向下翻页，向上始终允许
+  // 找到当前处于视口顶部的活动卡片
+  const navBottom = nav.offsetHeight;
+  let activeCard = null;
+  cards.forEach(card => {
+    const r = card.getBoundingClientRect();
+    if (r.top <= navBottom + 10 && r.bottom > navBottom) activeCard = card;
+  });
+  if (!activeCard) return;
+  // 若当前卡片内容超高且未滚到底，把向下滚动转交给卡片内部
+  if (cardHasOverflow(activeCard) && !cardAtBottom(activeCard)) {
+    e.preventDefault();
+    activeCard.scrollTop += e.deltaY;
+  }
+}, { passive: false });
+
+// 触屏翻阅锁定（移动端）
+let touchStartY = 0;
+window.addEventListener('touchstart', (e) => {
+  touchStartY = e.touches[0].clientY;
+}, { passive: true });
+window.addEventListener('touchmove', (e) => {
+  const deltaY = touchStartY - e.touches[0].clientY;
+  touchStartY = e.touches[0].clientY;
+  if (deltaY <= 0) return; // 只锁定向下翻页
+  const navBottom = nav.offsetHeight;
+  let activeCard = null;
+  cards.forEach(card => {
+    const r = card.getBoundingClientRect();
+    if (r.top <= navBottom + 10 && r.bottom > navBottom) activeCard = card;
+  });
+  if (!activeCard) return;
+  if (cardHasOverflow(activeCard) && !cardAtBottom(activeCard)) {
+    e.preventDefault();
+    activeCard.scrollTop += deltaY;
+  }
+}, { passive: false });
 
 // 图片放大查看（支持相册内左右切换）
 const lightbox = document.getElementById('lightbox');
