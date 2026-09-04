@@ -644,6 +644,10 @@ body {
   grid-row: 1 / 4;
   grid-column: 1 / 2;
 }
+.album-layout-featured .album-featured picture {
+  display: block;
+  height: 100%;
+}
 .album-layout-featured .album-featured img {
   height: 100%;
   object-fit: cover;
@@ -676,6 +680,9 @@ body {
   text-align: center;
   letter-spacing: 1px;
 }
+
+/* 作品图片均可点击放大 */
+img[src^="images/"] { cursor: zoom-in; }
 
 /* ===== 图片放大查看 (Lightbox) ===== */
 .lightbox {
@@ -713,7 +720,7 @@ body {
 .lightbox-figure img {
   display: block;
   max-width: 100%;
-  max-height: 80vh;
+  max-height: calc(100vh - 13rem); /* 预留底部说明条，保证图片完整可见 */
   object-fit: contain;
 }
 .lightbox-cap {
@@ -1118,35 +1125,35 @@ body {
           </figcaption>
         </figure>
         <figure class="album-item">
-          <img src="images/photo_amsterdam.jpeg" loading="lazy" decoding="async" alt="阿姆斯特丹">
+          <picture><source srcset="images/photo_amsterdam.webp" type="image/webp"><img src="images/photo_amsterdam.jpeg" loading="lazy" decoding="async" alt="阿姆斯特丹"></picture>
           <figcaption>
             <strong>阿姆斯特丹</strong>
             <span>运河与城市建筑</span>
           </figcaption>
         </figure>
         <figure class="album-item">
-          <img src="images/photo_amsterdam_metro.jpg" loading="lazy" decoding="async" alt="阿姆斯特丹 · 电车">
+          <picture><source srcset="images/photo_amsterdam_metro.webp" type="image/webp"><img src="images/photo_amsterdam_metro.jpg" loading="lazy" decoding="async" alt="阿姆斯特丹 · 电车"></picture>
           <figcaption>
             <strong>阿姆斯特丹 · 电车</strong>
             <span>城市公共交通人文</span>
           </figcaption>
         </figure>
         <figure class="album-item">
-          <img src="images/photo_amsterdam_street.jpg" loading="lazy" decoding="async" alt="阿姆斯特丹 · 街头">
+          <picture><source srcset="images/photo_amsterdam_street.webp" type="image/webp"><img src="images/photo_amsterdam_street.jpg" loading="lazy" decoding="async" alt="阿姆斯特丹 · 街头"></picture>
           <figcaption>
             <strong>阿姆斯特丹 · 街头</strong>
             <span>当地生活与美食</span>
           </figcaption>
         </figure>
         <figure class="album-item">
-          <img src="images/photo_street1.jpeg" loading="lazy" decoding="async" alt="街头纪实">
+          <picture><source srcset="images/photo_street1.webp" type="image/webp"><img src="images/photo_street1.jpeg" loading="lazy" decoding="async" alt="街头纪实"></picture>
           <figcaption>
             <strong>街头纪实</strong>
             <span>城市人文与环境叙事</span>
           </figcaption>
         </figure>
         <figure class="album-item">
-          <img src="images/photo_street2.jpeg" loading="lazy" decoding="async" alt="柏林街头">
+          <picture><source srcset="images/photo_street2.webp" type="image/webp"><img src="images/photo_street2.jpeg" loading="lazy" decoding="async" alt="柏林街头"></picture>
           <figcaption>
             <strong>柏林街头</strong>
             <span>欧洲城市光影</span>
@@ -1374,7 +1381,8 @@ let lbIndex = 0;        // 当前显示下标
 function lbRender(i) {
   lbIndex = (i + lbImages.length) % lbImages.length;
   const img = lbImages[lbIndex];
-  lbImg.src = img.src;
+  // 优先使用浏览器已加载的轻量源（webp），同分辨率且秒开
+  lbImg.src = img.currentSrc || img.src;
   // 提取标题与说明
   let strong = '', span = '';
   const fig = img.closest('figure');
@@ -1431,12 +1439,13 @@ lbNext.addEventListener('click', e => {
 });
 
 // 点击任意作品图片 → 打开完整大图查看
-document.querySelectorAll('img[src^="images/"]').forEach(img => {
-  img.style.cursor = 'zoom-in';
-  img.addEventListener('click', e => {
-    e.stopPropagation();
-    openLightbox(img);
-  });
+// 采用事件委托：点击图片或悬停说明条区域都能触发
+document.addEventListener('click', e => {
+  const box = e.target.closest('.album-item, .gallery-item, .hero-figure');
+  if (!box) return;
+  const img = box.querySelector('img[src^="images/"], img[src*="/images/"]');
+  if (!img) return;
+  openLightbox(img);
 });
 lbClose.addEventListener('click', e => {
   e.stopPropagation();
