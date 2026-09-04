@@ -7,7 +7,12 @@
 <style>
 /* ===== 基础重置 ===== */
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  -webkit-scroll-snap-type: y proximity;
+  scroll-padding-top: 62px;
+}
 
 /* ===== 变量系统 ===== */
 :root {
@@ -280,9 +285,10 @@ body {
 .portfolio-card {
   position: sticky;
   top: var(--nav-h);
-  height: max(calc(100vh - var(--nav-h)), 800px);
+  height: calc(100vh - var(--nav-h));
   min-height: 0;
   overflow-y: auto;
+  scroll-snap-align: start;
   scrollbar-width: thin;
   scrollbar-color: rgba(28, 28, 28, 0.35) transparent;
   padding: 3rem 4vw 4rem;
@@ -1351,51 +1357,8 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// 翻阅锁定：翻完当前卡片内容才能进入下一页
-function cardHasOverflow(card) {
-  return card.scrollHeight > card.clientHeight + 4;
-}
-function cardAtBottom(card) {
-  return card.scrollTop + card.clientHeight >= card.scrollHeight - 4;
-}
-window.addEventListener('wheel', (e) => {
-  if (e.deltaY <= 0) return; // 只锁定向下翻页，向上始终允许
-  // 找到当前处于视口顶部的活动卡片
-  const navBottom = nav.offsetHeight;
-  let activeCard = null;
-  cards.forEach(card => {
-    const r = card.getBoundingClientRect();
-    if (r.top <= navBottom + 10 && r.bottom > navBottom) activeCard = card;
-  });
-  if (!activeCard) return;
-  // 若当前卡片内容超高且未滚到底，把向下滚动转交给卡片内部
-  if (cardHasOverflow(activeCard) && !cardAtBottom(activeCard)) {
-    e.preventDefault();
-    activeCard.scrollTop += e.deltaY;
-  }
-}, { passive: false });
-
-// 触屏翻阅锁定（移动端）
-let touchStartY = 0;
-window.addEventListener('touchstart', (e) => {
-  touchStartY = e.touches[0].clientY;
-}, { passive: true });
-window.addEventListener('touchmove', (e) => {
-  const deltaY = touchStartY - e.touches[0].clientY;
-  touchStartY = e.touches[0].clientY;
-  if (deltaY <= 0) return; // 只锁定向下翻页
-  const navBottom = nav.offsetHeight;
-  let activeCard = null;
-  cards.forEach(card => {
-    const r = card.getBoundingClientRect();
-    if (r.top <= navBottom + 10 && r.bottom > navBottom) activeCard = card;
-  });
-  if (!activeCard) return;
-  if (cardHasOverflow(activeCard) && !cardAtBottom(activeCard)) {
-    e.preventDefault();
-    activeCard.scrollTop += deltaY;
-  }
-}, { passive: false });
+// 翻阅采用浏览器原生嵌套滚动 + CSS scroll-snap：
+// 卡片内容超高时先滚动卡片内部，滚到底后自然翻到下一页，保留惯性、更流畅。
 
 // 图片放大查看（支持相册内左右切换）
 const lightbox = document.getElementById('lightbox');
@@ -1451,10 +1414,12 @@ function openLightbox(img) {
   lbRender(lbIndex);
   lightbox.classList.add('open');
   lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden'; // 锁定背景滚动
 }
 function closeLightbox() {
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
 }
 lbPrev.addEventListener('click', e => {
   e.stopPropagation();
@@ -1465,7 +1430,9 @@ lbNext.addEventListener('click', e => {
   lbRender(lbIndex + 1);
 });
 
-document.querySelectorAll('.gallery-item img, .album-item img').forEach(img => {
+// 点击任意作品图片 → 打开完整大图查看
+document.querySelectorAll('img[src^="images/"]').forEach(img => {
+  img.style.cursor = 'zoom-in';
   img.addEventListener('click', e => {
     e.stopPropagation();
     openLightbox(img);
