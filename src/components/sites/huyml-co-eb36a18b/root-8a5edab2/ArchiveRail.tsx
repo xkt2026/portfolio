@@ -34,7 +34,7 @@ export default function ArchiveRail({ visible }: ArchiveRailProps) {
         {rows.map((row, i) => (
           <a
             key={`${row.slug}-${i}`}
-            href={`/project/${row.slug}`}
+            href={`/portfolio/project/${row.slug}`}
             tabIndex={visible ? 0 : -1}
             className={`flex w-min items-center gap-2.5 transition-opacity duration-300 hover:opacity-60 ${
               visible ? "pointer-events-auto" : "pointer-events-none"
