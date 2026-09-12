@@ -537,7 +537,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
   }
 ] as const;
 
-export const assetUrl = (file: string): string => `/sites/huyml-co-eb36a18b/shared/${file}`;
+export const assetUrl = (file: string): string => `/portfolio/sites/huyml-co-eb36a18b/shared/${file}`;
 
 /**
  * The four faces of the rotating logo stamp pinned to the top-left of the canvas.
