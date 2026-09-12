@@ -1,0 +1,533 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* ── huyml.co tokens ─────────────────────────────────────────── */
+  --font-grotesk: "BT Grotesk Medium", "BT Grotesk", Arial, sans-serif;
+  --font-grotesk-regular: "BT Grotesk Regular", "BT Grotesk", Arial, sans-serif;
+  --font-grotesk-bold: "BT Grotesk Bold", "BT Grotesk", Arial, sans-serif;
+  --font-glyphius: "BT Glyphius Regular", "BT Glyphius", Arial, sans-serif;
+  --font-glyphius-bold: "BT Glyphius Bold", "BT Glyphius", Arial, sans-serif;
+  --font-bolton: "F37 Bolton Trial Regular", "F37 Bolton", Arial, sans-serif;
+
+  --color-canvas: var(--hu-canvas);
+  --color-page: var(--hu-page);
+  --color-ink: var(--hu-ink);
+  --color-lime: var(--hu-lime);
+  --color-signal: var(--hu-red);
+  --color-sky: var(--hu-blue);
+  --color-flame: var(--hu-orange);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* ── huyml.co design tokens (extracted from huyml.co @1440px) ── */
+  --hu-page: #ededed;
+  --hu-canvas: #ececec;
+  --hu-ink: #1e1e1e;
+  --hu-lime: rgb(206 255 69);
+  --hu-red: rgb(255 73 73);
+  --hu-blue: rgb(0 153 255);
+  --hu-orange: rgb(255 90 54);
+  --hu-muted: rgb(255 255 255 / 0.5);
+  /* 1440px viewport sits in the 1100–1799.98px Framer breakpoint */
+  --hu-canvas-width: 1100px;
+  --hu-unit: 10px;
+  /* Framer exposes the fluid body size through this variable */
+  --bt-grotesk-responsive-font-size: 10px;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ==========================================================================
+   huyml.co — fonts (self-hosted, extracted from the live site)
+   ========================================================================== */
+
+@font-face {
+  font-family: "BT Grotesk Medium";
+  src: url("/sites/huyml-co-eb36a18b/shared/pczyWZYmicHp9LhGgMJo7tnDcHo.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BT Grotesk Regular";
+  src: url("/sites/huyml-co-eb36a18b/shared/oDqinH2S9k4fMbGueYwREUmNFM.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BT Grotesk Bold";
+  src: url("/sites/huyml-co-eb36a18b/shared/7wvwHnWrXSgYhuk2mEt4LrDGXo.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BT Grotesk Bold Italic";
+  src: url("/sites/huyml-co-eb36a18b/shared/8lewwPPD0MNSsf2BYYhgDrG6apE.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BT Glyphius Regular";
+  src: url("/sites/huyml-co-eb36a18b/shared/xirQ3g4Sv5q7MG0KvL1PiOOLLBA.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BT Glyphius Bold";
+  src: url("/sites/huyml-co-eb36a18b/shared/dcnL9H2gaFNAG9F1nc6gCkZt2CQ.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "F37 Bolton Trial Regular";
+  src: url("/sites/huyml-co-eb36a18b/shared/NjDO01jId5REkpwNN1pD7i8fBLY.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "F37 Bolton Trial Bold";
+  src: url("/sites/huyml-co-eb36a18b/shared/OUUqRFRKQpMerpUcBlnnMAKbp0.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/sites/huyml-co-eb36a18b/shared/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   huyml.co — base typography (Framer preset `fukh8o`)
+   BT Grotesk Medium / 10px @1100–1799px / +0.01em / 130% line-height
+   ========================================================================== */
+
+@layer components {
+  /* Framer preset `fukh8o` — BT Grotesk Medium / 10px @1100–1799px */
+  .hu-text {
+    font-family: var(--font-grotesk);
+    font-size: var(--bt-grotesk-responsive-font-size);
+    font-weight: 500;
+    font-style: normal;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #fff;
+    white-space: pre-line;
+    text-transform: none;
+  }
+
+  /* `--token-e93f529c…` / rgba(255,255,255,.5) — secondary copy */
+  .hu-text-quiet,
+  .hu-text-muted {
+    color: var(--hu-muted);
+  }
+
+  /* The menu overlay and the credits card sit on light surfaces, where the same
+     Framer presets resolve to ink instead of the difference-blended white. */
+  .hu-text-ink {
+    color: rgb(24 24 24);
+  }
+
+  .hu-text-quiet-ink {
+    color: rgb(0 0 0 / 0.5);
+  }
+
+  /* Framer preset `aopi0o` — BT Glyphius Regular / uppercase display (40px @1440) */
+  .hu-display {
+    font-family: var(--font-glyphius);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  /* BT Glyphius Regular / 19px — the overlay navigation links */
+  .hu-nav-link {
+    font-family: var(--font-glyphius);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+  }
+
+  /* `.framer-i848y9` / `.framer-9jd1rb` — the case-study `Next project` link.
+     BT Glyphius Regular at 160px on the signal red, 100% leading, uppercase. */
+  .hu-next-title {
+    font-family: var(--font-glyphius);
+    font-size: 160px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--hu-red);
+  }
+
+  /* `.framer-ysq23g` — the 180px index counter (BT Grotesk Regular) */
+  .hu-counter {
+    font-family: var(--font-grotesk-regular);
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 85%;
+    letter-spacing: -0.04em;
+    font-variant-numeric: tabular-nums;
+    color: #fff;
+  }
+
+  /* Right-hand project wheel */
+  .hu-wheel-tag {
+    font-family: var(--font-grotesk);
+    font-size: var(--bt-grotesk-responsive-font-size);
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: rgba(31, 31, 31, 0.52);
+    text-align: center;
+  }
+
+  .hu-wheel-title {
+    font-family: var(--font-glyphius);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: 0.01em;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .hu-wheel-desc {
+    font-family: var(--font-grotesk);
+    font-size: var(--bt-grotesk-responsive-font-size);
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: rgb(30, 30, 30);
+    text-align: center;
+  }
+
+  /* Archive row — F37 Bolton Trial Regular, uppercase, 10px */
+  .hu-archive-title {
+    font-family: var(--font-bolton);
+    font-size: var(--bt-grotesk-responsive-font-size);
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* `.framer-1irp2nk` rows — BT Glyphius Regular / 19px, 20px pitch.
+     The links sit in the top bar, revealed when `Menu` is hovered. */
+  .hu-quick-link {
+    font-family: var(--font-glyphius);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: rgb(255 255 255);
+  }
+
+  /* `.framer-sv5ik4` rows — the same four items at 30px inside the overlay,
+     on a 33px pitch so the sliding arrow lands on exact multiples. */
+  .hu-menu-link {
+    font-family: var(--font-glyphius);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: rgb(0 0 0);
+  }
+
+  /* Both pop-up cards carry an uppercase BT Glyphius heading at 30px. */
+  .hu-card-heading {
+    font-family: var(--font-glyphius);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  /* `.framer-1irp2nk` / `.framer-sv5ik4` — the 1px caret bar that wipes across
+     a hovered row. Framer stacks two copies and trades their transforms. */
+  .hu-wipe {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .hu-wipe > span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -2px;
+    right: -2px;
+    background-color: currentColor;
+    will-change: transform;
+  }
+
+  /* Framer stacks every label state in a single grid cell and crossfades them
+     through opacity + blur — the `For inquiries` / `Copied` cycle. */
+  .hu-blur-stack {
+    display: inline-grid;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .hu-blur-stack > * {
+    grid-area: 1 / 1;
+    will-change: opacity, filter;
+  }
+}
+
+/* ==========================================================================
+   huyml.co — keyframes extracted from the Framer canvas
+   ========================================================================== */
+
+/* `.framer-1ikkddz` archive rows drift upward as a seamless two-pass loop */
+@keyframes hu-rows-up {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -50%, 0);
+  }
+}
+
+/* the rotating logo stamp sells itself as a 4-faced cube */
+@keyframes hu-stamp-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.hu-stamp-stage {
+  perspective: 400px;
+}
+
+.hu-stamp-cube {
+  transform-style: preserve-3d;
+  animation: hu-stamp-spin 24s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+/* The hero info band re-reads Role / Launch from the wheel. The block is keyed on the
+   wheel index, so this replays and cross-fades the copy on every step. */
+@keyframes hu-info-swap {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.hu-info-swap {
+  animation: hu-info-swap 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* The credits card hosts a Rive animation (`huyml.riv`) in a 150×128 canvas. The
+   binary is served from Framer's CDN, so the stand-in below drives the two
+   extracted logotype faces through the same loop: a slow drift with a swap. */
+@keyframes hu-mark-drift {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-3deg) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -5%, 0) rotate(3deg) scale(1.04);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-3deg) scale(1);
+  }
+}
+
+@keyframes hu-mark-swap {
+  0%,
+  46% {
+    opacity: 1;
+  }
+  54%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.hu-mark {
+  animation: hu-mark-drift 6s ease-in-out infinite;
+}
+
+.hu-mark > * {
+  position: absolute;
+  inset: 0;
+  animation: hu-mark-swap 6s ease-in-out infinite;
+}
+
+.hu-mark > *:last-child {
+  animation-delay: -3s;
+}
+
+html,
+body {
+  background-color: var(--hu-page);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* hide scrollbar but keep scrolling — the target uses a wheel-driven canvas */
+.hu-scroll-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hu-scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hu-reduce-motion * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

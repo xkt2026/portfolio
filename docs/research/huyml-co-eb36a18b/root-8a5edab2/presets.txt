@@ -1,0 +1,30 @@
+qJfhG .fukh8o (p) [(max-width:2199px) and (min-width:1800px)]
+    fam="BT Grotesk Medium" size=12px w=500 lh=130% ls=.01em color=#fff transform=none } align=start
+qJfhG .fukh8o (p) [(max-width:1799px) and (min-width:1100px)]
+    fam="BT Grotesk Medium" size=10px w=500 lh=130% ls=.01em color=#fff transform=none } align=start
+qJfhG .fukh8o (p) [(max-width:1099px) and (min-width:0)]
+    fam="BT Grotesk Medium" size=12px w=500 lh=130% ls=.01em color=#fff transform=none } align=start
+mBimu .1h59vvl (h2) [base]
+    fam="BT Glyphius Regular" size=38px w=400 lh=128% ls=.01em color=#ff4949 transform=uppercase } align=start
+mBimu .1h59vvl (h2) [(max-width:2199px) and (min-width:1800px)]
+    fam="BT Glyphius Regular" size=30px w=400 lh=128% ls=.01em color=#ff4949 transform=uppercase } align=start
+mBimu .1h59vvl (h2) [(max-width:1799px) and (min-width:1100px)]
+    fam="BT Glyphius Regular" size=23px w=400 lh=128% ls=.01em color=#ff4949 transform=uppercase } align=start
+mBimu .1h59vvl (h2) [(max-width:1099px) and (min-width:0)]
+    fam="BT Glyphius Regular" size=12px w=400 lh=128% ls=.01em color=#ff4949 transform=uppercase } align=start
+cJCky .aopi0o (h3) [base]
+    fam="BT Glyphius Regular" size=80px w=400 lh=128% ls=.01em color=#181818 transform=uppercase } align=start
+cJCky .aopi0o (h3) [(max-width:2199px) and (min-width:1920px)]
+    fam="BT Glyphius Regular" size=60px w=400 lh=128% ls=.01em color=#181818 transform=uppercase } align=start
+cJCky .aopi0o (h3) [(max-width:1919px) and (min-width:1440px)]
+    fam="BT Glyphius Regular" size=40px w=400 lh=128% ls=.01em color=#181818 transform=uppercase } align=start
+cJCky .aopi0o (h3) [(max-width:1439px) and (min-width:1200px)]
+    fam="BT Glyphius Regular" size=29px w=400 lh=128% ls=.01em color=#181818 transform=uppercase } align=start
+cJCky .aopi0o (h3) [(max-width:1199px) and (min-width:0)]
+    fam="BT Glyphius Regular" size=23px w=400 lh=128% ls=.01em color=#181818 transform=uppercase } align=start
+FbZc1 .j5z6y6 (a) [base]
+    fam=undefined size=undefined w=undefined lh=undefined ls=undefined color=undefined transform=undefined align=undefined
+WaKqV .1cuzab (a) [base]
+    fam=undefined size=undefined w=undefined lh=undefined ls=undefined color=undefined transform=undefined align=undefined
+qJfhG .fukh8o (p) [base]
+    fam="BT Grotesk Medium" size=14px w=500 lh=130% ls=.01em color=#fff transform=none } align=start

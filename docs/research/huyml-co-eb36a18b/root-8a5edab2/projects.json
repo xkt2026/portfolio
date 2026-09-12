@@ -1,0 +1,571 @@
+{
+  "archive": [
+    {
+      "slug": "district2-studio",
+      "title": "DISTRICT2 STUDIO",
+      "date": "2019-09-24",
+      "dateLabel": "September 2019",
+      "colors": [
+        "rgb(255, 255, 255)",
+        "rgb(0, 0, 0)",
+        "rgb(61, 61, 61)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "CSSDA Website of the Day",
+        "Behance UI Gallery",
+        "Top 40 Vietnam Halo Dot Award"
+      ],
+      "roles": [
+        "District2",
+        "Website Design",
+        "Showcase"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "Designing the new website for District2, the first studio I ever worked at and my very first creative website project.",
+      "image": "FoYPkj63CnTXaljvLBaCO9gL9dE.jpg"
+    },
+    {
+      "slug": "dafi",
+      "title": "DAFI TROPICDANE",
+      "date": "2019-05-27",
+      "dateLabel": "May 2019",
+      "colors": [
+        "rgb(227, 232, 236)",
+        "rgb(235, 232, 226)",
+        "rgb(20, 20, 20)"
+      ],
+      "recognition": [
+        "Behance UI Gallery",
+        "Top 11 Vietnam Halo Dot Award"
+      ],
+      "roles": [
+        "District2",
+        "Website Design",
+        "Showcase"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Furniture",
+      "description": "A minimal, Scandinavian-inspired website for DAFI, a Danish company specializing in high-quality indoor and outdoor furniture.",
+      "image": "PbGu32LciyVQZHUuKJCNLLV2qZc.jpg"
+    },
+    {
+      "slug": "est-populo",
+      "title": "EST POPULO",
+      "date": "2022-02-11",
+      "dateLabel": "February 2022",
+      "colors": [
+        "rgb(229, 227, 219)",
+        "rgb(33, 33, 37)",
+        "rgb(219, 216, 205)"
+      ],
+      "recognition": [
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "District2 Studio",
+        "Website Design"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "A bold digital experience for Est Populo, a Swedish marketing agency, balancing clean Scandinavian aesthetics with editorial-style typography.",
+      "image": "F33bHKrCMVcgpBMdUPAEP579M.jpg"
+    },
+    {
+      "slug": "bison-studio",
+      "title": "BISON STUDIO",
+      "date": "2022-02-23",
+      "dateLabel": "February 2022",
+      "colors": [
+        "rgb(186, 55, 55)",
+        "rgb(38, 38, 38)",
+        "rgb(255, 255, 255)"
+      ],
+      "recognition": [
+        "CSSDA Website of the Day",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Art Director",
+        "Website Design",
+        "Showcase"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "New look and feel for Bison to reflect their vision and position them as a creative and award-winning studio.",
+      "image": "FP8bs8WqEOFTFST8L2YGqot9idA.jpg"
+    },
+    {
+      "slug": "huyml-2022",
+      "title": "HUYML VOL.1",
+      "date": "2022-08-23",
+      "dateLabel": "August 2022",
+      "colors": [
+        "rgb(26, 26, 26)",
+        "rgb(201, 201, 201)",
+        "rgb(255, 255, 255)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "FWA of the Day",
+        "CSSDA Website of the Month",
+        "CSSDA Website of the Day",
+        "CSSDA Website of the Year Nominee",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Art Director",
+        "Website Design"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Portfolio",
+      "description": "My first ever portfolio in 2022. The one that completely changed my whole career.",
+      "image": "Dr7ftrDUeUTFQY2afrDoalR8A.jpg"
+    },
+    {
+      "slug": "rly-network",
+      "title": "RLY NETWORK",
+      "date": "2022-10-23",
+      "dateLabel": "October 2022",
+      "colors": [
+        "rgb(206, 255, 69)",
+        "rgb(33, 33, 33)",
+        "rgb(222, 222, 222)"
+      ],
+      "recognition": [
+        "Webby Nominee",
+        "Awwwards Site of the Day",
+        "FWA of the Day",
+        "CSSDA Website of the Day",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Serious Business",
+        "Website Design"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Blockchain - Web3",
+      "description": "Together with SB to create an outstanding website that showcases the RLY network's value and ecosystem and encourages developers to build with the RLY protocol.",
+      "image": "FZyOyyrz0ZctFkAK2kROsql2w1A.jpg"
+    },
+    {
+      "slug": "mathijs-hanenkamp",
+      "title": "MATHIJS HANENKAMP",
+      "date": "2023-02-23",
+      "dateLabel": "February 2023",
+      "colors": [
+        "rgb(34, 34, 34)",
+        "rgb(240, 240, 240)",
+        "rgb(255, 0, 0)"
+      ],
+      "recognition": [
+        "FWA Site of the Day",
+        "CSSDA Website of the Day",
+        "Behance UI Gallery",
+        "Webby Honoree"
+      ],
+      "roles": [
+        "Art Director",
+        "Website Design"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Photography",
+      "description": "Bringing the vision and personality of portrait and documentary photographer Mathijs Hanenkamp into pixels by using smooth transitions to highlight his imagery.",
+      "image": "AHnUuCwiIe3u0k9N4az6316yTbU.jpg"
+    },
+    {
+      "slug": "ascon-system",
+      "title": "ASCON SYSTEMS",
+      "date": "2023-08-18",
+      "dateLabel": "August 2023",
+      "colors": [
+        "rgb(255, 90, 54)",
+        "rgb(106, 109, 119)",
+        "rgb(255, 255, 255)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "CSSDA Website of the Day",
+        "Behance Graphic Gallery"
+      ],
+      "roles": [
+        "Serious Business",
+        "Website Design"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Corporate",
+      "description": "Working with Serious Business to build a website for ASCon that stands out from the typical corporate template while staying clean and professional.",
+      "image": "Ce5CMDqNJqwWN1TC3B0xbsBq47M.jpg"
+    },
+    {
+      "slug": "uncommon-studio",
+      "title": "UNCOMMON STUDIO",
+      "date": "2026-07-18",
+      "dateLabel": "July 2026",
+      "colors": [
+        "rgb(18, 18, 18)",
+        "rgb(255, 255, 255)",
+        "rgb(214, 214, 214)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "FWA of the Day"
+      ],
+      "roles": [
+        "Design Direction",
+        "Website Design"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "Designed a bespoke digital experience for Uncommon, a Melbourne-based studio serving clients worldwide.",
+      "image": "e4NzJl004YbfnXuKnhQEuGgUPU.png"
+    },
+    {
+      "slug": "serious-business",
+      "title": "SERIOUS BUSINESS",
+      "date": "2024-08-24",
+      "dateLabel": "August 2024",
+      "colors": [
+        "rgb(251, 193, 212)",
+        "rgb(195, 171, 255)",
+        "rgb(252, 248, 236)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "Awwwards Business & Services Honors",
+        "FWA of the Day",
+        "CSSDA Website of the Day"
+      ],
+      "roles": [
+        "Serious Business",
+        "Website Design"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "Got a chance to help Serious Business transform their new brand into a website that is delicious and makes“people want to lick”.",
+      "image": "ZMZlhfAKVDPaWVzDIpnuU6HVRO4.jpg"
+    },
+    {
+      "slug": "by-kin",
+      "title": "BY 'KIN",
+      "date": "2024-11-14",
+      "dateLabel": "November 2024",
+      "colors": [
+        "rgb(255, 101, 66)",
+        "rgb(244, 242, 237)",
+        "rgb(250, 237, 188)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "FWA of the Day",
+        "CSSDA Website of the Day",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Art Director",
+        "Website Design",
+        "Showcase"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "Crafted a playful digital experience for Manchester-based interior and brand studio kin, featuring the layout switch that reflect the studio’s multifaceted personality.",
+      "image": "G6KRK08IYPVsspZ3za8etsb60.jpg"
+    },
+    {
+      "slug": "defiant",
+      "title": "DEFIANT",
+      "date": "2025-01-08",
+      "dateLabel": "January 2025",
+      "colors": [
+        "rgb(60, 40, 227)",
+        "rgb(255, 255, 255)",
+        "rgb(15, 15, 15)"
+      ],
+      "recognition": [
+        "CSSDA Website of the Day",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Art Director",
+        "Website Design",
+        "Showcase"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Venture Capital",
+      "description": "A website designed to mirror the brand's minimal, clean identity and help them stand out from traditional VC firms.",
+      "image": "JXol5lZzzYBnMZSEp2JZHIhuuI.jpg"
+    },
+    {
+      "slug": "mat-voyce",
+      "title": "MAT VOYCE",
+      "date": "2025-01-17",
+      "dateLabel": "January 2025",
+      "colors": [
+        "rgb(0, 211, 255)",
+        "rgb(223, 255, 107)",
+        "rgb(3, 3, 3)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "Awwwards Typography Honors",
+        "FWA of the Day",
+        "CSSDA Website of the Day",
+        "GSAP Site of the Year Nominee",
+        "Good Design Award Green Tick",
+        "AGDA Awards Merit"
+      ],
+      "roles": [
+        "Uncommon",
+        "Design Direction",
+        "Website Design",
+        "Showcase"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Portfolio",
+      "description": "A new home for the moving work of legendary type designer Mat Voyce, built to push the boundaries of creativity and performance.",
+      "image": "bovi8JsQWnROEtE0WYyYwqPkiE.jpg"
+    },
+    {
+      "slug": "eislab",
+      "title": "EISLAB",
+      "date": "2025-02-12",
+      "dateLabel": "February 2025",
+      "colors": [
+        "rgb(199, 179, 255)",
+        "rgb(28, 20, 86)",
+        "rgb(247, 226, 115)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "FWA of the Day",
+        "CSSDA Website of the Day"
+      ],
+      "roles": [
+        "Art Director",
+        "Design Direction",
+        "Design Lead"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Food & Beverage",
+      "description": "Refreshed the digital identity for this German ice cream brand, transforming a more colorful and tasteful website experience.",
+      "image": "BsJb1GV0DDjj2B5ELG33XfWmQ.jpg"
+    },
+    {
+      "slug": "markwoodland",
+      "title": "MARK WOODLAND",
+      "date": "2025-10-10",
+      "dateLabel": "October 2025",
+      "colors": [
+        "rgb(0, 112, 255)",
+        "rgb(7, 7, 7)",
+        "rgb(26, 44, 70)"
+      ],
+      "recognition": [
+        "FWA of the Day",
+        "CSSDA Website of the Day",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Uncommon Studio",
+        "Interaction",
+        "Showcase"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Personal Brand",
+      "description": "Working with the talented team at Uncommon Studio to reshape entrepreneur Mark Woodland’s digital presence.",
+      "image": "kyZpWmBOPtk7QyAeSE9QB3HmS2I.jpg"
+    },
+    {
+      "slug": "miuxstudio",
+      "title": "MIUX STUDIO",
+      "date": "2025-06-28",
+      "dateLabel": "June 2025",
+      "colors": [
+        "rgb(185, 189, 171)",
+        "rgb(213, 200, 176)",
+        "rgb(158, 143, 123)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "FWA of the Day",
+        "CSSDA Website of the Day",
+        "Behance UI Gallery"
+      ],
+      "roles": [
+        "Design Direction",
+        "Design Lead"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "Translated Thai-born founder Nara’s vision for her young UX studio into a digital experience.",
+      "image": "QqqJqinqeONnjCz1ncYlYpFRbs.jpg"
+    },
+    {
+      "slug": "wonjyou",
+      "title": "WON J. YOU STUDIOS",
+      "date": "2025-09-09",
+      "dateLabel": "September 2025",
+      "colors": [
+        "rgb(239, 81, 67)",
+        "rgb(254, 233, 206)",
+        "rgb(255, 178, 97)"
+      ],
+      "recognition": [
+        "Webby Nominee",
+        "Awwwards Site of the Day",
+        "FWA of the Day",
+        "CSSDA Website of the Day",
+        "CSSDA Website of the Month Nominee"
+      ],
+      "roles": [
+        "Design Direction",
+        "Design Lead"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Personal Brand",
+      "description": "A website for Won J. You, a veteran designer and professor focused on training the next generation through coaching, education, and mentorship.",
+      "image": "OUq4sSIJXVqet1DGXpjpnXuC1qc.jpg"
+    },
+    {
+      "slug": "iventions",
+      "title": "IVENTIONS",
+      "date": "2025-10-10",
+      "dateLabel": "October 2025",
+      "colors": [
+        "rgb(156, 147, 232)",
+        "rgb(224, 255, 152)",
+        "rgb(30, 30, 30)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "Awwwards Site of the Month Nominee",
+        "CSSDA Website of the Day",
+        "CSSDA Website of the Month",
+        "CSSDA Website of the Year Nominee"
+      ],
+      "roles": [
+        "Serious Business",
+        "Website Design"
+      ],
+      "ruler": [
+        "Team",
+        "Role"
+      ],
+      "category": "Promotional",
+      "description": "Teamed up with the Serious Business agency to build a new website for Iventions, an event agency based in Barcelona.",
+      "image": "75mCZ5SdSy2FaX0ameAhFh9ynE.jpg"
+    },
+    {
+      "slug": "fromanother",
+      "title": "FROMANOTHER",
+      "date": "2026-04-24",
+      "dateLabel": "April 2026",
+      "colors": [
+        "rgb(5, 18, 54)",
+        "rgb(255, 253, 226)",
+        "rgb(4, 87, 212)"
+      ],
+      "recognition": [
+        "Awwwards Site of the Day",
+        "Awwwards Site of the Month Nominee",
+        "CSS Design Awards Website of the Day",
+        "FWA of the Day"
+      ],
+      "roles": [
+        "Design Direction",
+        "Website Design"
+      ],
+      "ruler": [
+        "Role"
+      ],
+      "category": "Agency & Studio",
+      "description": "A fresh website for the creative agency fromanother, founded by two artists I’ve long admired, Vicki and Robin.",
+      "image": "JK0FqSLxHpj1w22TtNIaAQwr2uc.jpg"
+    }
+  ],
+  "selected": [
+    {
+      "title": "Mathijs Hanenkamp",
+      "tag": "Photography - portfolio",
+      "description": "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio."
+    },
+    {
+      "title": "Silent Waves",
+      "tag": "Brand - editorial",
+      "description": "A visual system balancing calm typography and high-contrast imagery."
+    },
+    {
+      "title": "North Arc",
+      "tag": "Studio - website",
+      "description": "A minimalist studio website with tactile transitions and sharp pacing."
+    },
+    {
+      "title": "Noir Capsule",
+      "tag": "Fashion - campaign",
+      "description": "Narrative-heavy campaign page with cinematic motion and modular blocks."
+    },
+    {
+      "title": "Vector Grid",
+      "tag": "Product - launch",
+      "description": "A launch story focused on precision, rhythm, and lightweight interactions."
+    },
+    {
+      "title": "Memory Atlas",
+      "tag": "Archive - collection",
+      "description": "Infinite-style archive experience that keeps context while browsing."
+    },
+    {
+      "title": "House of Noise",
+      "tag": "Agency - case study",
+      "description": "Case-study stack designed around outcomes, process, and visual evidence."
+    },
+    {
+      "title": "Future Echo",
+      "tag": "Creative - direction",
+      "description": "Art direction showcase with layered type and high-contrast visual hierarchy."
+    }
+  ]
+}

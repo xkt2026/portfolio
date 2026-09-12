@@ -1,0 +1,783 @@
+body {kids:3}
+  meta {kids:0}
+  meta {kids:0}
+  div {kids:1}
+    div {kids:1}
+        width=100% height=100%
+      div .framer-B9KKm.framer-17nslh7 {kids:1}
+          min-height=100vh width=auto
+        div .framer-pMJQv.framer-qJfhG {kids:1}
+            min-height=100vh width=auto display=contents
+          div .framer-1e6bled {kids:1}
+              height=100dvh min-height=100dvh
+            div [mid] .framer-thcsc6.hidden-16123g2 {kids:1}
+              div (heroinfo) .framer-7p0nok {kids:1}
+                div [Frame 2147226906] .framer-17yk1a1 {kids:1}
+              div (heroinfo) .framer-byaoxr {kids:1}
+                div [info] .framer-14jind7 {kids:1}
+                  div [info] .framer-y1ohsd {kids:1}
+            div [bottom] .framer-1e0z5mv {kids:1}
+              div (heroinfo) .framer-nhspyx.hidden-16123g2 {kids:1}
+                div [Frame 2147226915] .framer-k79qes {kids:1}
+                  div [Scroll] .framer-1dgbkwi {kids:1}
+                      transform=none
+                    p .framer-text.framer-styles-preset-fukh8o "Scroll" {kids:0}
+              div (heroinfo) .framer-1pmjs2o {kids:1}
+                div [Frame 2147226912] .framer-186iamq {kids:1}
+                  div [Frame 2147226913] .framer-1d42l80.hidden-16123g2 {kids:1}
+                    div [nr.] .framer-ns8ej {kids:1}
+                        transform=none
+                      p .framer-text.framer-styles-preset-fukh8o "Selected work" {kids:0}
+                  div [Frame 2147226913] .framer-ysq23g {kids:1}
+                    div [nr.] .framer-159spi4 {kids:1}
+                        transform=none
+                      p .framer-text.framer-styles-preset-fukh8o "/00" {kids:0}
+            div [info] .framer-1v518ve {kids:1}
+              div [right] (heroinfo) .framer-176m0et {kids:1}
+                div [Frame 2147226915] .framer-18wj2kn.hidden-4sw7zy {kids:1}
+                  div [Scroll] .framer-j44tl6 {kids:1}
+                      transform=none
+                    p .framer-text.framer-styles-preset-fukh8o "Scroll" {kids:0}
+            div .framer-d1ub0t-container {kids:1}
+          div .framer-1ikkddz {kids:1}
+              transform=translateX(-50%)
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DISTRICT2 STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DISTRICT2 STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DISTRICT2 STUDIO" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "district2-studio" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "September 2019" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayCSSDA Website of the DayBehance UI GalleryTop 40 Vietnam Halo Dot " {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "District2Website DesignShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Designing the new website for District2, the first studio I ever worked at and my very fir" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DAFI TROPICDANE" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DAFI TROPICDANE" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DAFI TROPICDANE" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "dafi" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "May 2019" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Behance UI GalleryTop 11 Vietnam Halo Dot Award" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "District2 Website DesignShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Furniture" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "A minimal, Scandinavian-inspired website for DAFI, a Danish company specializing in high-q" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "EST POPULO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "EST POPULO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "EST POPULO" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "est-populo" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "February 2022" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Behance UI Gallery" {kids:0}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "District2 StudioWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "A bold digital experience for Est Populo, a Swedish marketing agency, balancing clean Scan" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "BISON STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "BISON STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "BISON STUDIO" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "bison-studio" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "February 2022" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "CSSDA Website of the DayBehance UI Gallery" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Art DirectorWebsite DesignShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "New look and feel for Bison to reflect their vision and position them as a creative and aw" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "HUYML VOL.1" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "HUYML VOL.1" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "HUYML VOL.1" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "huyml-2022" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "August 2022" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayFWA of the DayCSSDA Website of the MonthCSSDA Website of the DayCS" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Art DirectorWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Portfolio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "My first ever portfolio in 2022. The one that completely changed my whole career." {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "RLY NETWORK" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "RLY NETWORK" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "RLY NETWORK" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "rly-network" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "October 2022" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Webby NomineeAwwwards Site of the DayFWA of the DayCSSDA Website of the DayBehance UI Gall" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Serious BusinessWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Blockchain - Web3" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Together with SB to create an outstanding website that showcases the RLY network's value a" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MATHIJS HANENKAMP" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MATHIJS HANENKAMP" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MATHIJS HANENKAMP" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "mathijs-hanenkamp" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "February 2023" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "FWA Site of the DayCSSDA Website of the DayBehance UI GalleryWebby Honoree" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Art DirectorWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Photography" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Bringing the vision and personality of portrait and documentary photographer Mathijs Hanen" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "ASCON SYSTEMS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "ASCON SYSTEMS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "ASCON SYSTEMS" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "ascon-system" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "August 2023" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayCSSDA Website of the DayBehance Graphic Gallery" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Serious BusinessWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Corporate" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Working with Serious Business to build a website for ASCon that stands out from the typica" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "UNCOMMON STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "UNCOMMON STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "UNCOMMON STUDIO" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "uncommon-studio" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "July 2026" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayFWA of the Day" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Design DirectionWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Designed a bespoke digital experience for Uncommon, a Melbourne-based studio serving clien" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "SERIOUS BUSINESS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "SERIOUS BUSINESS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "SERIOUS BUSINESS" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "serious-business" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "August 2024" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayAwwwards Business & Services HonorsFWA of the DayCSSDA Website of " {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Serious BusinessWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Got a chance to help Serious Business transform their new brand into a website that is del" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "BY 'KIN" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "BY 'KIN" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "BY 'KIN" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "by-kin" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "November 2024" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayFWA of the Day CSSDA Website of the DayBehance UI Gallery" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Art DirectorWebsite DesignShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Crafted a playful digital experience for Manchester-based interior and brand studio kin, f" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DEFIANT" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DEFIANT" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "DEFIANT" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "defiant" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "January 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "CSSDA Website of the DayBehance UI Gallery" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Art DirectorWebsite DesignShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Venture Capital" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "A website designed to mirror the brand's minimal, clean identity and help them stand out f" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MAT VOYCE" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MAT VOYCE" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MAT VOYCE" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "mat-voyce" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "January 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayAwwwards Typography HonorsFWA of the DayCSSDA Website of the DayGS" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "UncommonDesign DirectionWebsite DesignShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Portfolio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "A new home for the moving work of legendary type designer Mat Voyce, built to push the bou" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "EISLAB" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "EISLAB" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "EISLAB" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "eislab" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "February 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayFWA of the DayCSSDA Website of the Day" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Art DirectorDesign DirectionDesign Lead" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Food & Beverage" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Refreshed the digital identity for this German ice cream brand, transforming a more colorf" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MARK WOODLAND" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MARK WOODLAND" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MARK WOODLAND" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "markwoodland" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "October 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "FWA of the Day CSSDA Website of the DayBehance UI Gallery" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Uncommon StudioInteractionShowcase" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Personal Brand" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Working with the talented team at Uncommon Studio to reshape entrepreneur Mark Woodland’s " {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MIUX STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MIUX STUDIO" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "MIUX STUDIO" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "miuxstudio" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "June 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayFWA of the DayCSSDA Website of the DayBehance UI Gallery" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Design DirectionDesign Lead" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Translated Thai-born founder Nara’s vision for her young UX studio into a digital experien" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "WON J. YOU STUDIOS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "WON J. YOU STUDIOS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "WON J. YOU STUDIOS" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "wonjyou" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "September 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Webby NomineeAwwwards Site of the DayFWA of the Day CSSDA Website of the DayCSSDA Website " {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Design DirectionDesign Lead" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Personal Brand" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "A website for Won J. You, a veteran designer and professor focused on training the next ge" {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "IVENTIONS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "IVENTIONS" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "IVENTIONS" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "iventions" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "October 2025" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayAwwwards Site of the Month NomineeCSSDA Website of the DayCSSDA We" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Serious BusinessWebsite Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Promotional" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Teamed up with the Serious Business agency to build a new website for Iventions, an event " {kids:0}
+            a .framer-1tr28s.framer-245120 {kids:1}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "FROMANOTHER" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "FROMANOTHER" {kids:0}
+                div [Title] .framer-1tyrr8a {kids:1}
+                    transform=none
+                    mark .framer-text "FROMANOTHER" {kids:0}
+              div [Slug] .framer-ae8ka6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "fromanother" {kids:0}
+              div [Date] .framer-beg626 {kids:1}
+                  transform=none
+                  time "April 2026" {kids:0}
+              div [Color1] .framer-b4j5qv {kids:0}
+              div [Color2] .framer-rcqmlq {kids:0}
+              div [Color3] .framer-1qsqldr {kids:0}
+              div [Recognition] .framer-1rkszy {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayAwwwards Site of the Month NomineeCSS Design Awards Website of the" {kids:1}
+              div [Author] .framer-1t1klby {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Design Direction Website Design" {kids:1}
+              div [Ruler] .framer-72x45y {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Role" {kids:0}
+              div [Category] .framer-f3hg5h {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "Agency & Studio" {kids:0}
+              div [Description] .framer-1l7s8g6 {kids:1}
+                  transform=none
+                p .framer-text.framer-styles-preset-fukh8o "A fresh website for the creative agency fromanother, founded by two artists I’ve long admi" {kids:0}
+          div .framer-e9ve46-container {kids:0}
+          div .framer-1hflp8p-container {kids:1}
+            div .ssr-variant {kids:1}
+          div [Menumobile] (mobilem) .framer-sv5ik4.hidden-4sw7zy {kids:1}
+            div .framer-1ixptlb {kids:1}
+              div (mmenu) .framer-12yju8r {kids:1}
+                  p .framer-text.framer-styles-preset-fukh8o "Independent designer" {kids:0}
+                  p .framer-text.framer-styles-preset-fukh8o "Working globally" {kids:0}
+              div (mmenu) .framer-1irp2nk {kids:1}
+                  div [Variant 3] .framer-eCefT.framer-qJfhG {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "‘25 showreel" {kids:0}
+              div (mmenu) .framer-1srpme6 {kids:1}
+                  button (Copy hello@huyml.co) {kids:1}
+                      width=max-content max-width=100% padding=0 border=0 background=transparent display=inline-flex flex-direction=column align-items=flex-start gap=4px color=rgb(24, 24, 24) font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=12px font-weight=500 letter-spacing=0em line-height=100% text-align=left
+                    span (For inquiries) {kids:1}
+                        display=inline-grid white-space=nowrap
+                      span "For inquiries" {kids:0}
+                          color=rgb(122, 122, 122) opacity=1
+                      span "Click to copy" {kids:0}
+                          color=rgb(122, 122, 122) opacity=0
+                      span "Copied" {kids:0}
+                          color=rgb(255, 73, 73) opacity=0
+                      span "hello@huyml.co" {kids:0}
+          div (hideevent) .framer-icr6fd {kids:1}
+              transform=translate(-50%, -50%)
+            div .ssr-variant.hidden-16123g2 {kids:1}
+                  div [Desktop] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                  div [2200] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                  div [1440] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+            div .ssr-variant.hidden-4sw7zy {kids:1}
+                div [phone] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                      div [phone] (contact) .framer-ufSvN.framer-qJfhG {kids:1}
+                          backdrop-filter=blur(17px) background-color=rgb(23, 23, 23)
+          div .framer-hatez1-container {kids:1}
+            div [Variant 1] .framer-btR7N.framer-e6x6g0 {kids:0}
+                background-color=rgb(0, 0, 0) height=100% width=100%
+          div .ssr-variant.hidden-1h0szr2 {kids:1}
+            div .framer-ij2g0c-container.hidden-16123g2 {kids:1}
+              div [button] .framer-eCefT.framer-qJfhG {kids:1}
+                  p .framer-text.framer-styles-preset-fukh8o "‘25 showreel" {kids:0}
+          div .ssr-variant.hidden-4sw7zy {kids:1}
+            div .framer-ij2g0c-container.hidden-16123g2 {kids:1}
+              div [Variant 2] .framer-eCefT.framer-qJfhG {kids:1}
+                  p .framer-text.framer-styles-preset-fukh8o "‘25 showreel" {kids:0}
+        div {kids:0}
+        div .framer-1ips0ur {kids:0}
+        div .ssr-variant.hidden-1xg2xhx {kids:1}
+          div .framer-n2xgl8-container {kids:1}
+            div .ssr-variant.hidden-111writ {kids:1}
+              div [PC] .framer-h1Y2M.framer-qJfhG {kids:1}
+                  height=100% width=100%
+                      p .framer-text.framer-styles-preset-fukh8o "Menu" {kids:0}
+                      p .framer-text.framer-styles-preset-fukh8o "Audio" {kids:0}
+                    div (Toggle page sound) .framer-15io1pz {kids:1}
+                  div [email] .framer-1xjhont {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "For inquiries" {kids:0}
+            div .ssr-variant.hidden-17nslh7 {kids:1}
+              div [Variant 5] .framer-h1Y2M.framer-qJfhG {kids:1}
+                  height=100% width=100%
+                      p .framer-text.framer-styles-preset-fukh8o "Menu" {kids:0}
+                      p .framer-text.framer-styles-preset-fukh8o "Audio" {kids:0}
+                    div (Toggle page sound) .framer-15io1pz {kids:1}
+                  div [email] .framer-1xjhont {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "For inquiries" {kids:0}
+            div .ssr-variant.hidden-17nslh7 {kids:1}
+              div [Tablet] .framer-h1Y2M.framer-qJfhG {kids:1}
+                  height=100% width=100%
+                      p .framer-text.framer-styles-preset-fukh8o "Menu" {kids:0}
+                      p .framer-text.framer-styles-preset-fukh8o "Audio" {kids:0}
+                    div (Toggle page sound) .framer-15io1pz {kids:1}
+                  div [email] .framer-1xjhont {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "For inquiries" {kids:0}
+        div .ssr-variant.hidden-17nslh7 {kids:1}
+          div .framer-n2xgl8-container {kids:1}
+            div [Phone] .framer-h1Y2M.framer-qJfhG {kids:1}
+                width=100%
+                  button (Toggle menu) .btnmenu {kids:1}
+                      position=relative width=100% height=100% display=block padding=0 border=0 background=transparent color=rgb(255, 255, 255)
+        div [Header] .framer-um322p.hidden-1xg2xhx {kids:1}
+          div .framer-sr905f {kids:1}
+            div .ssr-variant.hidden-111writ {kids:1}
+            div .ssr-variant.hidden-17nslh7 {kids:1}
+    div {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  div {kids:0}
+      position=absolute overflow=hidden bottom=0 left=0 width=0 height=0 z-index=0

@@ -1,0 +1,152 @@
+=== SIZE === 517838
+=== TITLE === Huy Phan - Award-winning designer
+META description => Huy Phan (Huyml) is an award-winning designer and art director based in Ho Chi Minh city, Vietnam.
+META og:type => website
+META og:title => Huy Phan - Award-winning designer
+META og:description => Huy Phan (Huyml) is an award-winning designer and art director based in Ho Chi Minh city, Vietnam.
+META og:image => https://framerusercontent.com/images/JBedVTvAcxoM3c9pTqO7FcBZmQ.png
+META twitter:card => summary_large_image
+META twitter:title => Huy Phan - Award-winning designer
+META twitter:description => Huy Phan (Huyml) is an award-winning designer and art director based in Ho Chi Minh city, Vietnam.
+META twitter:image => https://framerusercontent.com/images/JBedVTvAcxoM3c9pTqO7FcBZmQ.png
+META og:url => https://huyml.co/
+LINK <link href="https://framerusercontent.com/images/T9Y2v9h5BFE7g3Jmw9iWd4WngyQ.svg" rel="icon" media="(prefers-color-scheme: light)">
+LINK <link href="https://framerusercontent.com/images/T9Y2v9h5BFE7g3Jmw9iWd4WngyQ.svg" rel="icon" media="(prefers-color-scheme: dark)">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/rolldown-runtime.Dh6celcD.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/react.BaDOPo3t.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/motion.BPkLvCVm.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/framer.BeBZUbg6.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/shared-lib.DyD4REXM.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/e8XHUPKsgUbD_j36i5m_YIM8UIU28O8o8aXrZlbi1A8.tux3-Cyy.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/Textstyle.BVJVhHaK.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/LKjkg9Djy.C-MTg-Qi.mjs">
+LINK <link rel="modulepreload" fetchpriority="low" href="https://framerusercontent.com/sites/4CUEbC1Vb07LtNCTtfjk6i/2PiN8Hecv5F6SLITrT0uqHl1FSHr-qhoYhoGOU3p53s.Q6_nXk9D.mjs">
+=== STYLE BLOCKS === 17 total chars 126614
+=== FONT FAMILIES ===
+291 | &quot
+24 | 
+3 | var(--framer-code-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif))
+2 | var(--font-family)
+2 | var(--framer-font-family)
+2 | Inter,Inter Placeholder,sans-serif
+1 | sans-serif
+1 | var(--framer-link-font-family,var(--framer-font-family))
+1 | var(--framer-link-hover-font-family,var(--framer-link-font-family,var(--framer-font-family)))
+1 | var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family)))
+1 | var(--framer-font-family-preview,var(--framer-blockquote-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif)))
+1 | var(--framer-blockquote-font-family-bold,var(--framer-font-family-bold))
+1 | var(--framer-blockquote-font-family-italic,var(--framer-font-family-italic))
+1 | var(--framer-blockquote-font-family-bold-italic,var(--framer-font-family-bold-italic))
+1 | var(--framer-font-family-preview,var(--framer-link-font-family,var(--framer-blockquote-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif))))
+1 | var(--framer-font-family-preview,var(--framer-link-hover-font-family,var(--framer-link-font-family,var(--framer-blockquote-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif)))))
+1 | var(--framer-font-family-preview,var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif))))
+1 | var(--framer-font-family-preview,var(--framer-link-hover-font-family,var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif)))))
+1 | var(--framer-font-family,Inter,Inter Placeholder,sans-serif)
+1 | var(--framer-link-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif))
+1 | var(--framer-link-hover-font-family,var(--framer-link-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif)))
+1 | var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif)))
+1 | var(--framer-link-hover-font-family,var(--framer-link-current-font-family,var(--framer-link-font-family,var(--framer-font-family,Inter,Inter Placeholder,sans-serif))))
+=== @font-face ===
+fam="BT Grotesk Medium" weight=500 style=normal url="https://framerusercontent.com/assets/pczyWZYmicHp9LhGgMJo7tnDcHo.woff2"
+fam="BT Grotesk Regular" weight=400 style=normal url="https://framerusercontent.com/assets/oDqinH2S9k4fMbGueYwREUmNFM.woff2"
+fam="F37 Bolton Trial Regular" weight=400 style=normal url="https://framerusercontent.com/assets/NjDO01jId5REkpwNN1pD7i8fBLY.woff2"
+fam="BT Glyphius Regular" weight=400 style=normal url="https://framerusercontent.com/assets/xirQ3g4Sv5q7MG0KvL1PiOOLLBA.woff2"
+fam="BT Grotesk Bold Italic" weight=700 style=normal url="https://framerusercontent.com/assets/8lewwPPD0MNSsf2BYYhgDrG6apE.woff2"
+fam="BT Glyphius Bold" weight=700 style=normal url="https://framerusercontent.com/assets/dcnL9H2gaFNAG9F1nc6gCkZt2CQ.woff2"
+fam="BT Grotesk Bold" weight=700 style=normal url="https://framerusercontent.com/assets/7wvwHnWrXSgYhuk2mEt4LrDGXo.woff2"
+fam="F37 Bolton Trial Bold" weight=700 style=normal url="https://framerusercontent.com/assets/OUUqRFRKQpMerpUcBlnnMAKbp0.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2"
+fam="Inter" weight=400 style=normal url="https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2"
+fam="BT Grotesk Medium Placeholder" weight=undefined style=undefined url=
+fam="BT Grotesk Regular Placeholder" weight=undefined style=undefined url=
+fam="F37 Bolton Trial Regular Placeholder" weight=undefined style=undefined url=
+fam="BT Glyphius Regular Placeholder" weight=undefined style=undefined url=
+fam="BT Grotesk Bold Italic Placeholder" weight=undefined style=undefined url=
+fam="BT Glyphius Bold Placeholder" weight=undefined style=undefined url=
+fam="BT Grotesk Bold Placeholder" weight=undefined style=undefined url=
+fam="F37 Bolton Trial Bold Placeholder" weight=undefined style=undefined url=
+fam="Inter Placeholder" weight=undefined style=undefined url=
+=== COLORS (top 40) ===
+193 | rgb(255,255,255)
+162 | rgba(255,255,255,0.5)
+120 | rgb(30,30,30)
+58 | #1e1e1e
+57 | rgba(31,31,31,0.52)
+38 | #000
+25 | rgba(0,0,0,0.5)
+22 | rgb(0,0,0)
+21 | rgb(0,153,255)
+15 | #fff
+10 | rgb(24,24,24)
+7 | rgba(0,0,0,0.23)
+5 | #ececec
+5 | #181818
+4 | #ff4949
+4 | rgb(192,192,192)
+4 | rgb(23,23,23)
+3 | rgb(212,212,212)
+2 | #09f
+2 | #000000
+2 | rgb(236,236,236)
+2 | rgb(61,61,61)
+2 | rgb(227,232,236)
+2 | rgb(235,232,226)
+2 | rgb(20,20,20)
+2 | rgb(229,227,219)
+2 | rgb(33,33,37)
+2 | rgb(219,216,205)
+2 | rgb(186,55,55)
+2 | rgb(38,38,38)
+2 | rgb(26,26,26)
+2 | rgb(201,201,201)
+2 | rgb(206,255,69)
+2 | rgb(33,33,33)
+2 | rgb(222,222,222)
+2 | rgb(34,34,34)
+2 | rgb(240,240,240)
+2 | rgb(255,0,0)
+2 | rgb(255,90,54)
+2 | rgb(106,109,119)
+=== UNIQUE framerusercontent ASSETS === 0
+=== IMG TAGS ===
+alt="" | https://framerusercontent.com/images/FoYPkj63CnTXaljvLBaCO9gL9dE.jpg
+alt="" | https://framerusercontent.com/images/PbGu32LciyVQZHUuKJCNLLV2qZc.jpg
+alt="" | https://framerusercontent.com/images/F33bHKrCMVcgpBMdUPAEP579M.jpg
+alt="" | https://framerusercontent.com/images/FP8bs8WqEOFTFST8L2YGqot9idA.jpg
+alt="" | https://framerusercontent.com/images/Dr7ftrDUeUTFQY2afrDoalR8A.jpg
+alt="" | https://framerusercontent.com/images/FZyOyyrz0ZctFkAK2kROsql2w1A.jpg
+alt="" | https://framerusercontent.com/images/AHnUuCwiIe3u0k9N4az6316yTbU.jpg
+alt="" | https://framerusercontent.com/images/Ce5CMDqNJqwWN1TC3B0xbsBq47M.jpg
+alt="" | https://framerusercontent.com/images/e4NzJl004YbfnXuKnhQEuGgUPU.png
+alt="" | https://framerusercontent.com/images/ZMZlhfAKVDPaWVzDIpnuU6HVRO4.jpg
+alt="" | https://framerusercontent.com/images/G6KRK08IYPVsspZ3za8etsb60.jpg
+alt="" | https://framerusercontent.com/images/JXol5lZzzYBnMZSEp2JZHIhuuI.jpg
+alt="" | https://framerusercontent.com/images/bovi8JsQWnROEtE0WYyYwqPkiE.jpg
+alt="" | https://framerusercontent.com/images/BsJb1GV0DDjj2B5ELG33XfWmQ.jpg
+alt="" | https://framerusercontent.com/images/kyZpWmBOPtk7QyAeSE9QB3HmS2I.jpg
+alt="" | https://framerusercontent.com/images/QqqJqinqeONnjCz1ncYlYpFRbs.jpg
+alt="" | https://framerusercontent.com/images/OUq4sSIJXVqet1DGXpjpnXuC1qc.jpg
+alt="" | https://framerusercontent.com/images/75mCZ5SdSy2FaX0ameAhFh9ynE.jpg
+alt="" | https://framerusercontent.com/images/JK0FqSLxHpj1w22TtNIaAQwr2uc.jpg
+alt="" | https://framerusercontent.com/assets/R4RlD3IldAw8k5cRONJ8SJJgqG4.svg
+alt="" | https://framerusercontent.com/assets/Bi57PSNgEGNhXnUjCjYBKAacRQ.svg
+alt="" | https://framerusercontent.com/assets/EwHniTuZoV3ME15lpjBiKTAYilc.svg
+alt="" | https://framerusercontent.com/assets/JZyDNnSPROUpFuFHbWYIKApoHng.svg
+alt="" | https://framerusercontent.com/assets/R4RlD3IldAw8k5cRONJ8SJJgqG4.svg
+alt="" | https://framerusercontent.com/assets/Bi57PSNgEGNhXnUjCjYBKAacRQ.svg
+alt="" | https://framerusercontent.com/assets/EwHniTuZoV3ME15lpjBiKTAYilc.svg
+alt="" | https://framerusercontent.com/assets/JZyDNnSPROUpFuFHbWYIKApoHng.svg
+alt="" | https://framerusercontent.com/assets/R4RlD3IldAw8k5cRONJ8SJJgqG4.svg
+alt="" | https://framerusercontent.com/assets/Bi57PSNgEGNhXnUjCjYBKAacRQ.svg
+alt="" | https://framerusercontent.com/assets/EwHniTuZoV3ME15lpjBiKTAYilc.svg
+alt="" | https://framerusercontent.com/assets/JZyDNnSPROUpFuFHbWYIKApoHng.svg
+alt="" | https://framerusercontent.com/assets/R4RlD3IldAw8k5cRONJ8SJJgqG4.svg
+alt="" | https://framerusercontent.com/assets/Bi57PSNgEGNhXnUjCjYBKAacRQ.svg
+alt="" | https://framerusercontent.com/assets/EwHniTuZoV3ME15lpjBiKTAYilc.svg
+alt="" | https://framerusercontent.com/assets/JZyDNnSPROUpFuFHbWYIKApoHng.svg
+=== TEXT NODE COUNT === 620

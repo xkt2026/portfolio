@@ -1,0 +1,629 @@
+TEXT "Huy Phan Hon Tran"
+   color:rgba(255, 255, 255, 0.5) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130% | text-align:left
+
+TEXT "Huy Phan Hon Tran"
+   color:rgb(255, 255, 255) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130% | text-align:left
+
+TEXT "Launch"
+   color:rgba(255, 255, 255, 0.5) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130% | text-align:left
+
+TEXT "2023"
+   color:rgb(255, 255, 255) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130% | text-align:left
+
+TEXT "Recognition"
+   color:rgba(255, 255, 255, 0.5) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130% | text-align:left
+
+TEXT "FWA of the Day CSSDA Website of the Day Behance UI Gallery"
+   color:rgb(255, 255, 255) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130% | text-align:left
+
+TEXT "Scroll"
+   --framer-text-color:var(--token-e93f529c-01a4-4879-a2e7-182bd1a3d9fa, rgba(255, 255, 255, 0.5))
+
+TEXT "Selected work"
+   --framer-text-color:rgba(255, 255, 255, 0.5)
+
+TEXT "01"
+   color:rgb(255, 255, 255) | font-family:"BT Grotesk Regular", "BT Grotesk Regular Placeholder", sans-serif | font-size:180px | font-weight:400 | letter-spacing:-0.04em | line-height:85% | width:100% | text-align:left
+
+TEXT "01"
+   color:rgb(255, 255, 255) | font-family:"F37 Bolton Trial Regular", "F37 Bolton Trial Regular Placeholder", sans-serif | font-size:90px | font-weight:400 | letter-spacing:-0.04em | line-height:85% | width:100% | text-align:left
+
+TEXT "/00"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "Photography - portfolio"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Mathijs Hanenkamp"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Brand - editorial"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Silent Waves"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A visual system balancing calm typography and high-contrast imagery."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Studio - website"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "North Arc"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A minimalist studio website with tactile transitions and sharp pacing."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Fashion - campaign"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Noir Capsule"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Narrative-heavy campaign page with cinematic motion and modular blocks."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Product - launch"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Vector Grid"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A launch story focused on precision, rhythm, and lightweight interactions."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Archive - collection"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Memory Atlas"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Infinite-style archive experience that keeps context while browsing."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Agency - case study"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "House of Noise"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Case-study stack designed around outcomes, process, and visual evidence."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Creative - direction"
+   text-align:center | color:rgba(31, 31, 31, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Future Echo"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Art direction showcase with layered type and high-contrast visual hierarchy."
+   width:337px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Photography - portfolio"
+   text-align:center | color:rgba(255, 255, 255, 0.52) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Mathijs Hanenkamp"
+   color:rgb(255, 255, 255) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:24px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio."
+   width:300px | text-align:center | color:rgb(255, 255, 255) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Mathijs Hanenkamp"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Silent Waves"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A visual system balancing calm typography and high-contrast imagery."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "North Arc"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A minimalist studio website with tactile transitions and sharp pacing."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Noir Capsule"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Narrative-heavy campaign page with cinematic motion and modular blocks."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Vector Grid"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A launch story focused on precision, rhythm, and lightweight interactions."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Memory Atlas"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Infinite-style archive experience that keeps context while browsing."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "House of Noise"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Case-study stack designed around outcomes, process, and visual evidence."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Future Echo"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:30px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Art direction showcase with layered type and high-contrast visual hierarchy."
+   width:450px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Mathijs Hanenkamp"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Silent Waves"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A visual system balancing calm typography and high-contrast imagery."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "North Arc"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A minimalist studio website with tactile transitions and sharp pacing."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Noir Capsule"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Narrative-heavy campaign page with cinematic motion and modular blocks."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Vector Grid"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "A launch story focused on precision, rhythm, and lightweight interactions."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Memory Atlas"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Infinite-style archive experience that keeps context while browsing."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "House of Noise"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Case-study stack designed around outcomes, process, and visual evidence."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Future Echo"
+   color:rgb(30, 30, 30) | font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | font-size:16px | font-weight:400 | letter-spacing:0.01em | line-height:1em | text-align:center
+
+TEXT "Art direction showcase with layered type and high-contrast visual hierarchy."
+   width:250px | text-align:center | color:rgb(30, 30, 30) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:var(--bt-grotesk-responsive-font-size, 12px) | letter-spacing:0.01em | line-height:130%
+
+TEXT "Scroll"
+   --framer-text-color:rgba(0, 0, 0, 0.5)
+
+TEXT "DISTRICT2 STUDIO"
+   
+
+TEXT "district2-studio"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "September 2019"
+   
+
+TEXT "District2Website DesignShowcase"
+   
+
+TEXT "TeamRole"
+   
+
+TEXT "Agency & Studio"
+   
+
+TEXT "DAFI TROPICDANE"
+   
+
+TEXT "dafi"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "May 2019"
+   
+
+TEXT "Behance UI GalleryTop 11 Vietnam Halo Dot Award"
+   
+
+TEXT "District2 Website DesignShowcase"
+   
+
+TEXT "Furniture"
+   
+
+TEXT "EST POPULO"
+   
+
+TEXT "est-populo"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "February 2022"
+   
+
+TEXT "Behance UI Gallery"
+   
+
+TEXT "District2 StudioWebsite Design"
+   
+
+TEXT "BISON STUDIO"
+   
+
+TEXT "bison-studio"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "CSSDA Website of the DayBehance UI Gallery"
+   
+
+TEXT "Art DirectorWebsite DesignShowcase"
+   
+
+TEXT "Role"
+   
+
+TEXT "HUYML VOL.1"
+   
+
+TEXT "huyml-2022"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "August 2022"
+   
+
+TEXT "Art DirectorWebsite Design"
+   
+
+TEXT "Portfolio"
+   
+
+TEXT "My first ever portfolio in 2022. The one that completely changed my whole career."
+   
+
+TEXT "RLY NETWORK"
+   
+
+TEXT "rly-network"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "October 2022"
+   
+
+TEXT "Serious BusinessWebsite Design"
+   
+
+TEXT "Blockchain - Web3"
+   
+
+TEXT "MATHIJS HANENKAMP"
+   
+
+TEXT "mathijs-hanenkamp"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "February 2023"
+   
+
+TEXT "FWA Site of the DayCSSDA Website of the DayBehance UI GalleryWebby Honoree"
+   
+
+TEXT "Photography"
+   
+
+TEXT "ASCON SYSTEMS"
+   
+
+TEXT "ascon-system"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "August 2023"
+   
+
+TEXT "Awwwards Site of the DayCSSDA Website of the DayBehance Graphic Gallery"
+   
+
+TEXT "Corporate"
+   
+
+TEXT "UNCOMMON STUDIO"
+   
+
+TEXT "uncommon-studio"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "July 2026"
+   
+
+TEXT "Awwwards Site of the DayFWA of the Day"
+   
+
+TEXT "Design DirectionWebsite Design"
+   
+
+TEXT "SERIOUS BUSINESS"
+   
+
+TEXT "serious-business"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "August 2024"
+   
+
+TEXT "BY 'KIN"
+   
+
+TEXT "by-kin"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "November 2024"
+   
+
+TEXT "Awwwards Site of the DayFWA of the Day CSSDA Website of the DayBehance UI Gallery"
+   
+
+TEXT "DEFIANT"
+   
+
+TEXT "defiant"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "January 2025"
+   
+
+TEXT "Venture Capital"
+   
+
+TEXT "MAT VOYCE"
+   
+
+TEXT "mat-voyce"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "UncommonDesign DirectionWebsite DesignShowcase"
+   
+
+TEXT "EISLAB"
+   
+
+TEXT "eislab"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "February 2025"
+   
+
+TEXT "Awwwards Site of the DayFWA of the DayCSSDA Website of the Day"
+   
+
+TEXT "Art DirectorDesign DirectionDesign Lead"
+   
+
+TEXT "Food & Beverage"
+   
+
+TEXT "MARK WOODLAND"
+   
+
+TEXT "markwoodland"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "October 2025"
+   
+
+TEXT "FWA of the Day CSSDA Website of the DayBehance UI Gallery"
+   
+
+TEXT "Uncommon StudioInteractionShowcase"
+   
+
+TEXT "Personal Brand"
+   
+
+TEXT "MIUX STUDIO"
+   
+
+TEXT "miuxstudio"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "June 2025"
+   
+
+TEXT "Awwwards Site of the DayFWA of the DayCSSDA Website of the DayBehance UI Gallery"
+   
+
+TEXT "Design DirectionDesign Lead"
+   
+
+TEXT "WON J. YOU STUDIOS"
+   
+
+TEXT "wonjyou"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "September 2025"
+   
+
+TEXT "IVENTIONS"
+   
+
+TEXT "iventions"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "Promotional"
+   
+
+TEXT "FROMANOTHER"
+   
+
+TEXT "fromanother"
+   --framer-text-color:rgb(255, 255, 255)
+
+TEXT "April 2026"
+   
+
+TEXT "Design Direction Website Design"
+   
+
+TEXT "Independent designer"
+   --framer-text-color:rgb(0, 0, 0)
+
+TEXT "Working globally"
+   --framer-text-color:rgb(0, 0, 0)
+
+TEXT "WORK"
+   
+
+TEXT "ABOUT"
+   
+
+TEXT "PLAYGROUND"
+   
+
+TEXT "CONTACT"
+   
+
+TEXT "‘25 showreel"
+   --framer-text-color:var(--extracted-r6o4lv, rgb(0, 0, 0))
+
+TEXT "For inquiries"
+   color:rgb(122, 122, 122)
+
+TEXT "Click to copy"
+   color:rgb(122, 122, 122)
+
+TEXT "Copied"
+   color:rgb(255, 73, 73)
+
+TEXT "hello@huyml.co"
+   
+
+TEXT "Come say hi"
+   --framer-font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | --framer-font-size:30px | --framer-letter-spacing:0.01em | --framer-line-height:100% | --framer-text-color:var(--extracted-1of0zx5, rgb(255, 255, 255)) | --framer-text-transform:uppercase
+
+TEXT "Drop me a line"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "Hear me yapping about design"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "YouTube"
+   
+
+TEXT "More design stuff"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "Behance"
+   
+
+TEXT "Dribbble"
+   
+
+TEXT "Design & life updates lately"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "LinkedIn"
+   
+
+TEXT "Instagram"
+   
+
+TEXT "Facebook"
+   
+
+TEXT "Things I captured along the way"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "Unsplash"
+   
+
+TEXT "Pexels"
+   
+
+TEXT "Close"
+   --framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))
+
+TEXT "Credits"
+   --framer-font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | --framer-font-size:30px | --framer-letter-spacing:0.01em | --framer-line-height:100% | --framer-text-color:var(--extracted-1of0zx5, rgb(24, 24, 24)) | --framer-text-transform:uppercase
+
+TEXT "Development & Rive"
+   
+
+TEXT "Chien Pham"
+   
+
+TEXT "Illustration"
+   
+
+TEXT "Yup Nguyen"
+   
+
+TEXT "Fonts"
+   
+
+TEXT "BT Glyphius"
+   
+
+TEXT "BT Grotesk"
+   
+
+TEXT "Copywriting"
+   
+
+TEXT "Ha Nguyen (the wife)"
+   
+
+TEXT "Come say hi"
+   --framer-font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | --framer-font-size:38px | --framer-letter-spacing:0.01em | --framer-line-height:100% | --framer-text-color:var(--extracted-1of0zx5, rgb(255, 255, 255)) | --framer-text-transform:uppercase
+
+TEXT "Credits"
+   --framer-font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | --framer-font-size:38px | --framer-letter-spacing:0.01em | --framer-line-height:100% | --framer-text-color:var(--extracted-1of0zx5, rgb(24, 24, 24)) | --framer-text-transform:uppercase
+
+TEXT "Come say hi"
+   --framer-font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | --framer-font-size:23px | --framer-letter-spacing:0.01em | --framer-line-height:100% | --framer-text-color:var(--extracted-1of0zx5, rgb(255, 255, 255)) | --framer-text-transform:uppercase
+
+TEXT "Credits"
+   --framer-font-family:"BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif | --framer-font-size:23px | --framer-letter-spacing:0.01em | --framer-line-height:100% | --framer-text-color:var(--extracted-1of0zx5, rgb(24, 24, 24)) | --framer-text-transform:uppercase
+
+TEXT "Close"
+   color:rgb(255, 255, 255) | font-family:"BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-serif | font-weight:500 | font-size:12px | letter-spacing:0.01em | line-height:100% | text-align:left
+
+TEXT "Menu"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "Audio"
+   --framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))
+
+TEXT "On"
+   
+
+TEXT "Off"
+   
+
+TEXT "Working globally"
+   
+
+TEXT "HCMC, 15:26"
+   color:rgba(255, 255, 255, 0.5)
+
+TEXT "For inquiries"
+   --framer-text-color:var(--extracted-r6o4lv, rgba(255, 255, 255, 0.5))
+
+TEXT "hello@huyml.co"
+   --framer-text-color:var(--extracted-r6o4lv, rgb(255, 255, 255))
+
+
+=== DECORATIONS ===

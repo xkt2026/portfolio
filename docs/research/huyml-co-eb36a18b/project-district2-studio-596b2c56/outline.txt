@@ -1,0 +1,478 @@
+body {kids:3}
+  meta {kids:0}
+  meta {kids:0}
+  div {kids:1}
+    div {kids:1}
+        width=100% height=100%
+      div .framer-B9KKm.framer-17nslh7 {kids:1}
+          min-height=100vh width=auto
+        div .framer-j44d8.framer-qJfhG {kids:1}
+            min-height=100vh width=auto display=contents
+          div .ssr-variant.hidden-1wzffn0 {kids:1}
+            div (scrollarea) .framer-15wwhxa {kids:1}
+                  p .framer-text "DISTRICT2 STUDIO" {kids:0}
+              div [mid] .framer-ozybli {kids:1}
+                  opacity=1
+                div (heroinfo) .framer-1h5109u {kids:1}
+                  div [Container] .framer-yy5g0g {kids:1}
+                    div [Section] .framer-hkseky {kids:1}
+                      div [Paragraph] (seconelement) .framer-14visgu {kids:1}
+                        div [Subtitle] .framer-2uot6b {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "About" {kids:0}
+                        div [Description] .framer-1p6hcfn {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "This was my very first creative website project and helped me to experience a full collabo" {kids:0}
+                      div [Info Container] (seconelement) .framer-15xuo83 {kids:1}
+                        div [Info Section] .framer-1uvw3 {kids:1}
+                          div [Section Title] .framer-15mk65b {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+                          div [Section Content] .framer-a6xcfh {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "District2Website DesignShowcase" {kids:1}
+                        div [Info Item] .framer-18xpz6u {kids:1}
+                          div [Label] .framer-4u3cbn {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "Launch" {kids:0}
+                          div [Date] .framer-onk3pl {kids:1}
+                              transform=none
+                              time "Sep 2019" {kids:0}
+                      div [Paragraph] (seconelement) .framer-ly69c5 {kids:1}
+                        div [Subtitle] .framer-1ygrvkj {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "Recognition" {kids:0}
+                        div [Description] .framer-dl51yu {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayCSSDA Website of the DayBehance UI GalleryTop 40 Vietnam Halo Dot " {kids:1}
+                      div [Paragraph] (seconelement) .framer-1a6o4yb.hidden-1wzffn0 {kids:1}
+                              div "Visit site â" {kids:0}
+                                  color=rgb(255, 255, 255) white-space=pre-line min-height=20px font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=20px font-weight=500 letter-spacing=0.01em line-height=100% text-align=left
+                              div "Visit site â" {kids:0}
+                                  color=rgb(255, 255, 255) white-space=pre-line min-height=16px font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=16px font-weight=500 letter-spacing=0.01em line-height=100% text-align=left
+                            div "Visit site â" {kids:0}
+                                color=rgb(255, 255, 255) white-space=pre-line min-height=16px font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=16px font-weight=500 letter-spacing=-0.01em line-height=100% text-align=left
+                div [mid] .framer-96lpjk {kids:0}
+                div [right] .framer-1la3cr0.hidden-1wzffn0 {kids:0}
+              div [bottom] .framer-2i0wwq.hidden-1wzffn0 {kids:1}
+                  opacity=1
+                div (seconelement) .framer-1f0rmkp {kids:1}
+                  div [Info Container] .framer-erbozi {kids:1}
+                  div (heroinfo) .framer-o5ubf7 {kids:1}
+                    div [Frame 2147226915] .framer-qt1h0q {kids:1}
+                      div [Scroll] .framer-8dmr6k {kids:1}
+                          transform=none
+                        p .framer-text.framer-styles-preset-fukh8o "Scroll" {kids:0}
+                      div [Scroll] .framer-eu1hcs {kids:1}
+                          transform=none
+                        p .framer-text.framer-styles-preset-fukh8o "DISTRICT2 STUDIO" {kids:0}
+              div [Imgaeproject] (Imgaeproject) .framer-1gvdprc {kids:1}
+                div [top] .framer-snafkt.hidden-1wzffn0 {kids:0}
+                div [1] .framer-is66ly-container {kids:1}
+                    div (ParallaxScrollImage) {kids:1}
+                        width=100% height=auto position=relative display=block border-radius=0 overflow=hidden
+                div [2] .framer-1yecd42-container {kids:1}
+                    div (ParallaxScrollImage) {kids:1}
+                        width=100% height=auto position=relative display=block border-radius=0 overflow=hidden
+                div [3] .framer-1doq1po-container {kids:1}
+                    div (ParallaxScrollImage) {kids:1}
+                        width=100% height=auto position=relative display=block border-radius=0 overflow=hidden
+                div [4] .framer-n93xn8-container {kids:1}
+                    div (ParallaxScrollImage) {kids:1}
+                        width=100% height=auto position=relative display=block border-radius=0 overflow=hidden
+                div [5] .framer-i63447-container {kids:1}
+                    div (ParallaxScrollImage) {kids:1}
+                        width=100% height=auto position=relative display=block border-radius=0 overflow=hidden
+                div [next] (hideinfo) .framer-16iigdf {kids:1}
+                  div [Next project] .framer-i848y9 {kids:1}
+                      transform=none
+                    p .framer-text.framer-styles-preset-fukh8o "Next project" {kids:0}
+                        div "FROMANOTHER" {kids:0}
+                            color=rgb(255, 72, 72) white-space=pre-line min-height=160px font-family="BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif font-size=160px font-weight=400 letter-spacing=0em line-height=100% text-align=center text-transform=uppercase
+                        div "FROMANOTHER" {kids:0}
+                            color=rgb(255, 72, 72) white-space=pre-line min-height=200px font-family="BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif font-size=200px font-weight=400 letter-spacing=0em line-height=100% text-align=center text-transform=uppercase
+                        div "FROMANOTHER" {kids:0}
+                            color=rgb(255, 72, 72) white-space=pre-line min-height=120px font-family="BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif font-size=120px font-weight=400 letter-spacing=0em line-height=100% text-align=center text-transform=uppercase
+          div .ssr-variant.hidden-1tyetid {kids:1}
+            div (Imgaeproject) .framer-15wwhxa {kids:1}
+                  p .framer-text "DISTRICT2 STUDIO" {kids:0}
+              div [mid] .framer-ozybli {kids:1}
+                  opacity=1
+                div (heroinfo) .framer-1h5109u {kids:1}
+                  div [Container] .framer-yy5g0g {kids:1}
+                    div [Section] .framer-hkseky {kids:1}
+                      div [Paragraph] (seconelement) .framer-14visgu {kids:1}
+                        div [Subtitle] .framer-2uot6b {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "About" {kids:0}
+                        div [Description] .framer-1p6hcfn {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "This was my very first creative website project and helped me to experience a full collabo" {kids:0}
+                      div [Info Container] (seconelement) .framer-15xuo83 {kids:1}
+                        div [Info Section] .framer-1uvw3 {kids:1}
+                          div [Section Title] .framer-15mk65b {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "TeamRole" {kids:1}
+                          div [Section Content] .framer-a6xcfh {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "District2Website DesignShowcase" {kids:1}
+                        div [Info Item] .framer-18xpz6u {kids:1}
+                          div [Label] .framer-4u3cbn {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "Launch" {kids:0}
+                          div [Date] .framer-onk3pl {kids:1}
+                              transform=none
+                              time "Sep 2019" {kids:0}
+                      div [Paragraph] (seconelement) .framer-ly69c5 {kids:1}
+                        div [Subtitle] .framer-1ygrvkj {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "Recognition" {kids:0}
+                        div [Description] .framer-dl51yu {kids:1}
+                            transform=none
+                          p .framer-text.framer-styles-preset-fukh8o "Awwwards Site of the DayCSSDA Website of the DayBehance UI GalleryTop 40 Vietnam Halo Dot " {kids:1}
+                      div [Paragraph] (seconelement) .framer-1a6o4yb.hidden-1wzffn0 {kids:1}
+                            div "Visit site â" {kids:0}
+                                color=rgb(255, 255, 255) white-space=pre-line min-height=20px font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=20px font-weight=500 letter-spacing=0.01em line-height=100% text-align=left
+                            div "Visit site â" {kids:0}
+                                color=rgb(255, 255, 255) white-space=pre-line min-height=16px font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=16px font-weight=500 letter-spacing=-0.01em line-height=100% text-align=left
+                div [mid] .framer-96lpjk {kids:0}
+                div [right] .framer-1la3cr0.hidden-1wzffn0 {kids:0}
+              div [bottom] .framer-2i0wwq.hidden-1wzffn0 {kids:1}
+                  opacity=1
+                div (seconelement) .framer-1f0rmkp {kids:1}
+                  div [Info Container] .framer-erbozi {kids:1}
+                  div (heroinfo) .framer-o5ubf7 {kids:1}
+                    div [Frame 2147226915] .framer-qt1h0q {kids:1}
+                      div [Scroll] .framer-8dmr6k {kids:1}
+                          transform=none
+                        p .framer-text.framer-styles-preset-fukh8o "Scroll" {kids:0}
+                      div [Scroll] .framer-eu1hcs {kids:1}
+                          transform=none
+                        p .framer-text.framer-styles-preset-fukh8o "DISTRICT2 STUDIO" {kids:0}
+              div [Imgaeproject] .framer-1gvdprc {kids:1}
+                div [top] .framer-snafkt.hidden-1wzffn0 {kids:0}
+                div [1] .framer-is66ly-container {kids:1}
+                  div (ParallaxScrollImage) {kids:1}
+                      height=auto width=100% position=relative display=block border-radius=0 overflow=visible
+                div [2] .framer-1yecd42-container {kids:1}
+                  div (ParallaxScrollImage) {kids:1}
+                      height=auto width=100% position=relative display=block border-radius=0 overflow=visible
+                div [3] .framer-1doq1po-container {kids:1}
+                  div (ParallaxScrollImage) {kids:1}
+                      height=auto width=100% position=relative display=block border-radius=0 overflow=visible
+                div [4] .framer-n93xn8-container {kids:1}
+                  div (ParallaxScrollImage) {kids:1}
+                      height=auto width=100% position=relative display=block border-radius=0 overflow=visible
+                div [5] .framer-i63447-container {kids:1}
+                  div (ParallaxScrollImage) {kids:1}
+                      height=auto width=100% position=relative display=block border-radius=0 overflow=visible
+                div [next] (hideinfo) .framer-16iigdf {kids:1}
+                  div [Next project] .framer-i848y9 {kids:1}
+                      transform=none
+                    p .framer-text.framer-styles-preset-fukh8o "Next project" {kids:0}
+                      div "FROMANOTHER" {kids:0}
+                          color=rgb(255, 72, 72) white-space=pre-line min-height=32px font-family="BT Glyphius Regular", "BT Glyphius Regular Placeholder", sans-serif font-size=32px font-weight=400 letter-spacing=0em line-height=100% text-align=center text-transform=uppercase
+          div .framer-17vttwe-container {kids:1}
+            div .ssr-variant.hidden-1tyetid {kids:1}
+              div [Variant 1] .framer-ZZdFi.framer-161e8hu {kids:1}
+                  height=100% width=100%
+                div [overlay] (overlay) .framer-1nwk0ck {kids:0}
+                    background-color=rgb(8, 8, 8)
+            div .ssr-variant.hidden-4ccosu {kids:1}
+              div [xl] .framer-ZZdFi.framer-161e8hu {kids:1}
+                  height=100% width=100%
+                div [overlay] (overlay) .framer-1nwk0ck {kids:0}
+                    background-color=rgb(8, 8, 8)
+            div .ssr-variant.hidden-1tyetid {kids:1}
+              div [mobile] .framer-ZZdFi.framer-161e8hu {kids:1}
+                  height=100% width=100%
+                div [overlay] (overlay) .framer-1nwk0ck {kids:0}
+                    background-color=rgb(8, 8, 8)
+          div (seconelementon) .framer-cbpm1x.hidden-1wzffn0 {kids:1}
+            div .ssr-variant.hidden-4ccosu {kids:1}
+                p .framer-text "DISTRICT2 STUDIO" {kids:0}
+            div .ssr-variant.hidden-1tyetid {kids:1}
+                p .framer-text "DISTRICT2 STUDIO" {kids:0}
+          div [Menumobile] (mobilem) .framer-touf5d.hidden-1aycho3 {kids:1}
+            div .framer-kpfsfr {kids:1}
+              div (mmenu) .framer-mcch6n {kids:1}
+                  p .framer-text.framer-styles-preset-fukh8o "Independent designer" {kids:0}
+                  p .framer-text.framer-styles-preset-fukh8o "Working globally" {kids:0}
+              div (mmenu) .framer-k0tv4m {kids:1}
+                        span "WORK" {kids:0}
+                            display=inline-block padding=6px margin=-6px overflow=visible
+                        span "ABOUT" {kids:0}
+                            display=inline-block padding=6px margin=-6px overflow=visible
+                        span "PLAYGROUND" {kids:0}
+                            display=inline-block padding=6px margin=-6px overflow=visible
+                        span "CONTACT" {kids:0}
+                            display=inline-block padding=6px margin=-6px overflow=visible
+              div (mmenu) .framer-1f2vmy5 {kids:1}
+                  button (Copy hello@huyml.co) {kids:1}
+                      width=max-content max-width=100% padding=0 border=0 background=transparent display=inline-flex flex-direction=column align-items=flex-start gap=4px color=rgb(24, 24, 24) font-family="BT Grotesk Medium", "BT Grotesk Medium Placeholder", sans-serif font-size=12px font-weight=500 letter-spacing=0em line-height=100% text-align=left
+                    span (For inquiries) {kids:1}
+                        display=inline-grid white-space=nowrap
+                      span "For inquiries" {kids:0}
+                          color=rgb(122, 122, 122) opacity=1
+                      span "Click to copy" {kids:0}
+                          color=rgb(122, 122, 122) opacity=0
+                      span "Copied" {kids:0}
+                          color=rgb(255, 73, 73) opacity=0
+                      span "hello@huyml.co" {kids:0}
+                  div [Variant 3] .framer-eCefT.framer-qJfhG {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "â25 showreel" {kids:0}
+          div (hideevent) .framer-kbg13q {kids:1}
+              transform=translate(-50%, -50%)
+            div .framer-1s4rofz-container {kids:1}
+                div [Desktop] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                      div [Desktop] (contact) .framer-ufSvN.framer-qJfhG {kids:1}
+                          backdrop-filter=blur(17px) background-color=rgb(23, 23, 23)
+                        div [Container] .framer-1x1ijn5 {kids:1}
+                          div [Container] .framer-799omb {kids:1}
+                            div [Main heading] .framer-1c4hmia {kids:1}
+                                transform=none
+                              h2 .framer-text "Come say hi" {kids:0}
+                            div [Container] .framer-1me2h5y {kids:1}
+                              div [Contact options] .framer-nw2c2j {kids:1}
+                                div [Contact info] .framer-1o89f7i {kids:1}
+                                div [Contact info] .framer-17vvclv {kids:1}
+                              div [Contact options] .framer-1ntb02l {kids:1}
+                                div [Contact info] .framer-1dhb6hi {kids:1}
+                                div [Contact info] .framer-19pjruh {kids:1}
+                              div [Contact info] .framer-1nj2u3j {kids:1}
+                                div [Photography title] .framer-dvpsht {kids:1}
+                                    transform=none
+                                div [Drop me a line title] .framer-1fyboka {kids:1}
+                                    transform=none
+                        div [Close button] .framer-10k85n6 {kids:1}
+                          div [Drop me a line title] .framer-1hmucf8 {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "Close" {kids:0}
+                          div [e-remove 1] .framer-ax4a4b {kids:0}
+                      div [Desktop] (contact-credits) .framer-I2CLL.framer-WaKqV {kids:1}
+                          background-color=rgb(212, 212, 212)
+                        div [huyml.riv] .framer-2lk68u-container {kids:1}
+                        div [Container] .framer-1jaixrb {kids:1}
+                          div [Container] .framer-13ubaq7 {kids:1}
+                            div [Main heading] .framer-1jfcrcj {kids:1}
+                                transform=none
+                              h2 .framer-text "Credits" {kids:0}
+                            div [Container] .framer-4agrdk {kids:1}
+                              div [Contact options] .framer-13z65y5 {kids:1}
+                                div [Contact info] .framer-1jid3y2 {kids:1}
+                                div [Contact info] .framer-1dkscra {kids:1}
+                              div [Contact options] .framer-by4vf8 {kids:1}
+                                div [Contact info] .framer-1alwkuy {kids:1}
+                                div [Contact info] .framer-cvbqth {kids:1}
+                div [2200] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                      div [2540] (contact) .framer-ufSvN.framer-qJfhG {kids:1}
+                          backdrop-filter=blur(17px) background-color=rgb(23, 23, 23)
+                        div [Container] .framer-1x1ijn5 {kids:1}
+                          div [Container] .framer-799omb {kids:1}
+                            div [Main heading] .framer-1c4hmia {kids:1}
+                                transform=none
+                              h2 .framer-text "Come say hi" {kids:0}
+                            div [Container] .framer-1me2h5y {kids:1}
+                              div [Contact options] .framer-nw2c2j {kids:1}
+                                div [Contact info] .framer-1o89f7i {kids:1}
+                                div [Contact info] .framer-17vvclv {kids:1}
+                              div [Contact options] .framer-1ntb02l {kids:1}
+                                div [Contact info] .framer-1dhb6hi {kids:1}
+                                div [Contact info] .framer-19pjruh {kids:1}
+                              div [Contact info] .framer-1nj2u3j {kids:1}
+                                div [Photography title] .framer-dvpsht {kids:1}
+                                    transform=none
+                                div [Drop me a line title] .framer-1fyboka {kids:1}
+                                    transform=none
+                        div [Close button] .framer-10k85n6 {kids:1}
+                          div [Drop me a line title] .framer-1hmucf8 {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "Close" {kids:0}
+                          div [e-remove 1] .framer-ax4a4b {kids:0}
+                      div [2200] (contact-credits) .framer-I2CLL.framer-WaKqV {kids:1}
+                          background-color=rgb(212, 212, 212)
+                        div [huyml.riv] .framer-2lk68u-container {kids:1}
+                        div [Container] .framer-1jaixrb {kids:1}
+                          div [Container] .framer-13ubaq7 {kids:1}
+                            div [Main heading] .framer-1jfcrcj {kids:1}
+                                transform=none
+                              h2 .framer-text "Credits" {kids:0}
+                            div [Container] .framer-4agrdk {kids:1}
+                              div [Contact options] .framer-13z65y5 {kids:1}
+                                div [Contact info] .framer-1jid3y2 {kids:1}
+                                div [Contact info] .framer-1dkscra {kids:1}
+                              div [Contact options] .framer-by4vf8 {kids:1}
+                                div [Contact info] .framer-1alwkuy {kids:1}
+                                div [Contact info] .framer-cvbqth {kids:1}
+                div [1440] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                      div [1440] (contact) .framer-ufSvN.framer-qJfhG {kids:1}
+                          backdrop-filter=blur(17px) background-color=rgb(23, 23, 23)
+                        div [Container] .framer-1x1ijn5 {kids:1}
+                          div [Container] .framer-799omb {kids:1}
+                            div [Main heading] .framer-1c4hmia {kids:1}
+                                transform=none
+                              h2 .framer-text "Come say hi" {kids:0}
+                            div [Container] .framer-1me2h5y {kids:1}
+                              div [Contact options] .framer-nw2c2j {kids:1}
+                                div [Contact info] .framer-1o89f7i {kids:1}
+                                div [Contact info] .framer-17vvclv {kids:1}
+                              div [Contact options] .framer-1ntb02l {kids:1}
+                                div [Contact info] .framer-1dhb6hi {kids:1}
+                                div [Contact info] .framer-19pjruh {kids:1}
+                              div [Contact info] .framer-1nj2u3j {kids:1}
+                                div [Photography title] .framer-dvpsht {kids:1}
+                                    transform=none
+                                div [Drop me a line title] .framer-1fyboka {kids:1}
+                                    transform=none
+                        div [Close button] .framer-10k85n6 {kids:1}
+                          div [Drop me a line title] .framer-1hmucf8 {kids:1}
+                              transform=none
+                            p .framer-text.framer-styles-preset-fukh8o "Close" {kids:0}
+                          div [e-remove 1] .framer-ax4a4b {kids:0}
+                      div [1440] (contact-credits) .framer-I2CLL.framer-WaKqV {kids:1}
+                          background-color=rgb(212, 212, 212)
+                        div [huyml.riv] .framer-2lk68u-container {kids:1}
+                        div [Container] .framer-1jaixrb {kids:1}
+                          div [Container] .framer-13ubaq7 {kids:1}
+                            div [Main heading] .framer-1jfcrcj {kids:1}
+                                transform=none
+                              h2 .framer-text "Credits" {kids:0}
+                            div [Container] .framer-4agrdk {kids:1}
+                              div [Contact options] .framer-13z65y5 {kids:1}
+                                div [Contact info] .framer-1jid3y2 {kids:1}
+                                div [Contact info] .framer-1dkscra {kids:1}
+                              div [Contact options] .framer-by4vf8 {kids:1}
+                                div [Contact info] .framer-1alwkuy {kids:1}
+                                div [Contact info] .framer-cvbqth {kids:1}
+                div [phone] (hideevent) .framer-z8nzr.framer-1ir20z6 {kids:1}
+                      div [phone] (contact) .framer-ufSvN.framer-qJfhG {kids:1}
+                          backdrop-filter=blur(17px) background-color=rgb(23, 23, 23)
+                        div [Container] .framer-1x1ijn5 {kids:1}
+                          div [Container] .framer-799omb {kids:1}
+                            div [Main heading] .framer-1c4hmia {kids:1}
+                                transform=none
+                              h2 .framer-text "Come say hi" {kids:0}
+                            div [Container] .framer-1me2h5y {kids:1}
+                              div [Contact options] .framer-nw2c2j {kids:1}
+                                div [Contact info] .framer-1o89f7i {kids:1}
+                                div [Contact info] .framer-17vvclv {kids:1}
+                              div [Contact options] .framer-1ntb02l {kids:1}
+                                div [Contact info] .framer-1dhb6hi {kids:1}
+                                div [Contact info] .framer-19pjruh {kids:1}
+                              div [Contact info] .framer-1nj2u3j {kids:1}
+                                div [Photography title] .framer-dvpsht {kids:1}
+                                    transform=none
+                                div [Drop me a line title] .framer-1fyboka {kids:1}
+                                    transform=none
+                        div [Close button] .framer-5rclai {kids:1}
+                              div "Close" {kids:0}
+                                  color=rgb(255, 255, 255) white-space=pre-line font-family="BT Grotesk", "BT Grotesk Trial", "BT Grotesk Medium", Arial, sans-ser… font-weight=500 font-size=12px letter-spacing=0.01em line-height=100% text-align=left margin=0
+                          div [e-remove 1] .framer-6qals1 {kids:0}
+          div .framer-1pavh7j-container {kids:1}
+            div [Variant 1] .framer-btR7N.framer-e6x6g0 {kids:0}
+                background-color=rgb(0, 0, 0) height=100% width=100%
+          div [minimap] .framer-1jg3ys5.hidden-1wzffn0 {kids:1}
+              opacity=1
+            div .framer-1go8fn5-container {kids:1}
+        div {kids:0}
+        div .framer-1ips0ur {kids:0}
+        div .ssr-variant.hidden-1xg2xhx {kids:1}
+          div .framer-n2xgl8-container {kids:1}
+            div .ssr-variant.hidden-111writ {kids:1}
+              div [PC] .framer-h1Y2M.framer-qJfhG {kids:1}
+                  height=100% width=100%
+                      p .framer-text.framer-styles-preset-fukh8o "Menu" {kids:0}
+                            span "WORK" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "ABOUT" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "PLAYGROUND" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "CONTACT" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                      p .framer-text.framer-styles-preset-fukh8o "Audio" {kids:0}
+                    div (Toggle page sound) .framer-15io1pz {kids:1}
+                            span "On" {kids:0}
+                            span "Off" {kids:0}
+                                position=absolute left=0 top=0 white-space=nowrap
+                        button (Enable sound) {kids:1}
+                            width=100% height=100% display=flex align-items=center justify-content=center padding=0 border=0 background=transparent color=rgb(255, 255, 255)
+                        span "Working globally" {kids:0}
+                        span "HCMC, 15:26" {kids:0}
+                            color=rgba(255, 255, 255, 0.5)
+                  div [email] .framer-1xjhont {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "For inquiries" {kids:0}
+                        p .framer-text.framer-styles-preset-fukh8o "hello@huyml.co" {kids:0}
+            div .ssr-variant.hidden-17nslh7 {kids:1}
+              div [Variant 5] .framer-h1Y2M.framer-qJfhG {kids:1}
+                  height=100% width=100%
+                      p .framer-text.framer-styles-preset-fukh8o "Menu" {kids:0}
+                            span "WORK" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "ABOUT" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "PLAYGROUND" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "CONTACT" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                      p .framer-text.framer-styles-preset-fukh8o "Audio" {kids:0}
+                    div (Toggle page sound) .framer-15io1pz {kids:1}
+                            span "On" {kids:0}
+                            span "Off" {kids:0}
+                                position=absolute left=0 top=0 white-space=nowrap
+                        button (Enable sound) {kids:1}
+                            width=100% height=100% display=flex align-items=center justify-content=center padding=0 border=0 background=transparent color=rgb(255, 255, 255)
+                        span "Working globally" {kids:0}
+                        span "HCMC, 15:26" {kids:0}
+                            color=rgba(255, 255, 255, 0.5)
+                  div [email] .framer-1xjhont {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "For inquiries" {kids:0}
+                        p .framer-text.framer-styles-preset-fukh8o "hello@huyml.co" {kids:0}
+            div .ssr-variant.hidden-17nslh7 {kids:1}
+              div [Tablet] .framer-h1Y2M.framer-qJfhG {kids:1}
+                  height=100% width=100%
+                      p .framer-text.framer-styles-preset-fukh8o "Menu" {kids:0}
+                            span "WORK" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "ABOUT" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "PLAYGROUND" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                            span "CONTACT" {kids:0}
+                                display=inline-block padding=6px margin=-6px overflow=visible
+                      p .framer-text.framer-styles-preset-fukh8o "Audio" {kids:0}
+                    div (Toggle page sound) .framer-15io1pz {kids:1}
+                            span "On" {kids:0}
+                            span "Off" {kids:0}
+                                position=absolute left=0 top=0 white-space=nowrap
+                        button (Enable sound) {kids:1}
+                            width=100% height=100% display=flex align-items=center justify-content=center padding=0 border=0 background=transparent color=rgb(255, 255, 255)
+                        span "Working globally" {kids:0}
+                        span "HCMC, 15:26" {kids:0}
+                            color=rgba(255, 255, 255, 0.5)
+                  div [email] .framer-1xjhont {kids:1}
+                      p .framer-text.framer-styles-preset-fukh8o "For inquiries" {kids:0}
+                        p .framer-text.framer-styles-preset-fukh8o "hello@huyml.co" {kids:0}
+        div .ssr-variant.hidden-17nslh7 {kids:1}
+          div .framer-n2xgl8-container {kids:1}
+            div [Phone] .framer-h1Y2M.framer-qJfhG {kids:1}
+                width=100%
+                  button (Toggle menu) .btnmenu {kids:1}
+                      position=relative width=100% height=100% display=block padding=0 border=0 background=transparent color=rgb(255, 255, 255)
+        div [Header] .framer-um322p.hidden-1xg2xhx {kids:1}
+          div .framer-sr905f {kids:1}
+            div .ssr-variant.hidden-111writ {kids:1}
+            div .ssr-variant.hidden-17nslh7 {kids:1}
+    div {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  link {kids:0}
+  div {kids:0}
+      position=absolute overflow=hidden bottom=0 left=0 width=0 height=0 z-index=0
