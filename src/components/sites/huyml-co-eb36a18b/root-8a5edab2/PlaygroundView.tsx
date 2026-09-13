@@ -8,7 +8,12 @@ import MenuOverlay from "./MenuOverlay";
 import SiteNav from "./SiteNav";
 import SiteStamp from "./SiteStamp";
 import { SITE } from "./data";
-import { PLAYGROUND, type PlaygroundItem, PLAYGROUND_INTRO } from "./playground";
+import {
+  PLAYGROUND,
+  type PlaygroundItem,
+  PLAYGROUND_INTRO,
+  PLAYGROUND_INTRO_ZH,
+} from "./playground";
 
 /**
  * Playground images live in their own folder (not the shared case-study pool),
@@ -110,7 +115,10 @@ export default function PlaygroundView() {
       />
 
       <main className="pg-page">
-        <p className="pg-intro">{PLAYGROUND_INTRO}</p>
+        <p className="pg-intro">
+          {PLAYGROUND_INTRO}
+          <span className="pg-intro-zh">{PLAYGROUND_INTRO_ZH}</span>
+        </p>
         <p
           className="pg-count"
           aria-label={`${PLAYGROUND.length} playground pieces`}
