@@ -19,16 +19,9 @@ export const PLAYGROUND_INTRO =
   "A space where I can explore different visual directions, interactions, and styles without overthinking too much. Some of these ideas eventually evolve into real projects, while others simply stay here as part of the process.";
 
 export const PLAYGROUND: readonly PlaygroundItem[] = [
-  { ratio: 1.6 },
-  { ratio: 0.75 },
-  { ratio: 1.33 },
-  { ratio: 0.75 },
-  { ratio: 1 },
-  { ratio: 0.75 },
-  { ratio: 1.6 },
-  { ratio: 1 },
-  { ratio: 1.33 },
-  { ratio: 0.75 },
-  { ratio: 1 },
-  { ratio: 1 },
+  { file: "01-amsterdam-street.jpg" },
+  { file: "02-street-food.jpg" },
+  { file: "03-tram-interior.jpg" },
+  { file: "04-tram-platform.jpg" },
+  { file: "05-tingting-design.png" },
 ];
