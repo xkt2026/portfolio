@@ -16,7 +16,7 @@ export interface PlaygroundItem {
 }
 
 export const PLAYGROUND_INTRO =
-  "A space where I can explore different visual directions, interactions, and styles without overthinking too much. Some of these ideas eventually evolve into real projects, while others simply stay here as part of the process.";
+  "This is a space where I can freely explore different visual directions, interaction methods, and styles.";
 
 export const PLAYGROUND_INTRO_ZH =
   "这是一个让我可以尽情探索不同视觉方向、交互方式和风格的空间";
