@@ -24,4 +24,9 @@ export const PLAYGROUND: readonly PlaygroundItem[] = [
   { file: "03-tram-interior.jpg" },
   { file: "04-tram-platform.jpg" },
   { file: "05-tingting-design.png" },
+  { file: "06-nunu-brand.jpg" },
+  { file: "07-jili-packaging.png" },
+  { file: "08-book-some-in-the-middle.png" },
+  { file: "09-via-watercolor.jpg" },
+  { file: "10-pink-red-collage.jpg" },
 ];
