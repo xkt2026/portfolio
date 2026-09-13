@@ -5,7 +5,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 import ArchiveRail from "./ArchiveRail";
 import ContactCard from "./ContactCard";
-import CreditsCard from "./CreditsCard";
 import HeroBand from "./HeroBand";
 import MenuOverlay from "./MenuOverlay";
 import ProjectCover from "./ProjectCover";
@@ -16,7 +15,7 @@ import SiteStamp from "./SiteStamp";
 import WorkCounter from "./WorkCounter";
 import { SITE, WHEEL } from "./data";
 
-type SheetKind = "contact" | "credits" | null;
+type SheetKind = "contact" | null;
 
 /** Minimum gap between two wheel steps so a trackpad flick reads as one move. */
 const STEP_LOCK_MS = 620;
@@ -125,11 +124,18 @@ export default function HomeView() {
     copyTimer.current = setTimeout(() => setCopied(false), 1800);
   }, []);
 
-  /** Menu rows navigate by hash on the live site; here they also dismiss the sheet. */
-  const goToSection = useCallback((href: string) => {
-    setMenuOpen(false);
-    window.location.hash = href;
-  }, []);
+  /** Menu rows: real routes navigate, hashes dismiss the sheet and set the anchor. */
+  const goToSection = useCallback(
+    (href: string) => {
+      setMenuOpen(false);
+      if (href.startsWith("/")) {
+        router.push(href);
+        return;
+      }
+      window.location.hash = href;
+    },
+    [router],
+  );
 
   return (
     <>
@@ -156,7 +162,6 @@ export default function HomeView() {
           archiveOpen={showIndex}
           onToggleArchive={() => setShowIndex((value) => !value)}
           onOpenContact={() => setSheet("contact")}
-          onOpenCredits={() => setSheet("credits")}
         />
         <ArchiveRail visible={showIndex} />
         <ScrollHint />
@@ -170,7 +175,6 @@ export default function HomeView() {
         onSelect={goToSection}
       />
       <ContactCard open={sheet === "contact"} onClose={() => setSheet(null)} />
-      <CreditsCard open={sheet === "credits"} onClose={() => setSheet(null)} />
     </>
   );
 }

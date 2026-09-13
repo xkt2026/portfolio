@@ -15,7 +15,6 @@ interface WorkCounterProps {
   readonly archiveOpen: boolean;
   readonly onToggleArchive: () => void;
   readonly onOpenContact: () => void;
-  readonly onOpenCredits: () => void;
 }
 
 /**
@@ -37,7 +36,6 @@ export default function WorkCounter({
   archiveOpen,
   onToggleArchive,
   onOpenContact,
-  onOpenCredits,
 }: WorkCounterProps) {
   const current = String(index + 1).padStart(2, "0");
   const total = `/${String(totalCount).padStart(2, "0")}`;
@@ -57,13 +55,6 @@ export default function WorkCounter({
           className="hu-text pointer-events-auto block cursor-pointer transition-opacity duration-300 hover:opacity-50"
         >
           {SITE.contactTitle}
-        </button>
-        <button
-          type="button"
-          onClick={onOpenCredits}
-          className="hu-text hu-text-quiet pointer-events-auto block cursor-pointer transition-opacity duration-300 hover:text-white"
-        >
-          {SITE.creditsTitle}
         </button>
         <button
           type="button"

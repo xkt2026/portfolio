@@ -63,11 +63,6 @@ export interface SocialGroup {
   readonly links: readonly ContactLink[];
 }
 
-export interface CreditRow {
-  readonly role: string;
-  readonly people: readonly ContactLink[];
-}
-
 export interface NavItem {
   readonly label: string;
   readonly href: string;
@@ -96,8 +91,6 @@ export interface SiteMeta {
   readonly contactTitle: string;
   readonly ownerLines: readonly string[];
   readonly contactGroups: readonly SocialGroup[];
-  readonly creditsTitle: string;
-  readonly credits: readonly CreditRow[];
 }
 
 export const SITE: SiteMeta = {
@@ -143,49 +136,6 @@ export const SITE: SiteMeta = {
         }
       ]
     }
-  ],
-  "creditsTitle": "Credits",
-  "credits": [
-    {
-      "role": "Development & Rive",
-      "people": [
-        {
-          "label": "Chien Pham",
-          "href": "https://x.com/BausPjam"
-        }
-      ]
-    },
-    {
-      "role": "Illustration",
-      "people": [
-        {
-          "label": "Yup Nguyen",
-          "href": "https://dribbble.com/yupnguyen"
-        }
-      ]
-    },
-    {
-      "role": "Fonts",
-      "people": [
-        {
-          "label": "BT Glyphius",
-          "href": "https://www.myfonts.com/collections/bt-glyphius-font-bitstream"
-        },
-        {
-          "label": "BT Grotesk",
-          "href": "https://www.myfonts.com/collections/bt-grotesk-font-bitstream"
-        }
-      ]
-    },
-    {
-      "role": "Copywriting",
-      "people": [
-        {
-          "label": "Ha Nguyen (the wife)",
-          "href": "https://www.youtube.com/@theimpulsivestitch"
-        }
-      ]
-    }
   ]
 };
 
@@ -200,7 +150,7 @@ export const NAV: readonly NavItem[] = [
   },
   {
     "label": "PLAYGROUND",
-    "href": "#playground"
+    "href": "/playground"
   },
   {
     "label": "CONTACT",
