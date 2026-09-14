@@ -284,10 +284,10 @@
     text-transform: uppercase;
   }
 
-  /* BT Glyphius Regular / 22px — the overlay navigation links */
+  /* BT Glyphius Regular / 26px — the overlay navigation links */
   .hu-nav-link {
     font-family: var(--font-glyphius);
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 0.01em;
@@ -363,21 +363,21 @@
      The links sit in the top bar, revealed when `Menu` is hovered. */
   .hu-quick-link {
     font-family: var(--font-glyphius);
-    font-size: 19px;
+    font-size: 24px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 26px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: rgb(255 255 255);
   }
 
-  /* `.framer-sv5ik4` rows — the same four items at 38px inside the overlay,
-     on a 42px pitch so the sliding arrow lands on exact multiples. */
+  /* `.framer-sv5ik4` rows — the same four items at 48px inside the overlay,
+     on a 54px pitch so the sliding arrow lands on exact multiples. */
   .hu-menu-link {
     font-family: var(--font-glyphius);
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 400;
-    line-height: 42px;
+    line-height: 54px;
     letter-spacing: 0;
     text-transform: uppercase;
     color: rgb(0 0 0);
@@ -805,7 +805,7 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   }
 
-  /* ProjectView mobile — inline info, full-width images */
+  /* ProjectView mobile — info band above images, text in black */
   .hu-project-main {
     display: flex !important;
     flex-direction: column !important;
@@ -813,24 +813,44 @@ body {
     min-height: 100vh !important;
     overflow: visible !important;
   }
+  /* Info band first, then bottom band, then image scroll */
+  .hu-project-info-band {
+    order: 1 !important;
+    position: static !important;
+    height: auto !important;
+    grid-template-columns: 1fr !important;
+    padding: 90px 1rem 0 !important;
+    mix-blend-mode: normal !important;
+    margin: 0 !important;
+    pointer-events: auto !important;
+  }
+  .hu-project-bottom-band {
+    order: 2 !important;
+    position: static !important;
+    height: auto !important;
+    padding: 1rem 1rem 2rem !important;
+    mix-blend-mode: normal !important;
+    pointer-events: auto !important;
+  }
   .hu-project-scroll {
+    order: 3 !important;
     width: 100% !important;
     height: auto !important;
     overflow: visible !important;
     gap: 2rem !important;
-    padding: 90px 1rem 4rem !important;
+    padding: 0 1rem 4rem !important;
   }
   .hu-project-frame {
     width: 100% !important;
   }
-  .hu-project-info-band {
-    position: static !important;
-    height: auto !important;
-    grid-template-columns: 1fr !important;
-    padding: 0 1rem !important;
-    mix-blend-mode: normal !important;
-    margin: 1.5rem 0 !important;
-    pointer-events: auto !important;
+  /* Force text to black on mobile (desktop uses mix-blend-difference white) */
+  .hu-project-info-band .hu-text,
+  .hu-project-bottom-band .hu-text {
+    color: rgb(30, 30, 30) !important;
+  }
+  .hu-project-info-band .hu-text-quiet,
+  .hu-project-bottom-band .hu-text-quiet {
+    color: rgba(30, 30, 30, 0.5) !important;
   }
   .hu-project-info-inner {
     width: 100% !important;
@@ -847,16 +867,10 @@ body {
   .hu-project-info-band .hu-roles-zh {
     color: rgba(30, 30, 30, 0.45) !important;
   }
-  .hu-project-bottom-band {
-    position: static !important;
-    height: auto !important;
-    padding: 2rem 1rem !important;
-    mix-blend-mode: normal !important;
-    pointer-events: auto !important;
-  }
   .hu-next-title {
     font-size: 32px !important;
     min-height: 40px !important;
+    color: rgb(30, 30, 30) !important;
   }
   .hu-counter {
     font-size: 60px !important;
