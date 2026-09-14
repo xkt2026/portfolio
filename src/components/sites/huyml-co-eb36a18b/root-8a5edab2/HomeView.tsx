@@ -16,19 +16,6 @@ import WorkCounter from "./WorkCounter";
 import { SITE, WHEEL, assetUrl } from "./data";
 import { projectOf } from "./cardProject";
 
-/** SSR-safe media query hook: returns true once the viewport matches on the client. */
-function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false);
-  useEffect(() => {
-    const mql = window.matchMedia(query);
-    setMatches(mql.matches);
-    const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
-    mql.addEventListener("change", handler);
-    return () => mql.removeEventListener("change", handler);
-  }, [query]);
-  return matches;
-}
-
 type SheetKind = "contact" | null;
 
 /** Minimum gap between two wheel steps so a trackpad flick reads as one move. */
@@ -41,13 +28,15 @@ function wrapDelta(from: number, to: number, count: number): number {
   return raw > count / 2 ? raw - count : raw;
 }
 
+/** True when the viewport is at least 769px — i.e. the desktop wheel layout is active. */
+function isDesktop(): boolean {
+  if (typeof window === "undefined") return true;
+  return window.matchMedia("(min-width: 769px)").matches;
+}
+
 export default function HomeView() {
   const router = useRouter();
   const count = Math.max(WHEEL.length, 1);
-  /**
-   * Unbounded step counter rather than a clamped index: 8 -> 1 keeps counting up,
-   * so the wheel rolls straight back into the first card instead of dead-ending.
-   */
   const [virtual, setVirtual] = useState(0);
   const card = ((virtual % count) + count) % count;
   const [showIndex, setShowIndex] = useState(false);
@@ -70,7 +59,6 @@ export default function HomeView() {
     [showIndex],
   );
 
-  /** Clicking a card walks the shortest way round the loop instead of spinning past it. */
   const selectCard = useCallback(
     (index: number) => {
       setVirtual((value) => value + wrapDelta(((value % count) + count) % count, index, count));
@@ -78,11 +66,6 @@ export default function HomeView() {
     [count],
   );
 
-  /**
-   * The centred card doubles as the entry to its case study: the wheel has already
-   * parked the project in the middle, so a click on it should carry on rather than
-   * re-select it. Cards without a `slug` have no page yet and stay inert.
-   */
   const openCard = useCallback(
     (index: number) => {
       const slug = WHEEL[index]?.slug;
@@ -93,6 +76,8 @@ export default function HomeView() {
 
   useEffect(() => {
     const onWheel = (event: WheelEvent) => {
+      // Only intercept wheel on desktop — let mobile scroll naturally.
+      if (!isDesktop()) return;
       if (overlayOpen) return;
       event.preventDefault();
       if (locked.current || Math.abs(event.deltaY) < 4) return;
@@ -138,7 +123,6 @@ export default function HomeView() {
     copyTimer.current = setTimeout(() => setCopied(false), 1800);
   }, []);
 
-  /** Menu rows: real routes navigate, hashes dismiss the sheet and set the anchor. */
   const goToSection = useCallback(
     (href: string) => {
       setMenuOpen(false);
@@ -151,8 +135,6 @@ export default function HomeView() {
     [router],
   );
 
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
   return (
     <>
       <SiteStamp />
@@ -162,66 +144,66 @@ export default function HomeView() {
         onOpenMenu={() => setMenuOpen(true)}
       />
 
-      {isMobile ? (
-        <main className="hu-home-mobile bg-[#ececec]">
-          <p className="hu-home-mobile-section-label">{SITE.selectedLabel}</p>
-          {WHEEL.map((item, i) => {
-            const project = projectOf(i);
-            const slug = item.slug;
-            const href = slug ? `/project/${slug}` : "#";
-            const img = project?.image;
-            return (
-              <a
-                key={`${i}-${item.title}`}
-                href={href}
-                className="hu-home-mobile-card"
-                onClick={(e) => {
-                  if (!slug) e.preventDefault();
-                }}
-              >
-                <div className="hu-home-mobile-cover">
-                  {img && (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img src={assetUrl(img)} alt={item.title} />
-                  )}
-                </div>
-                <span className="hu-home-mobile-tag">{item.tag}</span>
-                <span className="hu-home-mobile-title">{item.title}</span>
-                <span className="hu-home-mobile-desc">{item.description}</span>
-              </a>
-            );
-          })}
-          <button
-            type="button"
-            onClick={() => setSheet("contact")}
-            className="hu-home-mobile-section-label"
-            style={{ cursor: "pointer", textAlign: "left" }}
-          >
-            {SITE.contactTitle}
-          </button>
-        </main>
-      ) : (
-        <main className="relative h-screen w-screen overflow-hidden bg-[#ececec]">
-          <HeroBand active={card} />
-          <ProjectCover active={card} visible={!showIndex} />
-          <ProjectWheel
-            active={card}
-            visible={!showIndex}
-            onSelect={selectCard}
-            onOpen={openCard}
-          />
-          <WorkCounter
-            index={card}
-            totalCount={count}
-            visible={!showIndex}
-            archiveOpen={showIndex}
-            onToggleArchive={() => setShowIndex((value) => !value)}
-            onOpenContact={() => setSheet("contact")}
-          />
-          <ArchiveRail visible={showIndex} />
-          <ScrollHint />
-        </main>
-      )}
+      {/* Mobile layout — hidden on desktop via CSS, no JS needed */}
+      <main className="hu-home-mobile hu-mobile-only bg-[#ececec]">
+        <p className="hu-home-mobile-section-label">{SITE.selectedLabel}</p>
+        {WHEEL.map((item, i) => {
+          const project = projectOf(i);
+          const slug = item.slug;
+          const href = slug ? `/project/${slug}` : "#";
+          const img = project?.image;
+          return (
+            <a
+              key={`${i}-${item.title}`}
+              href={href}
+              className="hu-home-mobile-card"
+              onClick={(e) => {
+                if (!slug) e.preventDefault();
+              }}
+            >
+              <div className="hu-home-mobile-cover">
+                {img && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={assetUrl(img)} alt={item.title} />
+                )}
+              </div>
+              <span className="hu-home-mobile-tag">{item.tag}</span>
+              <span className="hu-home-mobile-title">{item.title}</span>
+              <span className="hu-home-mobile-desc">{item.description}</span>
+            </a>
+          );
+        })}
+        <button
+          type="button"
+          onClick={() => setSheet("contact")}
+          className="hu-home-mobile-section-label"
+          style={{ cursor: "pointer", textAlign: "left" }}
+        >
+          {SITE.contactTitle}
+        </button>
+      </main>
+
+      {/* Desktop layout — hidden on mobile via CSS */}
+      <main className="hu-desktop-only relative h-screen w-screen overflow-hidden bg-[#ececec]">
+        <HeroBand active={card} />
+        <ProjectCover active={card} visible={!showIndex} />
+        <ProjectWheel
+          active={card}
+          visible={!showIndex}
+          onSelect={selectCard}
+          onOpen={openCard}
+        />
+        <WorkCounter
+          index={card}
+          totalCount={count}
+          visible={!showIndex}
+          archiveOpen={showIndex}
+          onToggleArchive={() => setShowIndex((value) => !value)}
+          onOpenContact={() => setSheet("contact")}
+        />
+        <ArchiveRail visible={showIndex} />
+        <ScrollHint />
+      </main>
 
       <MenuOverlay
         open={menuOpen}

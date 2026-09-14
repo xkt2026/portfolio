@@ -679,8 +679,25 @@ body {
 /* ============================================================
    Mobile responsive overrides (max-width: 768px)
    Desktop layout is untouched — these only apply on phones.
+   !important is used to beat Tailwind utility specificity.
    ============================================================ */
+
+/* Layout visibility toggles — no JS needed, pure CSS */
+.hu-mobile-only {
+  display: none;
+}
+.hu-desktop-only {
+  display: block;
+}
+
 @media (max-width: 768px) {
+  .hu-mobile-only {
+    display: block;
+  }
+  .hu-desktop-only {
+    display: none !important;
+  }
+
   /* SiteStamp — shrink the rotating cube */
   .hu-stamp-stage {
     transform: scale(0.5);
@@ -689,38 +706,39 @@ body {
 
   /* SiteNav — tighten the top bar */
   .hu-nav-cluster {
-    gap: 1rem;
-    padding-top: 0.75rem;
+    gap: 1rem !important;
+    padding-top: 0.75rem !important;
   }
 
   /* MenuOverlay — fit the full-screen menu on small screens */
   .hu-menu-overlay {
-    padding: 0.75rem;
+    padding: 0.75rem !important;
   }
   .hu-menu-content {
-    height: 85%;
+    height: 85% !important;
   }
 
   /* ContactCard — narrow the card */
   .hu-contact-card {
-    padding: 1.5rem;
+    padding: 1.5rem !important;
   }
   .hu-contact-inner {
-    width: 100%;
-    max-width: 280px;
-    gap: 2rem;
+    width: 100% !important;
+    max-width: 280px !important;
+    gap: 2rem !important;
   }
   .hu-card-heading {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 
   /* HomeView mobile — vertical scrolling card list */
   .hu-home-mobile {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 100px 1rem 4rem;
+    gap: 2rem;
+    padding: 90px 1rem 4rem;
     min-height: 100vh;
+    background: #ececec;
   }
   .hu-home-mobile-card {
     display: flex;
@@ -731,7 +749,7 @@ body {
   }
   .hu-home-mobile-cover {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 2;
     overflow: hidden;
     background: #ddd;
   }
@@ -747,11 +765,11 @@ body {
     letter-spacing: 0.01em;
     color: rgba(30, 30, 30, 0.52);
     white-space: pre-line;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
   }
   .hu-home-mobile-title {
     font-family: var(--font-glyphius);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.1;
     letter-spacing: 0.01em;
@@ -760,14 +778,14 @@ body {
   }
   .hu-home-mobile-desc {
     font-family: var(--font-grotesk);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.5;
     color: rgba(30, 30, 30, 0.7);
   }
   .hu-home-mobile-section-label {
     font-family: var(--font-grotesk);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.01em;
     color: #222;
@@ -778,52 +796,55 @@ body {
 
   /* ProjectView mobile — inline info, full-width images */
   .hu-project-main {
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
-    overflow: visible;
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: visible !important;
   }
   .hu-project-scroll {
-    width: 100%;
-    height: auto;
-    overflow: visible;
-    gap: 1.5rem;
-    padding: 100px 1rem 4rem;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    gap: 2rem !important;
+    padding: 90px 1rem 4rem !important;
   }
   .hu-project-frame {
-    width: 100%;
+    width: 100% !important;
   }
   .hu-project-info-band {
-    position: static;
-    height: auto;
-    grid-template-columns: 1fr;
-    padding: 0 1rem;
-    mix-blend-mode: normal;
-    margin: 1.5rem 0;
+    position: static !important;
+    height: auto !important;
+    grid-template-columns: 1fr !important;
+    padding: 0 1rem !important;
+    mix-blend-mode: normal !important;
+    margin: 1.5rem 0 !important;
+    pointer-events: auto !important;
   }
   .hu-project-info-inner {
-    width: 100%;
+    width: 100% !important;
   }
   .hu-project-about {
-    width: 100%;
-    flex-direction: column;
-    gap: 0.5rem;
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 0.5rem !important;
   }
   .hu-project-roles {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
   }
   .hu-project-bottom-band {
-    position: static;
-    height: auto;
-    padding: 2rem 1rem;
-    mix-blend-mode: normal;
+    position: static !important;
+    height: auto !important;
+    padding: 2rem 1rem !important;
+    mix-blend-mode: normal !important;
+    pointer-events: auto !important;
   }
   .hu-next-title {
-    font-size: 32px;
-    min-height: 40px;
+    font-size: 32px !important;
+    min-height: 40px !important;
   }
   .hu-counter {
-    font-size: 60px;
+    font-size: 60px !important;
   }
 }

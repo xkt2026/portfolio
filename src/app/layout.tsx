@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 import { SITE } from "@/components/sites/huyml-co-eb36a18b/root-8a5edab2/data";
 import "./globals.css";
@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     template: `%s — ${SITE.owner}`,
   },
   description: `${SITE.owner} (${SITE.ownerAlias}) — ${SITE.role}. Selected work, playground and inquiries.`,
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
