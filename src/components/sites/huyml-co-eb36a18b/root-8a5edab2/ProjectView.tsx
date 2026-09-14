@@ -73,14 +73,10 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-  /** The bottom band trades `Scroll` for the project name on hover or after a scroll. */
-  const [hovered, setHovered] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
+  /** The bottom band shows the project name. */
   const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const gallery = PROJECT_GALLERIES[project.slug] ?? [project.image];
   const about = project.about ?? project.description;
-  const revealed = hovered || scrolled;
 
   useEffect(
     () => () => {
@@ -131,9 +127,6 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
 
       <main className="hu-project-main relative flex h-screen w-screen items-center justify-center gap-2.5 overflow-hidden bg-[#ececec]">
         <div
-          onScroll={(event) => {
-            if (event.currentTarget.scrollTop > 48) setScrolled(true);
-          }}
           className="hu-project-scroll hu-scroll-hidden relative z-2 flex h-full w-px flex-1 flex-col items-center gap-[85px] overflow-y-auto"
         >
           <div aria-hidden className="h-[21.5vh] w-full shrink-0" />
@@ -184,27 +177,14 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
           </div>
         </section>
 
-        {/* `.framer-2i0wwq` — the bottom 24% band: `Scroll` ⇄ the project name. */}
+        {/* `.framer-2i0wwq` — the bottom 24% band: project name. */}
         <section
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
           className="hu-project-bottom-band absolute inset-x-0 bottom-0 z-7 flex h-[24%] px-5 pb-5 mix-blend-difference"
         >
           <div className="flex h-full w-full flex-col items-center justify-between">
             <div className="h-px w-full" />
             <div className="flex items-center justify-center gap-2.5">
-              <span
-                className={`hu-text hu-text-quiet block transition-opacity duration-500 ${
-                  revealed ? "opacity-0" : "opacity-100"
-                }`}
-              >
-                {SITE.scrollLabel}
-              </span>
-              <span
-                className={`hu-text hu-text-quiet block transition-opacity duration-500 ${
-                  revealed ? "opacity-100" : "opacity-0"
-                }`}
-              >
+              <span className="hu-text hu-text-quiet block">
                 {project.title}
               </span>
             </div>

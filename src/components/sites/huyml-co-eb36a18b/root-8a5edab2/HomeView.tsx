@@ -10,7 +10,6 @@ import HeroBand from "./HeroBand";
 import MenuOverlay from "./MenuOverlay";
 import ProjectCover from "./ProjectCover";
 import ProjectWheel from "./ProjectWheel";
-import ScrollHint from "./ScrollHint";
 import SiteNav from "./SiteNav";
 import SiteStamp from "./SiteStamp";
 import WorkCounter from "./WorkCounter";
@@ -203,7 +202,6 @@ export default function HomeView() {
           onOpenContact={() => setSheet("contact")}
         />
         <ArchiveRail visible={showIndex} />
-        <ScrollHint />
       </main>
 
       <MenuOverlay
