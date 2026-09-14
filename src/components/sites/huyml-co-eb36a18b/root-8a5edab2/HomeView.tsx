@@ -13,7 +13,21 @@ import ScrollHint from "./ScrollHint";
 import SiteNav from "./SiteNav";
 import SiteStamp from "./SiteStamp";
 import WorkCounter from "./WorkCounter";
-import { SITE, WHEEL } from "./data";
+import { SITE, WHEEL, assetUrl } from "./data";
+import { projectOf } from "./cardProject";
+
+/** SSR-safe media query hook: returns true once the viewport matches on the client. */
+function useMediaQuery(query: string): boolean {
+  const [matches, setMatches] = useState(false);
+  useEffect(() => {
+    const mql = window.matchMedia(query);
+    setMatches(mql.matches);
+    const handler = (e: MediaQueryListEvent) => setMatches(e.matches);
+    mql.addEventListener("change", handler);
+    return () => mql.removeEventListener("change", handler);
+  }, [query]);
+  return matches;
+}
 
 type SheetKind = "contact" | null;
 
@@ -137,6 +151,8 @@ export default function HomeView() {
     [router],
   );
 
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <>
       <SiteStamp />
@@ -146,26 +162,66 @@ export default function HomeView() {
         onOpenMenu={() => setMenuOpen(true)}
       />
 
-      <main className="relative h-screen w-screen overflow-hidden bg-[#ececec]">
-        <HeroBand active={card} />
-        <ProjectCover active={card} visible={!showIndex} />
-        <ProjectWheel
-          active={card}
-          visible={!showIndex}
-          onSelect={selectCard}
-          onOpen={openCard}
-        />
-        <WorkCounter
-          index={card}
-          totalCount={count}
-          visible={!showIndex}
-          archiveOpen={showIndex}
-          onToggleArchive={() => setShowIndex((value) => !value)}
-          onOpenContact={() => setSheet("contact")}
-        />
-        <ArchiveRail visible={showIndex} />
-        <ScrollHint />
-      </main>
+      {isMobile ? (
+        <main className="hu-home-mobile bg-[#ececec]">
+          <p className="hu-home-mobile-section-label">{SITE.selectedLabel}</p>
+          {WHEEL.map((item, i) => {
+            const project = projectOf(i);
+            const slug = item.slug;
+            const href = slug ? `/project/${slug}` : "#";
+            const img = project?.image;
+            return (
+              <a
+                key={`${i}-${item.title}`}
+                href={href}
+                className="hu-home-mobile-card"
+                onClick={(e) => {
+                  if (!slug) e.preventDefault();
+                }}
+              >
+                <div className="hu-home-mobile-cover">
+                  {img && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={assetUrl(img)} alt={item.title} />
+                  )}
+                </div>
+                <span className="hu-home-mobile-tag">{item.tag}</span>
+                <span className="hu-home-mobile-title">{item.title}</span>
+                <span className="hu-home-mobile-desc">{item.description}</span>
+              </a>
+            );
+          })}
+          <button
+            type="button"
+            onClick={() => setSheet("contact")}
+            className="hu-home-mobile-section-label"
+            style={{ cursor: "pointer", textAlign: "left" }}
+          >
+            {SITE.contactTitle}
+          </button>
+        </main>
+      ) : (
+        <main className="relative h-screen w-screen overflow-hidden bg-[#ececec]">
+          <HeroBand active={card} />
+          <ProjectCover active={card} visible={!showIndex} />
+          <ProjectWheel
+            active={card}
+            visible={!showIndex}
+            onSelect={selectCard}
+            onOpen={openCard}
+          />
+          <WorkCounter
+            index={card}
+            totalCount={count}
+            visible={!showIndex}
+            archiveOpen={showIndex}
+            onToggleArchive={() => setShowIndex((value) => !value)}
+            onOpenContact={() => setSheet("contact")}
+          />
+          <ArchiveRail visible={showIndex} />
+          <ScrollHint />
+        </main>
+      )}
 
       <MenuOverlay
         open={menuOpen}

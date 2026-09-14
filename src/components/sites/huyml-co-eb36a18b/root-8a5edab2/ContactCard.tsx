@@ -59,7 +59,7 @@ export default function ContactCard({ open, onClose }: ContactCardProps) {
                 role="dialog"
                 aria-modal="true"
                 aria-label={SITE.contactTitle}
-                className="relative w-min overflow-hidden p-10"
+                className="hu-contact-card relative w-min overflow-hidden p-10"
                 style={{
                   backgroundColor: "rgb(23, 23, 23)",
                   backdropFilter: "blur(17px)",
@@ -67,7 +67,7 @@ export default function ContactCard({ open, onClose }: ContactCardProps) {
                   boxShadow: "-2px 4px 4px 0 rgba(0, 0, 0, 0.23)",
                 }}
               >
-                <div className="flex w-[390px] flex-col items-start gap-[69px]">
+                <div className="hu-contact-inner flex w-[390px] flex-col items-start gap-[69px]">
                   <h2 className="hu-card-heading block w-full text-white">
                     {SITE.contactTitle}
                   </h2>

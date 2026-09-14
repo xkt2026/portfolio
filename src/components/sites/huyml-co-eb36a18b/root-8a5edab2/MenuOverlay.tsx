@@ -43,7 +43,7 @@ export default function MenuOverlay({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: EASE }}
-          className="fixed inset-0 z-20 flex flex-col items-end justify-end bg-[#ececec] p-4"
+          className="hu-menu-overlay fixed inset-0 z-20 flex flex-col items-end justify-end bg-[#ececec] p-4"
           role="dialog"
           aria-modal="true"
           aria-label={SITE.menuLabel}
@@ -57,7 +57,7 @@ export default function MenuOverlay({
             className="absolute inset-0 z-0 cursor-default"
           />
 
-          <div className="pointer-events-none relative z-10 flex h-[71%] w-full flex-col items-start justify-between">
+          <div className="hu-menu-content pointer-events-none relative z-10 flex h-[71%] w-full flex-col items-start justify-between">
             <p className="hu-text hu-text-ink block w-full">
               {SITE.ownerLines[0]}
               {"\n"}

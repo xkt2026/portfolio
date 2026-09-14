@@ -546,8 +546,8 @@ body {
     "gallery";
   grid-template-columns: minmax(0, 1fr);
   min-height: 100vh;
-  /* clear the fixed rotating logo stamp (219px tall) in the top-left corner */
-  padding: 235px 16px 80px;
+  /* clear the fixed rotating logo stamp in the top-left corner */
+  padding: 160px 16px 60px;
   background: #ececec;
 }
 
@@ -576,9 +576,9 @@ body {
 
 .pg-count {
   grid-area: num;
-  margin: 29px 0 48px;
+  margin: 20px 0 32px;
   font-family: var(--font-grotesk-bold);
-  font-size: min(43.6vw, 334px);
+  font-size: min(26vw, 160px);
   font-weight: 700;
   line-height: 0.8;
   letter-spacing: -0.03em;
@@ -598,7 +598,7 @@ body {
 
 .pg-item {
   break-inside: avoid;
-  margin: 0 0 28px;
+  margin: 0 0 16px;
   overflow: hidden;
 }
 
@@ -673,5 +673,157 @@ body {
 
   .pg-item {
     margin-bottom: 0;
+  }
+}
+
+/* ============================================================
+   Mobile responsive overrides (max-width: 768px)
+   Desktop layout is untouched — these only apply on phones.
+   ============================================================ */
+@media (max-width: 768px) {
+  /* SiteStamp — shrink the rotating cube */
+  .hu-stamp-stage {
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+
+  /* SiteNav — tighten the top bar */
+  .hu-nav-cluster {
+    gap: 1rem;
+    padding-top: 0.75rem;
+  }
+
+  /* MenuOverlay — fit the full-screen menu on small screens */
+  .hu-menu-overlay {
+    padding: 0.75rem;
+  }
+  .hu-menu-content {
+    height: 85%;
+  }
+
+  /* ContactCard — narrow the card */
+  .hu-contact-card {
+    padding: 1.5rem;
+  }
+  .hu-contact-inner {
+    width: 100%;
+    max-width: 280px;
+    gap: 2rem;
+  }
+  .hu-card-heading {
+    font-size: 22px;
+  }
+
+  /* HomeView mobile — vertical scrolling card list */
+  .hu-home-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 100px 1rem 4rem;
+    min-height: 100vh;
+  }
+  .hu-home-mobile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .hu-home-mobile-cover {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #ddd;
+  }
+  .hu-home-mobile-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hu-home-mobile-tag {
+    font-family: var(--font-grotesk);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: rgba(30, 30, 30, 0.52);
+    white-space: pre-line;
+    margin-top: 0.5rem;
+  }
+  .hu-home-mobile-title {
+    font-family: var(--font-glyphius);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: rgb(30, 30, 30);
+    white-space: pre-line;
+  }
+  .hu-home-mobile-desc {
+    font-family: var(--font-grotesk);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: rgba(30, 30, 30, 0.7);
+  }
+  .hu-home-mobile-section-label {
+    font-family: var(--font-grotesk);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #222;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  /* ProjectView mobile — inline info, full-width images */
+  .hu-project-main {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+  .hu-project-scroll {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    gap: 1.5rem;
+    padding: 100px 1rem 4rem;
+  }
+  .hu-project-frame {
+    width: 100%;
+  }
+  .hu-project-info-band {
+    position: static;
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+    mix-blend-mode: normal;
+    margin: 1.5rem 0;
+  }
+  .hu-project-info-inner {
+    width: 100%;
+  }
+  .hu-project-about {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hu-project-roles {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .hu-project-bottom-band {
+    position: static;
+    height: auto;
+    padding: 2rem 1rem;
+    mix-blend-mode: normal;
+  }
+  .hu-next-title {
+    font-size: 32px;
+    min-height: 40px;
+  }
+  .hu-counter {
+    font-size: 60px;
   }
 }

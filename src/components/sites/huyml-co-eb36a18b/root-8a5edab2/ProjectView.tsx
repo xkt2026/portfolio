@@ -44,7 +44,7 @@ function CaseFrame({ file, alt }: { readonly file: string; readonly alt: string 
   }, []);
 
   return (
-    <div ref={frame} className="relative block w-[45%] shrink-0 overflow-hidden">
+    <div ref={frame} className="hu-project-frame relative block w-[45%] shrink-0 overflow-hidden">
       <div
         className="relative block w-full origin-center transition-transform duration-[720ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
         style={{ transform: shown ? "scale(1)" : "scale(0.92)" }}
@@ -129,12 +129,12 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
         onOpenMenu={() => setMenuOpen(true)}
       />
 
-      <main className="relative flex h-screen w-screen items-center justify-center gap-2.5 overflow-hidden bg-[#ececec]">
+      <main className="hu-project-main relative flex h-screen w-screen items-center justify-center gap-2.5 overflow-hidden bg-[#ececec]">
         <div
           onScroll={(event) => {
             if (event.currentTarget.scrollTop > 48) setScrolled(true);
           }}
-          className="hu-scroll-hidden relative z-2 flex h-full w-px flex-1 flex-col items-center gap-[85px] overflow-y-auto"
+          className="hu-project-scroll hu-scroll-hidden relative z-2 flex h-full w-px flex-1 flex-col items-center gap-[85px] overflow-y-auto"
         >
           <div aria-hidden className="h-[21.5vh] w-full shrink-0" />
 
@@ -159,15 +159,15 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
         </div>
 
         {/* `.framer-ozybli` — the 290px info band, pinned to the vertical centre. */}
-        <section className="pointer-events-none absolute inset-x-0 top-[calc(50%-145px)] z-6 grid h-[290px] grid-cols-[repeat(16,minmax(50px,1fr))] gap-x-7 gap-y-2.5 px-5 mix-blend-difference">
-          <div className="col-span-4 flex flex-col items-start gap-2.5">
+        <section className="hu-project-info-band pointer-events-none absolute inset-x-0 top-[calc(50%-145px)] z-6 grid h-[290px] grid-cols-[repeat(16,minmax(50px,1fr))] gap-x-7 gap-y-2.5 px-5 mix-blend-difference">
+          <div className="hu-project-info-inner col-span-4 flex flex-col items-start gap-2.5">
             <div className="flex flex-col gap-10">
-              <div className="flex gap-[54px]">
+              <div className="hu-project-about flex gap-[54px]">
                 <p className="hu-text shrink-0 opacity-50">{SITE.aboutLabel}</p>
                 <p className="hu-text w-[310px]">{about}</p>
               </div>
 
-              <div className="grid grid-cols-[repeat(2,minmax(50px,1fr))] gap-x-5 gap-y-24">
+              <div className="hu-project-roles grid grid-cols-[repeat(2,minmax(50px,1fr))] gap-x-5 gap-y-24">
                 <div className="flex items-start gap-[19px]">
                   <p className="hu-text w-[70px] shrink-0 opacity-50">{project.ruler.join("\n")}</p>
                   <p className="hu-text flex-1">{project.roles.join("\n")}</p>
@@ -185,7 +185,7 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
         <section
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="absolute inset-x-0 bottom-0 z-7 flex h-[24%] px-5 pb-5 mix-blend-difference"
+          className="hu-project-bottom-band absolute inset-x-0 bottom-0 z-7 flex h-[24%] px-5 pb-5 mix-blend-difference"
         >
           <div className="flex h-full w-full flex-col items-center justify-between">
             <div className="h-px w-full" />

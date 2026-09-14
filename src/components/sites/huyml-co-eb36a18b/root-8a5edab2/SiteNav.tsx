@@ -22,7 +22,7 @@ interface SiteNavProps {
 export default function SiteNav({ copied, onCopyEmail, onOpenMenu }: SiteNavProps) {
   return (
     <nav className="pointer-events-none fixed inset-x-0 top-0 z-9 h-0 mix-blend-difference">
-      <div className="flex items-start justify-end gap-x-14 px-5 pt-5">
+      <div className="hu-nav-cluster flex items-start justify-end gap-x-14 px-5 pt-5">
         <button
           type="button"
           onClick={onOpenMenu}
