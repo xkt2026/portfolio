@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -153,7 +154,7 @@ export default function HomeView() {
           const href = slug ? `/project/${slug}` : "#";
           const img = project?.image;
           return (
-            <a
+            <Link
               key={`${i}-${item.title}`}
               href={href}
               className="hu-home-mobile-card"
@@ -170,7 +171,7 @@ export default function HomeView() {
               <span className="hu-home-mobile-tag">{item.tag}</span>
               <span className="hu-home-mobile-title">{item.title}</span>
               <span className="hu-home-mobile-desc">{item.description}</span>
-            </a>
+            </Link>
           );
         })}
         <button

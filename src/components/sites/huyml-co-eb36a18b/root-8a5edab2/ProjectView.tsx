@@ -170,7 +170,10 @@ export default function ProjectView({ project, next }: ProjectViewProps) {
               <div className="hu-project-roles grid grid-cols-[repeat(2,minmax(50px,1fr))] gap-x-5 gap-y-24">
                 <div className="flex items-start gap-[19px]">
                   <p className="hu-text w-[70px] shrink-0 opacity-50">{project.ruler.join("\n")}</p>
-                  <p className="hu-text flex-1">{project.roles.join("\n")}</p>
+                  <div className="hu-text flex-1">
+                    <p>{project.roles.join("\n")}</p>
+                    <p className="hu-roles-zh">{project.rolesZh.join("\n")}</p>
+                  </div>
                 </div>
                 <div className="flex items-center gap-[21px]">
                   <p className="hu-text shrink-0 opacity-50">{SITE.launchLabel}</p>

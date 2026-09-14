@@ -19,6 +19,7 @@ export interface ArchiveEntry {
   readonly dateLabel: string;
   readonly colors: ArchiveColors;
   readonly roles: readonly string[];
+  readonly rolesZh: readonly string[];
   readonly ruler: readonly string[];
   readonly category: string;
   readonly description: string;
@@ -44,6 +45,7 @@ export interface SelectedWork {
    * `/project/<slug>` are edited in one place.
    */
   readonly roles: readonly string[];
+  readonly rolesZh: readonly string[];
   readonly launch: string;
   /**
    * Only the cards that are also real case studies carry one. Clicking the centred
@@ -172,6 +174,10 @@ export const WHEEL: readonly SelectedWork[] = [
       "Art Director",
       "Website Design"
     ],
+    "rolesZh": [
+      "艺术总监",
+      "网页设计"
+    ],
     "launch": "2023",
     "slug": "district2-studio",
   },
@@ -187,6 +193,10 @@ export const WHEEL: readonly SelectedWork[] = [
     "roles": [
       "Jiuyi Advertising Co., Ltd.",
       "Visual Designer"
+    ],
+    "rolesZh": [
+      "九一广告有限公司",
+      "视觉设计师"
     ],
     "launch": "2019-2020",
     "slug": "telecom-5g-series",
@@ -204,6 +214,10 @@ export const WHEEL: readonly SelectedWork[] = [
       "Photography",
       "Retouching"
     ],
+    "rolesZh": [
+      "摄影",
+      "修图"
+    ],
     "launch": "2019",
     "slug": "juner-carl",
   },
@@ -220,6 +234,10 @@ export const WHEEL: readonly SelectedWork[] = [
       "UI Design",
       "Interaction"
     ],
+    "rolesZh": [
+      "界面设计",
+      "交互设计"
+    ],
     "launch": "2026",
     "slug": "credit-app-ui",
   },
@@ -234,6 +252,9 @@ export const WHEEL: readonly SelectedWork[] = [
     ],
     "roles": [
       "Photography-AIGC"
+    ],
+    "rolesZh": [
+      "摄影-AIGC"
     ],
     "launch": "2026",
     "slug": "fairway-editorial",
@@ -251,6 +272,10 @@ export const WHEEL: readonly SelectedWork[] = [
       "Photography",
       "Retouching"
     ],
+    "rolesZh": [
+      "摄影",
+      "修图"
+    ],
     "launch": "2020",
     "slug": "materialism-necklace",
   },
@@ -267,6 +292,10 @@ export const WHEEL: readonly SelectedWork[] = [
       "Graphic Design",
       "Illustration"
     ],
+    "rolesZh": [
+      "平面设计",
+      "插画"
+    ],
     "launch": "2021",
     "slug": "ear-manual",
   },
@@ -281,6 +310,9 @@ export const WHEEL: readonly SelectedWork[] = [
     ],
     "roles": [
       "Lead Designer"
+    ],
+    "rolesZh": [
+      "主设计师"
     ],
     "launch": "2015-2025",
     "slug": "biy",
@@ -300,6 +332,9 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     ],
     "roles": [
       "Lead Designer"
+    ],
+    "rolesZh": [
+      "主设计师"
     ],
     "ruler": [
       "Role"
@@ -322,6 +357,10 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "roles": [
       "Jiuyi Advertising Co., Ltd.",
       "Visual Designer"
+    ],
+    "rolesZh": [
+      "九一广告有限公司",
+      "视觉设计师"
     ],
     "ruler": [
       "Team",
@@ -346,6 +385,10 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
       "Jiuyi Advertising Co., Ltd.",
       "Visual Designer"
     ],
+    "rolesZh": [
+      "九一广告有限公司",
+      "视觉设计师"
+    ],
     "ruler": [
       "Team",
       "Role"
@@ -369,6 +412,10 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
       "Photography",
       "Retouching"
     ],
+    "rolesZh": [
+      "摄影",
+      "修图"
+    ],
     "ruler": [
       "Role"
     ],
@@ -391,6 +438,10 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
       "UI Design",
       "Interaction"
     ],
+    "rolesZh": [
+      "界面设计",
+      "交互设计"
+    ],
     "ruler": [
       "Role"
     ],
@@ -411,6 +462,9 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     ],
     "roles": [
       "Photography-AIGC"
+    ],
+    "rolesZh": [
+      "摄影-AIGC"
     ],
     "ruler": [
       "Role"
@@ -434,6 +488,10 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
       "Photography",
       "Retouching"
     ],
+    "rolesZh": [
+      "摄影",
+      "修图"
+    ],
     "ruler": [
       "Role"
     ],
@@ -456,6 +514,10 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
       "Graphic Design",
       "Illustration"
     ],
+    "rolesZh": [
+      "平面设计",
+      "插画"
+    ],
     "ruler": [
       "Role"
     ],
@@ -476,6 +538,9 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     ],
     "roles": [
       "Visual Designer"
+    ],
+    "rolesZh": [
+      "视觉设计师"
     ],
     "ruler": [
       "Role"

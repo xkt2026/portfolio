@@ -67,7 +67,7 @@ export default function MenuOverlay({
             <div className="pointer-events-auto">
               <NavArrowList
                 items={NAV}
-                rowHeight={33}
+                rowHeight={42}
                 linkClass="hu-menu-link"
                 onSelect={(item) => onSelect(item.href)}
               />

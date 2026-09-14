@@ -253,6 +253,17 @@
     color: var(--hu-muted);
   }
 
+  /* Chinese translations shown directly under English role values */
+  .hu-roles-zh {
+    font-family: var(--font-grotesk);
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.45);
+    white-space: pre-line;
+    margin-top: 1px;
+  }
+
   /* The menu overlay and the credits card sit on light surfaces, where the same
      Framer presets resolve to ink instead of the difference-blended white. */
   .hu-text-ink {
@@ -273,10 +284,10 @@
     text-transform: uppercase;
   }
 
-  /* BT Glyphius Regular / 19px — the overlay navigation links */
+  /* BT Glyphius Regular / 22px — the overlay navigation links */
   .hu-nav-link {
     font-family: var(--font-glyphius);
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 100%;
     letter-spacing: 0.01em;
@@ -360,13 +371,13 @@
     color: rgb(255 255 255);
   }
 
-  /* `.framer-sv5ik4` rows — the same four items at 30px inside the overlay,
-     on a 33px pitch so the sliding arrow lands on exact multiples. */
+  /* `.framer-sv5ik4` rows — the same four items at 38px inside the overlay,
+     on a 42px pitch so the sliding arrow lands on exact multiples. */
   .hu-menu-link {
     font-family: var(--font-glyphius);
-    font-size: 30px;
+    font-size: 38px;
     font-weight: 400;
-    line-height: 33px;
+    line-height: 42px;
     letter-spacing: 0;
     text-transform: uppercase;
     color: rgb(0 0 0);
@@ -832,6 +843,9 @@ body {
   .hu-project-roles {
     grid-template-columns: 1fr !important;
     gap: 0.75rem !important;
+  }
+  .hu-project-info-band .hu-roles-zh {
+    color: rgba(30, 30, 30, 0.45) !important;
   }
   .hu-project-bottom-band {
     position: static !important;

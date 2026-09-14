@@ -42,9 +42,9 @@ export default function HeroBand({ active }: HeroBandProps) {
    */
   const rows = project
     ? project.roles
-        .map((value, i) => ({ label: project.ruler[i] ?? SITE.roleLabel, value }))
+        .map((value, i) => ({ label: project.ruler[i] ?? SITE.roleLabel, value, zh: project.rolesZh[i] ?? "" }))
         .filter((row) => !HOME_HIDDEN_RULERS.includes(row.label.toLowerCase()))
-    : [{ label: SITE.roleLabel, value: item.roles.join("\n") }];
+    : [{ label: SITE.roleLabel, value: item.roles.join("\n"), zh: item.rolesZh.join("\n") }];
   const launch = project?.dateLabel ?? item.launch;
 
   return (
@@ -73,10 +73,13 @@ export default function HeroBand({ active }: HeroBandProps) {
         <div key={active} className="hu-info-swap flex flex-col items-start gap-12">
           <div className="flex flex-col items-start gap-1">
             {rows.map((row, i) => (
-              <p key={`${row.label}-${i}`} className="hu-text flex items-start">
+              <div key={`${row.label}-${i}`} className="hu-text flex items-start">
                 <span className="hu-text-quiet block w-[64px] shrink-0">{row.label}</span>
-                <span className="block">{row.value}</span>
-              </p>
+                <div className="block">
+                  <p>{row.value}</p>
+                  {row.zh && <p className="hu-roles-zh">{row.zh}</p>}
+                </div>
+              </div>
             ))}
           </div>
           <p className="hu-text flex h-4 w-[120px] items-center">
