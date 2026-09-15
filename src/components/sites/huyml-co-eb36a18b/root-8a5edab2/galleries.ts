@@ -31,11 +31,15 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
     "juner-carl-06.jpg",
   ],
   "valentines-day": [
-    "valentines-day-01.jpg",
+    "valentines-day-01.png",
     "valentines-day-02.jpg",
-    "valentines-day-03.png",
+    "valentines-day-03.jpg",
+    "valentines-day-04.png",
   ],
-  "yaojin-brand": ["yaojin-brand-01.jpg"],
+  "yaojin-brand": [
+    "yaojin-brand-01.png",
+    "yaojin-brand-02.jpg",
+  ],
   "grow-more-program": ["grow-more-01.jpg"],
   "street-photography": [
     "street-photo-01.jpg",
