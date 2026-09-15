@@ -31,7 +31,7 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
     "juner-carl-06.jpg",
   ],
   "valentines-day": [
-    "valentines-day-01.jpg",
+    "valentines-day-01.png",
     "valentines-day-02.jpg",
     "valentines-day-03.png",
   ],

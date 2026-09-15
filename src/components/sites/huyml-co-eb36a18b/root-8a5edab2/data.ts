@@ -464,7 +464,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "category": "Brand Event",
     "description": "Valentine's Day event themes and main visual KV for online promotion across social platforms.",
     "about": "Plan Valentine's Day event themes according to the brand's tone (such as romantic, luxury, or fun). Design the main visual KV (including illustrations, 3D elements, and brand IP image linkage). Extract the core selling points of the event (such as limited-edition gift boxes and interactive gameplay) and transform them into visual language to ensure clear information hierarchy and compliance with social communication logic.\n\n根据品牌调性（如浪漫/轻奢/趣味）策划情人节活动主题，设计主视觉KV（含插画/3D元素/品牌IP形象联动），提炼活动核心卖点（如限定礼盒、互动玩法）转化为视觉语言，确保信息层级清晰且符合社交传播逻辑。",
-    "image": "valentines-day-01.jpg"
+    "image": "valentines-day-01.png"
   },
   {
     "slug": "credit-app-ui",
