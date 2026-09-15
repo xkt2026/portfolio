@@ -592,7 +592,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "category": "Scene Reference",
     "description": "Scene reference photography for the Grow More Program visual development.",
     "about": "Scene reference photo shoots documenting composition, light, texture and color palettes for visual development across illustration and 3D art departments.\n\n为 Grow More Program 项目拍摄场景参考素材，记录构图、光线、质感与色彩方案，用于插画和 3D 美术部门的视觉开发。",
-    "image": "grow-more-01.jpg"
+    "image": "grow-more-01.png"
   },
   {
     "slug": "street-photography",
