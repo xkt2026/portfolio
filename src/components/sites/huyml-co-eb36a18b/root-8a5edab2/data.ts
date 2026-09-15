@@ -505,7 +505,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     ],
     "category": "Restaurant Brand",
     "description": "Record the regional characteristic decoration and dishes of the restaurant from a humanistic perspective.",
-    "about": "Record the regional characteristic decoration of the restaurant from a humanistic perspective. The finished films will be used on Dianping and Xiaohongshu to enhance the \"local flavor\" atmosphere. Highlight the texture of the dishes to increase their appeal.\n\n以人文视角记录餐厅地域特色装修，成片用于大众点评/小红书，强化"本地烟火气"氛围。菜品突出质感，提升菜品吸引力。",
+    "about": "Record the regional characteristic decoration of the restaurant from a humanistic perspective. The finished films will be used on Dianping and Xiaohongshu to enhance the \"local flavor\" atmosphere. Highlight the texture of the dishes to increase their appeal.\n\n以人文视角记录餐厅地域特色装修，成片用于大众点评/小红书，强化「本地烟火气」氛围。菜品突出质感，提升菜品吸引力。",
     "image": "yaojin-brand-01.jpg"
   },
   {
