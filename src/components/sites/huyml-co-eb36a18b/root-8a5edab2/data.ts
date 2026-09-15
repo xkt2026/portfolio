@@ -278,6 +278,42 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "credit-app-ui",
   },
   {
+    "title": "Grow More Program",
+    "tag": "Scene Reference\n场景参考",
+    "description": "Scene reference photography for the Grow More Program visual development.",
+    "colors": [
+      "rgb(34, 139, 34)",
+      "rgb(107, 142, 35)",
+      "rgb(255, 255, 255)"
+    ],
+    "roles": [
+      "Scene Reference Photographer"
+    ],
+    "rolesZh": [
+      "场景参考摄影"
+    ],
+    "launch": "2025",
+    "slug": "grow-more-program",
+  },
+  {
+    "title": "Street Photography",
+    "tag": "Documentary\n纪实摄影",
+    "description": "Candid street moments captured across Amsterdam, Berlin and Hong Kong.",
+    "colors": [
+      "rgb(52, 52, 52)",
+      "rgb(128, 128, 128)",
+      "rgb(255, 255, 255)"
+    ],
+    "roles": [
+      "Street Photographer"
+    ],
+    "rolesZh": [
+      "街头摄影师"
+    ],
+    "launch": "2019-2025",
+    "slug": "street-photography",
+  },
+  {
     "title": "FAIRWAY EDITORIAL",
     "tag": "Advertising - Photography\n广告-摄影",
     "description": "Fashion editorial on a golf course, balancing tailored silhouettes with the quiet geometry of the green.",
@@ -482,7 +518,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "category": "Brand Event",
     "description": "Valentine's Day event themes and main visual KV for online promotion across social platforms.",
     "about": "Plan Valentine's Day event themes according to the brand's tone (such as romantic, luxury, or fun). Design the main visual KV (including illustrations, 3D elements, and brand IP image linkage). Extract the core selling points of the event (such as limited-edition gift boxes and interactive gameplay) and transform them into visual language to ensure clear information hierarchy and compliance with social communication logic.\n\n根据品牌调性（如浪漫/轻奢/趣味）策划情人节活动主题，设计主视觉KV（含插画/3D元素/品牌IP形象联动），提炼活动核心卖点（如限定礼盒、互动玩法）转化为视觉语言，确保信息层级清晰且符合社交传播逻辑。",
-    "image": "valentines-day-01.png"
+    "image": "valentines-day-01.jpg"
   },
   {
     "slug": "yaojin-brand",
@@ -533,6 +569,54 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "description": "A glassmorphism credit dashboard exploring dark-mode cards, score history and bank-offer flows.",
     "about": "A dark-mode credit dashboard concept built around glassmorphism and data clarity. The design stacks bank cards, score history and credit offers into a single calm interface where information hierarchy replaces visual noise.\n\n深色模式信用卡仪表盘概念，围绕玻璃拟态与数据清晰性展开。将银行卡片、信用历史和信贷优惠堆叠成一个安静的界面，让信息层级取代视觉噪音。",
     "image": "credit-app-ui-01.png"
+  },
+  {
+    "slug": "grow-more-program",
+    "title": "Grow More Program",
+    "date": "2025",
+    "dateLabel": "2025",
+    "colors": [
+      "rgb(34, 139, 34)",
+      "rgb(107, 142, 35)",
+      "rgb(255, 255, 255)"
+    ],
+    "roles": [
+      "Scene Reference Photographer"
+    ],
+    "rolesZh": [
+      "场景参考摄影"
+    ],
+    "ruler": [
+      "Role"
+    ],
+    "category": "Scene Reference",
+    "description": "Scene reference photography for the Grow More Program visual development.",
+    "about": "Scene reference photo shoots documenting composition, light, texture and color palettes for visual development across illustration and 3D art departments.\n\n为 Grow More Program 项目拍摄场景参考素材，记录构图、光线、质感与色彩方案，用于插画和 3D 美术部门的视觉开发。",
+    "image": "grow-more-01.jpg"
+  },
+  {
+    "slug": "street-photography",
+    "title": "Street Photography",
+    "date": "2019-2025",
+    "dateLabel": "2019-2025",
+    "colors": [
+      "rgb(52, 52, 52)",
+      "rgb(128, 128, 128)",
+      "rgb(255, 255, 255)"
+    ],
+    "roles": [
+      "Street Photographer"
+    ],
+    "rolesZh": [
+      "街头摄影师"
+    ],
+    "ruler": [
+      "Role"
+    ],
+    "category": "Documentary",
+    "description": "Candid street moments captured across Amsterdam, Berlin and Hong Kong.",
+    "about": "A long-running personal project wandering city streets — Amsterdam canals at blue hour, Berlin's brutalist subway entrances, Hong Kong's double-decker trams between the neon and the rain. Three cities, one ongoing habit of carrying a camera.\n\n一个长期个人项目，游走于城市街头：阿姆斯特丹蓝色时分的运河、柏林野兽派地铁入口、香港霓虹与雨水之间的双层电车。三座城市，一个随身带相机的习惯。",
+    "image": "street-photo-01.jpg"
   },
   {
     "slug": "fairway-editorial",
