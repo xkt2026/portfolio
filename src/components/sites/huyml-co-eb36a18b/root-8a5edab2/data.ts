@@ -222,6 +222,24 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "juner-carl",
   },
   {
+    "title": "Online Valentine's Day Event Promotion Design",
+    "tag": "Brand - Event\n品牌-活动推广",
+    "description": "Valentine's Day event themes and main visual KV for online promotion across social platforms.",
+    "colors": [
+      "rgb(255, 182, 193)",
+      "rgb(220, 20, 60)",
+      "rgb(255, 255, 255)"
+    ],
+    "roles": [
+      "Project Execution"
+    ],
+    "rolesZh": [
+      "项目执行"
+    ],
+    "launch": "2023",
+    "slug": "valentines-day",
+  },
+  {
     "title": "CREDIT APP UI",
     "tag": "UI/UX - App Design\n界面设计",
     "description": "A glassmorphism credit dashboard exploring dark-mode cards, score history and bank-offer flows.",
@@ -423,6 +441,30 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "description": "Summer collection campaign shot by the sea, built on natural beauty and light fashion.",
     "about": "JUNER CARL spring/summer collection launch. The direction is natural beauty and light fashion, and the shoot was set on the beach. Every frame brings out how softly the wetsuit fabric sits on the skin, and the clean silhouette it draws once worn.\n\nJUNER CARL 春夏新品发布。以自然美、轻时尚为设计点，拍摄选择在海边。画面主要突出潜水服面料的亲肤质感，以及上身后修饰出的完美曲线。",
     "image": "juner-carl-01.jpg"
+  },
+  {
+    "slug": "valentines-day",
+    "title": "Online Valentine's Day Event Promotion Design",
+    "date": "2023",
+    "dateLabel": "2023",
+    "colors": [
+      "rgb(255, 182, 193)",
+      "rgb(220, 20, 60)",
+      "rgb(255, 255, 255)"
+    ],
+    "roles": [
+      "Project Execution"
+    ],
+    "rolesZh": [
+      "项目执行"
+    ],
+    "ruler": [
+      "Role"
+    ],
+    "category": "Brand Event",
+    "description": "Valentine's Day event themes and main visual KV for online promotion across social platforms.",
+    "about": "Plan Valentine's Day event themes according to the brand's tone (such as romantic, luxury, or fun). Design the main visual KV (including illustrations, 3D elements, and brand IP image linkage). Extract the core selling points of the event (such as limited-edition gift boxes and interactive gameplay) and transform them into visual language to ensure clear information hierarchy and compliance with social communication logic.\n\n根据品牌调性（如浪漫/轻奢/趣味）策划情人节活动主题，设计主视觉KV（含插画/3D元素/品牌IP形象联动），提炼活动核心卖点（如限定礼盒、互动玩法）转化为视觉语言，确保信息层级清晰且符合社交传播逻辑。",
+    "image": "valentines-day-01.jpg"
   },
   {
     "slug": "credit-app-ui",
