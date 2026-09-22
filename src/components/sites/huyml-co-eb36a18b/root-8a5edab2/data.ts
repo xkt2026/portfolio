@@ -162,6 +162,62 @@ export const NAV: readonly NavItem[] = [
 
 export const WHEEL: readonly SelectedWork[] = [
   {
+    "title": "CREDIT APP UI",
+    "tag": "UI/UX - App Design\n界面设计",
+    "description": "A glassmorphism credit dashboard exploring dark-mode cards, score history and bank-offer flows.",
+    "colors": [
+      "rgb(15, 17, 21)",
+      "rgb(124, 186, 92)",
+      "rgb(176, 122, 122)"
+    ],
+    "roles": [
+      "UI Design",
+      "Interaction"
+    ],
+    "rolesZh": [
+      "界面设计",
+      "交互设计"
+    ],
+    "launch": "2026",
+    "slug": "credit-app-ui",
+  },
+  {
+    "title": "FAIRWAY EDITORIAL",
+    "tag": "Advertising - Photography\n广告-摄影",
+    "description": "Fashion editorial on a golf course, balancing tailored silhouettes with the quiet geometry of the green.",
+    "colors": [
+      "rgb(58, 90, 58)",
+      "rgb(232, 224, 208)",
+      "rgb(212, 185, 106)"
+    ],
+    "roles": [
+      "Photography-AIGC"
+    ],
+    "rolesZh": [
+      "摄影-AIGC"
+    ],
+    "launch": "2026",
+    "slug": "fairway-editorial",
+  },
+  {
+    "title": "EISLAB",
+    "tag": "Website Design\n网页设计",
+    "description": "Refreshed the digital identity for this German ice cream brand, transforming a more colorful and tasteful website experience.",
+    "colors": [
+      "rgb(199, 179, 255)",
+      "rgb(28, 20, 86)",
+      "rgb(247, 226, 115)"
+    ],
+    "roles": [
+      "Visual Designer"
+    ],
+    "rolesZh": [
+      "视觉设计师"
+    ],
+    "launch": "2025",
+    "slug": "eislab",
+  },
+  {
     "title": "China Unicom 5G Era KV Design",
     "tag": "Visual Identity\n视觉形象",
     "description": "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio.",
@@ -258,26 +314,6 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "yaojin-brand",
   },
   {
-    "title": "CREDIT APP UI",
-    "tag": "UI/UX - App Design\n界面设计",
-    "description": "A glassmorphism credit dashboard exploring dark-mode cards, score history and bank-offer flows.",
-    "colors": [
-      "rgb(15, 17, 21)",
-      "rgb(124, 186, 92)",
-      "rgb(176, 122, 122)"
-    ],
-    "roles": [
-      "UI Design",
-      "Interaction"
-    ],
-    "rolesZh": [
-      "界面设计",
-      "交互设计"
-    ],
-    "launch": "2026",
-    "slug": "credit-app-ui",
-  },
-  {
     "title": "Grow More Program",
     "tag": "Scene Reference\n场景参考",
     "description": "Scene reference photography for the Grow More Program visual development.",
@@ -312,24 +348,6 @@ export const WHEEL: readonly SelectedWork[] = [
     ],
     "launch": "2019-2025",
     "slug": "street-photography",
-  },
-  {
-    "title": "FAIRWAY EDITORIAL",
-    "tag": "Advertising - Photography\n广告-摄影",
-    "description": "Fashion editorial on a golf course, balancing tailored silhouettes with the quiet geometry of the green.",
-    "colors": [
-      "rgb(58, 90, 58)",
-      "rgb(232, 224, 208)",
-      "rgb(212, 185, 106)"
-    ],
-    "roles": [
-      "Photography-AIGC"
-    ],
-    "rolesZh": [
-      "摄影-AIGC"
-    ],
-    "launch": "2026",
-    "slug": "fairway-editorial",
   },
   {
     "title": "MATERIALISM",
