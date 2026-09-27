@@ -776,7 +776,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "category": "Exhibition",
     "description": "Connectome: Network of Networks in the MediaLab Madrid Archive — a FECYT-funded exhibition reflecting on the interrelationships between art, science and technology.",
     "about": "The exhibition \"Connectome: Network of Networks in the MediaLab Madrid Archive\" is part of the project \"Scientists in the Arts and Artists in Science: Historical Milestones in the MediaLab Madrid Archive Through an Exhibition and Educational Proposal\", funded by FECYT under the 2022 call for singular projects.\nIts main objective is to highlight the value of the collections of the MediaLab Madrid Archive and reflect on the interrelationships between art, science and technology, emphasizing the importance of the transdisciplinary methodologies developed at MediaLab Madrid between 2002 and 2006. The exhibition thus aims to foster knowledge transfer and raise new questions about the role of these disciplinary intersections in contemporary culture.\n\n「网络之网——马德里媒体实验室档案馆」展览，隶属于「艺术中的科学家与科学中的艺术家：基于展览与教育方案梳理马德里媒体实验室档案馆历史里程碑」项目，该项目由西班牙科学技术基金会（FECYT）在2022年的特色项目征集活动中资助。\n其核心目标是挖掘马德里媒体实验室档案馆馆藏的价值，反思艺术、科学与技术之间的关联，重点凸显2002年至2006年间马德里媒体实验室探索形成的跨学科方法论的重要性。本次展览也致力于推动知识的传播转化，围绕这类学科交叉在当代文化中扮演的角色提出新的思考议题。",
-    "image": "connectome-01.png"
+    "image": "connectome-cover.jpg"
   }
 ] as const;
 
