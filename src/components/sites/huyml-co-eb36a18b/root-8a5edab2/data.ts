@@ -218,6 +218,24 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "eislab",
   },
   {
+    "title": "CONNECTOME",
+    "tag": "Exhibition - MediaLab Madrid\n展览-马德里媒体实验室",
+    "description": "Connectome: Network of Networks in the MediaLab Madrid Archive — a FECYT-funded exhibition on art, science and technology.",
+    "colors": [
+      "rgb(24, 32, 68)",
+      "rgb(232, 224, 208)",
+      "rgb(196, 73, 51)"
+    ],
+    "roles": [
+      "Project Assistant"
+    ],
+    "rolesZh": [
+      "项目助理"
+    ],
+    "launch": "2024",
+    "slug": "connectome-medialab",
+  },
+  {
     "title": "China Unicom 5G Era KV Design",
     "tag": "Visual Identity\n视觉形象",
     "description": "Working with Hon Tran to bring Mathijs's vision and personality to his portfolio.",
@@ -735,6 +753,30 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "description": "Refreshed the digital identity for this German ice cream brand, transforming a more colorful and tasteful website experience.",
     "about": "Eislab reached out for a website redesign and a bit of a brand refresh. They wanted to move away from a serious, \"lab\" feeling and toward something much more joyful and delicious. I updated the typography and color palette, then brought that new identity to life with rich interactions and motion. The whole point was to give users a fresh, happy feeling the moment they start experiencing the site.",
     "image": "BsJb1GV0DDjj2B5ELG33XfWmQ.jpg"
+  },
+  {
+    "slug": "connectome-medialab",
+    "title": "CONNECTOME",
+    "date": "2024",
+    "dateLabel": "2024",
+    "colors": [
+      "rgb(24, 32, 68)",
+      "rgb(232, 224, 208)",
+      "rgb(196, 73, 51)"
+    ],
+    "roles": [
+      "Project Assistant"
+    ],
+    "rolesZh": [
+      "项目助理"
+    ],
+    "ruler": [
+      "Role"
+    ],
+    "category": "Exhibition",
+    "description": "Connectome: Network of Networks in the MediaLab Madrid Archive — a FECYT-funded exhibition reflecting on the interrelationships between art, science and technology.",
+    "about": "The exhibition \"Connectome: Network of Networks in the MediaLab Madrid Archive\" is part of the project \"Scientists in the Arts and Artists in Science: Historical Milestones in the MediaLab Madrid Archive Through an Exhibition and Educational Proposal\", funded by FECYT under the 2022 call for singular projects.\nIts main objective is to highlight the value of the collections of the MediaLab Madrid Archive and reflect on the interrelationships between art, science and technology, emphasizing the importance of the transdisciplinary methodologies developed at MediaLab Madrid between 2002 and 2006. The exhibition thus aims to foster knowledge transfer and raise new questions about the role of these disciplinary intersections in contemporary culture.\n\n「网络之网——马德里媒体实验室档案馆」展览，隶属于「艺术中的科学家与科学中的艺术家：基于展览与教育方案梳理马德里媒体实验室档案馆历史里程碑」项目，该项目由西班牙科学技术基金会（FECYT）在2022年的特色项目征集活动中资助。\n其核心目标是挖掘马德里媒体实验室档案馆馆藏的价值，反思艺术、科学与技术之间的关联，重点凸显2002年至2006年间马德里媒体实验室探索形成的跨学科方法论的重要性。本次展览也致力于推动知识的传播转化，围绕这类学科交叉在当代文化中扮演的角色提出新的思考议题。",
+    "image": "connectome-01.png"
   }
 ] as const;
 

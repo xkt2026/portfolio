@@ -67,4 +67,16 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
     "ear-manual-06.jpg",
   ],
   "eislab": ["Qz7IA3cxk2ytInSo2iqoxwkYzX0.jpg", "gfhG39T9bYBENJqrSSgCfM6cxI.jpg", "rD5C15OquIbYHQUP4pXqzXE2tOk.jpg", "KYrg5rmo9Uq2YPlyEw6A1f6v2s.jpg", "GpawisL3wLgB9HEXcuqeClcuXo.jpg", "UR9JFWMLOnwxdJNFm49YJjZdxKg.jpg", "V5EglSa4L79VSjnPEJH3W393HMo.jpg", "uL7t9GVoMh0BJNmFAI1pgijSrqA.jpg"],
+  "connectome-medialab": [
+    "connectome-01.png",
+    "connectome-02.png",
+    "connectome-03.png",
+    "connectome-04.png",
+    "connectome-05.png",
+    "connectome-06.png",
+    "connectome-07.png",
+    "connectome-08.png",
+    "connectome-09.png",
+    "connectome-10.png",
+  ],
 };
