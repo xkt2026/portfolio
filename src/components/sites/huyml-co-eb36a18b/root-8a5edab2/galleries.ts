@@ -39,6 +39,8 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
   "yaojin-brand": [
     "yaojin-brand-01.png",
     "yaojin-brand-02.jpg",
+    "yaojin-brand-03.jpg",
+    "yaojin-brand-04.jpg",
   ],
   "grow-more-program": ["grow-more-01.jpg"],
   "street-photography": [
