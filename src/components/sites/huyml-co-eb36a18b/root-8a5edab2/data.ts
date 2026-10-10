@@ -276,6 +276,26 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "telecom-5g-series",
   },
   {
+    "title": "Telecom Campaign Series",
+    "tag": "Brand - Campaign\n品牌-活动",
+    "description": "Festival and node campaign visuals for China's three major telecom operators, spanning e-commerce events, countdown promotions, and key visual design.",
+    "colors": [
+      "rgb(230, 0, 0)",
+      "rgb(0, 123, 199)",
+      "rgb(0, 159, 68)"
+    ],
+    "roles": [
+      "Jiuyi Advertising Co., Ltd.",
+      "Visual Designer"
+    ],
+    "rolesZh": [
+      "九易广告有限公司",
+      "视觉设计师"
+    ],
+    "launch": "2019-2021",
+    "slug": "telecom-campaign-series",
+  },
+  {
     "title": "JUNER CARL",
     "tag": "Advertising - photography (womenswear)\n广告-摄影（女装）",
     "description": "Summer collection campaign shot by the sea, built on natural beauty and light fashion.",
@@ -503,8 +523,35 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     ],
     "category": "Visual Identity",
     "description": "A series of China Telecom 5G campaign key visuals for tourism, healthcare, smart home, industry and lifestyle scenarios.",
-    "about": "Provided brand communication and marketing visual support for China's three major telecom operators, and participated in more than 15 provincial-level brand marketing projects.\nBrand system construction and standardized output: Built a unified brand communication system through core visual and narrative content design, which increased the client's brand reuse rate by 40%.\nHigh-conversion content solution design: Led the content solution design of multiple bidding projects, and achieved a project winning rate of 83% by combining user insights and communication strategies.\n\n为中国三大通信运营商提供品牌传播与营销视觉支持，参与 15+省级品牌营销项目。\n品牌体系构建与标准化输出：通过核心视觉与叙事内容设计，构建统一品牌传播体系，使客户品牌复用率提升 40%。\n高转化内容方案设计：主导多项招标项目内容方案设计，结合用户洞察与传播策略，使项目中标率达到 83%。",
+    "about": "5G Weaves a New Cantonese Landscape: China Telecom Lights Up Full Scenarios of Cities, Households, Healthcare and Tourism with Digital and Intelligent Power\nWhen the signals from 5G base stations along the Pearl River banks drift into old alleys along the carved eaves of Qilou buildings, and when the high-definition live streaming signals in the tourist attractions on the coast of eastern Guangdong spread across the beaches with the sea breeze, the digital practice of China Telecom's \"5G Empowering Guangdong\" is no longer a technical concept confined to brochures, but a vivid experience that has penetrated every detail of the daily work and life of Guangdong people. Centered on four core scenarios: urban governance, family life, healthcare, and cultural tourism and leisure, China Telecom, leveraging the core technical advantages of 5G featuring low latency, modernization and high efficiency, has woven a city-wide digital and intelligent service network for Guangdong, a land that boasts both bustling everyday vibes and innovative vitality.\n5G织就粤式新图景：中国电信以数智之力点亮城市、家庭、健康、旅游全场景\n当珠江岸的5G基站信号顺着骑楼的雕花廊檐漫进老巷，当粤东滨海的旅游景区里高清直播信号顺着海风铺满沙滩，中国电信\u201c5G赋能广东\u201d的数字化实践，早已不是停留在宣传册上的技术概念，而是渗透进广东人日常生产生活每一处细节的鲜活体验。以城市治理、家庭生活、健康医疗、文旅休闲四大核心场景为脉络，中国电信依托5G低延迟、现代化、高效率的核心技术优势，为广东这片兼具烟火气与创新活力的土地，织就了一张覆盖全域的数智服务网络。",
     "image": "telecom-5g-06.jpg"
+  },
+  {
+    "slug": "telecom-campaign-series",
+    "title": "TELECOM CAMPAIGN SERIES",
+    "date": "2019-2021",
+    "dateLabel": "2019-2021",
+    "colors": [
+      "rgb(230, 0, 0)",
+      "rgb(0, 123, 199)",
+      "rgb(0, 159, 68)"
+    ],
+    "roles": [
+      "Jiuyi Advertising Co., Ltd.",
+      "Visual Designer"
+    ],
+    "rolesZh": [
+      "九易广告有限公司",
+      "视觉设计师"
+    ],
+    "ruler": [
+      "Team",
+      "Role"
+    ],
+    "category": "Campaign",
+    "description": "Festival and node campaign visuals for China's three major telecom operators — e-commerce events, countdown promotions, key visuals and more.",
+    "about": "Provided brand communication and marketing visual support for China's three major telecom operators, and participated in more than 15 provincial-level brand marketing projects.\nBrand system construction and standardized output: Built a unified brand communication system through core visual and narrative content design, which increased the client's brand reuse rate by 40%.\nHigh-conversion content solution design: Led the content solution design of multiple bidding projects, and achieved a project winning rate of 83% by combining user insights and communication strategies.\n\n为中国三大通信运营商提供品牌传播与营销视觉支持，参与 15+省级品牌营销项目。\n品牌体系构建与标准化输出：通过核心视觉与叙事内容设计，构建统一品牌传播体系，使客户品牌复用率提升 40%。\n高转化内容方案设计：主导多项招标项目内容方案设计，结合用户洞察与传播策略，使项目中标率达到 83%。",
+    "image": "telecom-campaign-22.jpg"
   },
   {
     "slug": "juner-carl",
