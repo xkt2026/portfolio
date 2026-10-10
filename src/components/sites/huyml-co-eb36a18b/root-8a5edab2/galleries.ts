@@ -13,11 +13,13 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
   "biy": ["biy-01.png", "biy-02.png", "biy-03.png"],
   "district2-studio": ["unicom-5g-cover.png"],
   "telecom-5g-series": [
-    "telecom-5g-01.jpg",
-    "telecom-5g-02.jpg",
-    "telecom-5g-03.jpg",
-    "telecom-5g-04.jpg",
-    "telecom-5g-05.png",
+    "telecom-5g-06.jpg",
+    "telecom-5g-07.jpg",
+    "telecom-5g-08.jpg",
+    "telecom-5g-09.jpg",
+    "telecom-5g-10.jpg",
+    "telecom-5g-11.jpg",
+    "telecom-5g-12.jpg",
   ],
   "juner-carl": [
     "juner-carl-07.jpg",
