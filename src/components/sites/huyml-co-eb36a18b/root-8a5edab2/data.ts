@@ -296,6 +296,24 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "telecom-campaign-series",
   },
   {
+    "title": "BNTO",
+    "tag": "Website Design\n网页设计",
+    "description": "Overseas brand webpage for BNTO — fashion rental service with new product recommendations and operation demonstration.",
+    "colors": [
+      "rgb(180, 83, 42)",
+      "rgb(28, 28, 28)",
+      "rgb(232, 224, 208)"
+    ],
+    "roles": [
+      "Visual Designer"
+    ],
+    "rolesZh": [
+      "视觉设计师"
+    ],
+    "launch": "2026",
+    "slug": "bnto-brand-webpage",
+  },
+  {
     "title": "JUNER CARL",
     "tag": "Advertising - photography (womenswear)\n广告-摄影（女装）",
     "description": "Summer collection campaign shot by the sea, built on natural beauty and light fashion.",
@@ -552,6 +570,30 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "description": "Festival and node campaign visuals for China's three major telecom operators — e-commerce events, countdown promotions, key visuals and more.",
     "about": "Provided brand communication and marketing visual support for China's three major telecom operators, and participated in more than 15 provincial-level brand marketing projects.\nBrand system construction and standardized output: Built a unified brand communication system through core visual and narrative content design, which increased the client's brand reuse rate by 40%.\nHigh-conversion content solution design: Led the content solution design of multiple bidding projects, and achieved a project winning rate of 83% by combining user insights and communication strategies.\n\n为中国三大通信运营商提供品牌传播与营销视觉支持，参与 15+省级品牌营销项目。\n品牌体系构建与标准化输出：通过核心视觉与叙事内容设计，构建统一品牌传播体系，使客户品牌复用率提升 40%。\n高转化内容方案设计：主导多项招标项目内容方案设计，结合用户洞察与传播策略，使项目中标率达到 83%。",
     "image": "telecom-campaign-22.jpg"
+  },
+  {
+    "slug": "bnto-brand-webpage",
+    "title": "BNTO",
+    "date": "2026",
+    "dateLabel": "2026",
+    "colors": [
+      "rgb(180, 83, 42)",
+      "rgb(28, 28, 28)",
+      "rgb(232, 224, 208)"
+    ],
+    "roles": [
+      "Visual Designer"
+    ],
+    "rolesZh": [
+      "视觉设计师"
+    ],
+    "ruler": [
+      "Role"
+    ],
+    "category": "Website",
+    "description": "BNTO Overseas Brand Webpage — new product recommendations and operation demonstration.",
+    "about": "BNTO Overseas Brand Webpage, New Product Recommendations, Operation Demonstration.\nBNTO海外品牌网页，新品推荐，操作展示。",
+    "image": "bnto-webpage-01.jpg"
   },
   {
     "slug": "juner-carl",

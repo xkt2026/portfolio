@@ -51,6 +51,9 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
     "telecom-campaign-25.jpg",
     "telecom-campaign-26.jpg",
   ],
+  "bnto-brand-webpage": [
+    "bnto-webpage-01.jpg",
+  ],
   "juner-carl": [
     "juner-carl-07.jpg",
     "juner-carl-08.jpg",
