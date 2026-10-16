@@ -296,24 +296,6 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "telecom-campaign-series",
   },
   {
-    "title": "BNTO",
-    "tag": "Website Design\n网页设计",
-    "description": "Overseas brand webpage for BNTO — fashion rental service with new product recommendations and operation demonstration.",
-    "colors": [
-      "rgb(180, 83, 42)",
-      "rgb(28, 28, 28)",
-      "rgb(232, 224, 208)"
-    ],
-    "roles": [
-      "Visual Designer"
-    ],
-    "rolesZh": [
-      "视觉设计师"
-    ],
-    "launch": "2026",
-    "slug": "bnto-brand-webpage",
-  },
-  {
     "title": "JUNER CARL",
     "tag": "Advertising - photography (womenswear)\n广告-摄影（女装）",
     "description": "Summer collection campaign shot by the sea, built on natural beauty and light fashion.",
@@ -368,6 +350,24 @@ export const WHEEL: readonly SelectedWork[] = [
     ],
     "launch": "2023",
     "slug": "yaojin-brand",
+  },
+  {
+    "title": "BNTO",
+    "tag": "Website Design\n网页设计",
+    "description": "Overseas brand webpage for BNTO — fashion rental service with new product recommendations and operation demonstration.",
+    "colors": [
+      "rgb(180, 83, 42)",
+      "rgb(28, 28, 28)",
+      "rgb(232, 224, 208)"
+    ],
+    "roles": [
+      "Visual Designer"
+    ],
+    "rolesZh": [
+      "视觉设计师"
+    ],
+    "launch": "2026",
+    "slug": "bnto-brand-webpage",
   },
   {
     "title": "Grow More Program",
