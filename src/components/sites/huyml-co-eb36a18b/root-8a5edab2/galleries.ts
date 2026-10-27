@@ -96,6 +96,13 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
   ],
   "materialism-necklace": ["materialism-01.jpg"],
   "ear-manual": [
+    "ear-manual-new-01.jpg",
+    "ear-manual-new-02.jpg",
+    "ear-manual-new-03.jpg",
+    "ear-manual-new-04.jpg",
+    "ear-manual-new-05.jpg",
+    "ear-manual-new-06.jpg",
+    "ear-manual-new-07.jpg",
     "ear-manual-01.jpg",
     "ear-manual-02.jpg",
     "ear-manual-03.jpg",
