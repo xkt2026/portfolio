@@ -111,9 +111,7 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
     "ear-manual-06.jpg",
   ],
   "eislab": [
-    "eislab-new-01.jpg",
-    "eislab-new-02.jpg",
-    "eislab-new-03.jpg",
+    "Qz7IA3cxk2ytInSo2iqoxwkYzX0.jpg",
     "eislab-new-04.jpg",
     "eislab-new-05.jpg",
     "eislab-new-06.jpg",
@@ -125,7 +123,6 @@ export const PROJECT_GALLERIES: Readonly<Record<string, readonly string[]>> = {
     "eislab-new-12.jpg",
     "eislab-new-13.jpg",
     "eislab-new-14.jpg",
-    "Qz7IA3cxk2ytInSo2iqoxwkYzX0.jpg",
     "gfhG39T9bYBENJqrSSgCfM6cxI.jpg",
     "rD5C15OquIbYHQUP4pXqzXE2tOk.jpg",
     "KYrg5rmo9Uq2YPlyEw6A1f6v2s.jpg",
