@@ -593,7 +593,7 @@ export const ARCHIVE: readonly ArchiveEntry[] = [
     "category": "Website",
     "description": "BNTO Overseas Brand Webpage — new product recommendations and operation demonstration.",
     "about": "BNTO Overseas Brand Webpage, New Product Recommendations, Operation Demonstration.\nBNTO海外品牌网页，新品推荐，操作展示。",
-    "image": "bnto-webpage-01.jpg"
+    "image": "bnto-cover-top.jpg"
   },
   {
     "slug": "juner-carl",
