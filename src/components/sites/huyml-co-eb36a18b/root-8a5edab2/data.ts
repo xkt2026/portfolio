@@ -296,6 +296,26 @@ export const WHEEL: readonly SelectedWork[] = [
     "slug": "telecom-campaign-series",
   },
   {
+    "title": "EAR MANUAL",
+    "tag": "Manual Design\n手册设计",
+    "description": "A popular-science booklet on the ear: how hearing is formed, the myths around ear care, and the common ear diseases.",
+    "colors": [
+      "rgb(91, 87, 124)",
+      "rgb(211, 213, 83)",
+      "rgb(84, 76, 151)"
+    ],
+    "roles": [
+      "Graphic Design",
+      "Illustration"
+    ],
+    "rolesZh": [
+      "平面设计",
+      "插画"
+    ],
+    "launch": "2021",
+    "slug": "ear-manual",
+  },
+  {
     "title": "JUNER CARL",
     "tag": "Advertising - photography (womenswear)\n广告-摄影（女装）",
     "description": "Summer collection campaign shot by the sea, built on natural beauty and light fashion.",
@@ -424,26 +444,6 @@ export const WHEEL: readonly SelectedWork[] = [
     ],
     "launch": "2020",
     "slug": "materialism-necklace",
-  },
-  {
-    "title": "EAR MANUAL",
-    "tag": "Manual Design\n手册设计",
-    "description": "A popular-science booklet on the ear: how hearing is formed, the myths around ear care, and the common ear diseases.",
-    "colors": [
-      "rgb(91, 87, 124)",
-      "rgb(211, 213, 83)",
-      "rgb(84, 76, 151)"
-    ],
-    "roles": [
-      "Graphic Design",
-      "Illustration"
-    ],
-    "rolesZh": [
-      "平面设计",
-      "插画"
-    ],
-    "launch": "2021",
-    "slug": "ear-manual",
   },
   {
     "title": "HONGKONG 72 hours",
